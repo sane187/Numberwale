@@ -158,7 +158,7 @@ height: auto;
 }
 
 .carousel-cont{
-    background-color: linear-gradient(to right, #140e38, #194089);
+    background-color:#ffa800;
   ;
 }
 
@@ -173,7 +173,7 @@ height: auto;
     font-size: 28px;
 }
 .hero-text-container button {
-   background: linear-gradient(to right, #140e38, #194089);
+   background: #ffa800;
    color:white;
    padding: 10px 40px;
    border-radius: 20px;
@@ -231,11 +231,12 @@ height: 50px;
       border-radius: 30px;
      padding:1rem 0.8rem;
      margin-top: 30px;
-     background-color: linear-gradient(to right, #140e38, #194089);
+   background-color: #ffa800;
      
   }
 .video-wrapper{
-  background: linear-gradient(to right, #140e38, #194089);
+   background: #ffa800;
+ 
 }
 
 .video-wrapper .layout-wrapper h1{
@@ -304,7 +305,8 @@ color:white
     z-index: 999;
 }
 footer{
-    background: linear-gradient(to right, #140e38, #194089);
+  
+   background: #ffa800;
     color:white;
     padding: 3em 0;
    
@@ -328,7 +330,8 @@ font-size: 16px;
 
 .hwrap {
     overflow: hidden; 
-    background: #9e48cd;
+background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+
   }
    
   .hmove { display: flex; }
