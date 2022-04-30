@@ -7,7 +7,10 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-
+:root {
+  ---font: "Ubuntu", sans-serif;
+  ---main-bg:linear-gradient(to right, #140e38, #194089);
+}
 a{
     text-decoration: none !important;
     color:white !important;
@@ -103,20 +106,20 @@ height: auto;
 }
 .col1 .btn-primary,
 .col3 .btn-primary {
-  background-color:rgb(255, 84, 47) !important;
+  background:rgb(255, 84, 47)!important;
   border-color: rgb(255, 84, 47) !important;
 }
 
 
 .carousel-img-cont{
-    height:78vh !important;
+    height:71.6vh !important;
     width: 100%;
     overflow: hidden;
     object-fit: cover;
 }
 
 .carousel-img-cont-2{
-  height:74.8vh;
+  height:68.4vh;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
@@ -140,7 +143,7 @@ height: auto;
     content: "";
     position: absolute;
     inset: 0px;
-    background: rgba(227, 227, 241, 0.85);
+    background: rgba(102, 102, 158, 0.85);
 }
 
 .hero-text-container{
@@ -169,7 +172,7 @@ height: auto;
     font-size: 28px;
 }
 .hero-text-container button {
-   background-color: rgb(255, 84, 47);
+   background: rgb(255, 84, 47);
    color:white;
    padding: 10px 40px;
    border-radius: 20px;
@@ -196,7 +199,7 @@ width:50px;
 height: 50px;
 }
 .carousel-indicators button.active{
-    background-color: rgb(255, 84, 47);
+    background-color: rgba(247,129,2,1)
 }
 .hero-bext-container h1{
    font-size: 72px;
@@ -346,7 +349,7 @@ font-size: 16px;
 
   .col3 button{
     background-color: rgb(255, 84, 47);
-    color:white;
+       color:white;
     padding: 8px 20px;
     border-radius: 20px;
     border: none;
@@ -396,11 +399,11 @@ font-size: 16px;
     text-transform: uppercase;
   }
   .col4 .btn-primary {
-    background-color: rgb(255, 79, 0);
+    background:rgb(255, 84, 47);
     border-color: rgb(255, 79, 0);
   }
   .col4 .btn-primary:hover {
-    background-color: rgb(255, 79, 0);
+    background:rgb(255, 84, 47);
     border-color: rgb(255, 79, 0);
   }
   .col4 .detail-card .sumTotal {
@@ -432,7 +435,7 @@ border: none;
 }
 
 .card-cont .card a{
-  background-color: rgb(255, 84, 47);
+  background:rgb(255, 84, 47);
    color:white;
    border-radius: 20px;
    border: none;
