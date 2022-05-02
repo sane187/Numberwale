@@ -452,6 +452,27 @@ border: none;
  
 }
 
+#loader {
+  
+  width: 400px;
+  height: 400px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;}
+
 @media screen and (max-width:768px){
     .navbar-nav{
         height: 100%;
