@@ -1,21 +1,30 @@
-let menuBtn=document.querySelector(".navbar-toggler-icon")
+let menuButton=document.querySelector(".nav-mob-toggler");
+let overlayDiv=document.querySelector(".overlay-content");
 let showMenu = false;
 
 const toggleMenu =()=>{
+    let menuBtn=document.getElementById("nav-mob-icon");
 
     if(showMenu==false){
+    
         menuBtn.classList.remove("fa-bars");
         menuBtn.classList.add("fa-xmark");
+        overlayDiv.style.width="100%";
+        overlayDiv.style.height="100%";
        showMenu =true;
     }
    else{
+    
     menuBtn.classList.add("fa-bars");
     menuBtn.classList.remove("fa-xmark");
+    overlayDiv.style.width=0;
+    overlayDiv.style.height="0";
    showMenu =false;
    }
+  
 }
 
-menuBtn.addEventListener("click", toggleMenu);
+menuButton.addEventListener("click", toggleMenu);
 
 // document.onreadystatechange = function() {
 // 	if (document.readyState !== "complete") {
@@ -26,3 +35,4 @@ menuBtn.addEventListener("click", toggleMenu);
 // 		document.querySelector("body").style.visibility = "visible";
 // 	}
 // };
+

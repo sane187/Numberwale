@@ -7,10 +7,7 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-:root {
-  ---font: "Ubuntu", sans-serif;
-  ---main-bg:linear-gradient(to right, #140e38, #194089);
-}
+
 a{
     text-decoration: none !important;
    
@@ -23,9 +20,7 @@ li{
 body{
     font-family: 'Montserrat' !important;
 }
-.layout-wrapper{
-    max-width: 1280px;
-}
+
 .navbar-brand{
 width: 150px;
 height: auto;
@@ -74,7 +69,7 @@ height: auto;
   font-size: 30px;
   text-transform: uppercase;
   font-family: 'Montserrat';
-  color: #fff;
+  color: rgb(47, 48, 67);
   font-weight: 700;
 }
 .col1 hr,
@@ -98,7 +93,7 @@ height: auto;
 }
 .col1 .btn,
 .col3 .btn {
-  width: 20vw;
+ 
   font-size: 20px;
   text-transform: uppercase;
   font-family: 'Montserrat';
@@ -119,7 +114,7 @@ height: auto;
 }
 
 .carousel-img-cont-2{
-  height:68.4vh;
+  height:100%;
   width: 100%;
   overflow: hidden;
   object-fit: cover;
@@ -153,7 +148,7 @@ height: auto;
 }
 
 .hero-bext-container{
-    z-index: 2;
+    z-index: 1;
     position: relative;
 }
 
@@ -225,12 +220,10 @@ height: 50px;
   .mobile-cont{
       background: url("../Assets/cropped (2).jpg") no-repeat center ;
     background-size: 100% 100%;
-      width: 40vw;
-      height: 42vh;
       overflow: none;
       border-radius: 30px;
-     padding:1rem 0.8rem;
-     margin-top: 30px;
+     padding:0.9rem 0.8rem;
+     height:18rem;
    background-color: #ffa800;
      
   }
@@ -246,7 +239,7 @@ color:white
   color:white !important;
 }
   .vid-content{
-      max-width: 35vw;
+    max-width: 35vw;
       border: 1.5px solid #1ee01eb0;
       padding: 25px 20px;
       border-radius: 10px;
@@ -255,9 +248,8 @@ color:white
 
   }
   .rid-content{
-    max-width: 25vw;
     border: 1.5px solid #1ee01eb0;
-    padding: 25px 20px;
+    padding: 20px 18px;
     border-radius: 10px;
     background-color: white;
 }
@@ -302,7 +294,7 @@ color:white
 
 .pull-up:hover{
     transform: translateY(-4px) scale(1.04) !important;
-    z-index: 999;
+    z-index: 333;
 }
 footer{
   
@@ -384,9 +376,9 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 350px;
+    width: 22rem;
     height: auto;
-   background: url('../Assets/background.jpg');
+   background:rgba(255, 168, 0,0.2);
     border-radius: 10px;
     border: 2px solid #1ee01eb0;
   }
@@ -504,8 +496,77 @@ color: black;
 
 }
 
+#loader{
+  height: 50vh;
+  width: 50vw;
+
+}
+ /* Mobile Nav*/
+ .mob-logo-cont{
+   height: auto;
+   width: 8rem;
+   overflow: hidden;
+ }
+
+ .overlay-content{
+   position: relative;
+   top: 0.5rem;
+  z-index: 999;  
+  background-color:#fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+  width: 0;
+  height: 0}
+ .overlay-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffa800;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(238, 236, 236);
+  font-family: 'Roboto', sans-serif;
+}
+.overlay button{
+font-size: 1.8rem;
+color: white;
+background: #ee9617;
+}
+.fa-check{
+  color: #1ee01eb0;
+  font-size: 1.2rem
+ 
+}
+#search-select{
+   padding: 0.5rem 18px;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
 
 @media screen and (max-width:768px){
+  .mobile-cont{
+    background: none ;
+  background-size: 100% 100%;
+    overflow: none;
+    border-radius: 30px;
+   padding:0.9rem 0.8rem;
+   height: 40vh;
+ background-color: #ffa800;
+   
+}
+  .hitem{
+    width: 40%;
+  }
     .navbar-nav{
         height: 100%;
     }
@@ -513,12 +574,11 @@ color: black;
     .phone-outer-div{
         flex-direction: column;
     }
-
-
-.vid-content,.rid-content{
-    max-width: 100%;
-
+.vid-content{
+max-width: 90%;
 }
+
+
 .hero-text-container h1{
     font-size: 32px;
     font-weight: 600;

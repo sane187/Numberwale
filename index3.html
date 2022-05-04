@@ -12,11 +12,15 @@
     <link rel="stylesheet" type="text/css" href="./Css/index3.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./Css/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
  
     <title>VIP Mobile Number | Fancy</title>
 </head>
 <body>
+  <!-- <div id="loader" class="center">
+    <img src="./Assets/logo.png" alt="" style="width:100%;height: 100%;"/>
+  </div> -->
 <div class="container-fluid d-none d-lg-block" style="background:#ffa800">
     <div class="container nav-top">
     <div class="d-flex justify-content-between align-items-center h-100 w-100" style="color:white">
@@ -46,7 +50,7 @@
 
     <header>
   
-   <nav class="navbar navbar-expand-lg" style=" background: #ffa800;"> 
+   <nav class="navbar navbar-expand-lg d-none d-lg-block" style=" background: #ffa800;"> 
         <div class="container-lg container-fluid" data-aos="fade-right">
           <a class="navbar-brand" href="#"><div><img src="Assets/orangeLogo.png" ></div></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,15 +85,46 @@
       </nav>
     </header>
 
+
+
+
+<section class="mobile-navbar d-lg-none d-sm-block">
+<div class="container-fluid p-0" style="background:#ffa800;">
+  <div id="myNav" class="overlay w-100 h-100" style="position: absolute;"> 
+      
+<div class="d-flex align-items-center justify-content-between px-3 w-100" style="position: relative;left: 0; top:10;z-index: 555;">
+  <a href="#"><div class="mob-logo-cont"><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
+  <button class="border-0 d-flex justify-content-center align-items-center nav-mob-toggler">
+    <span class="fa-solid fa-bars" id="nav-mob-icon" style="background:#ffa800;"></span>
+  </button>
+</div>
+
+    <div class="overlay-content d-flex justify-content-center">
+      <div>
+      <a href="#">HOME</a>
+      <a href="#">VIP NUMBERS </a>
+      <a href="#">Sold Out</a>
+      <a href="#">About Us</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact us</a>
+    </div>
+    </div>
+  </div>
+
+
+</div>
+</section>
+
+
 <main>
 <div class="carousel-cont">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-    <div class="carousel-indicators">
+    <!-- <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       
-    </div>
+    </div> -->
     <div class="carousel-inner">
       <!-- <div class="carousel-item ">
         <div class="carousel-img-cont slide-1">
@@ -122,7 +157,7 @@
       <div class="carousel-item active"  style=" background: #ffa800;">
         <section class="mt-4" >
           <div class="container">
-            <div class="row">
+            <div class="row pb-5">
               <div
                 class="col col-xl-6 col-lg-12 col-md-12 col-sm-12"
                 data-aos="fade-right"
@@ -137,7 +172,7 @@
                   <button class="btn btn-primary">Buy now</button>
                 </div>
               </div>
-              <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 carousel-img-cont-2">
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-0 carousel-img-cont-2">
                 <div class="mt-4 bannerImage">
                   <img
                     src="./Assets/bannerImage.svg"
@@ -185,31 +220,22 @@
 </div>
 
 <section class="mt-4 search">
-  <div class="d-flex justify-content-center align-items-center flex-row">
-    <select id="cars" name="cars" style="/* position: absolute; */
-    padding: 0.5rem 18px;
-    margin: 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 2px solid rgba(0,0,0,.15);
-    border-radius: 0.25rem;">
-    <option value="volvo">Anywhere</option>
-    <option value="saab">Starts With</option>
-    
-<option value="fiat">Ends With</option><option value="fiat">Contains</option>
-<option value="fiat">Not-contains</option>
+  <div class="d-flex justify-content-lg-center align-items-center flex-lg-row flex-column-reverse">
+    <select id="search-select" name="cars">
+    <option value="Anywhere">Anywhere</option>
+    <option value="Starts With">Starts With</option>
+<option value="Ends With">Ends With</option>
+<option value="Contains">Contains</option>
+<option value="Not-contains">Not-contains</option>
     </select>
-  <div class="form-group mx-3" style="width:25rem;border:rgb(28, 30, 55);">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search number" 
-    style="width:25rem; border:1.5px solid rgb(28, 30, 55)">
+  <div class="mx-3 d-flex" style="width:25rem;border:rgb(28, 30, 55);">
+    <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search number" 
+    style="border:1.5px solid rgb(28, 30, 55)">
+    <button class="btn mx-3 text-white" style="background: #05d561">Search</button>
   </div>
-   <button class="btn mx-3 text-white" style="background: #05d561">Search</button>
+   
   </div>
-</section>
+
 
 </section>
 
@@ -225,7 +251,7 @@
                 <p class="discover-para text-center" data-aos="fade-right" data-aos-duration="1200">
                   Categories
                 </p>
-                <button class="btn d-flex justify-content-center">Discover Categories</button>
+                <button class="btn d-flex justify-content-center mt-lg-3 mt-0 mb-lg-0 mb-2">Discover Categories</button>
               </div>
             </div>
             <div class="col col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -374,7 +400,7 @@
 
 
 <div class="video-wrapper w-100 h-100 d-flex flex-column align-items-center" style="position: relative; margin-top: 5rem;padding: 2rem 0;">
-<div class="layout-wrappper d-flex flex-column align-items-center w-100 h-100">
+<div class="d-flex flex-column align-items-center w-100 h-100">
  <h1 class="mt-5 fw-bold pb-2" style="color:#fff;border-bottom: 3px solid rgb(255, 84, 47)" >QUICK STEPS TO BUY YOUR VIP NUMBER</h1> 
 
 <div class="vid-content flex-column" style="margin-top: 4rem;" data-aos="fade-down">
@@ -389,35 +415,44 @@
 
 </div>
 
-<div class="d-flex align-items-center phone-outer-div">
-  <div class="rid-content flex-column me-lg-4" data-aos="flip-left">
+
+
+<div class="row py-3 px-lg-3 px-4 d-flex align-items-center">
+  <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-12">
+    <div class="rid-content flex-column " data-aos="flip-left">
+      <div class="d-flex align-items-center">
+        <div><i class="fa-solid fa-sim-card"></i></div>
+        <div class="vid-content-cont">
+          <h5 class="fw-bolder" style="color:rgb(255, 84, 47)">GET YOUR SIM CARD</h5>
+          <p class="fw-bold mb-0 small-text" style="color:#140e38;">Visit any Telecom Gallery or Mobile Shop and port the number. You can get your number ported to any network, on your Name.</p>
+         </div>
+      </div>
+    </div>
+ </div>
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+  <div class="mobile-cont" > 
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 18px;"loading="eager" class="vid-vid"></iframe>
+</div>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+  <div class="rid-content flex-column" data-aos="flip-right">
     <div class="d-flex align-items-center">
-      <div class="pe-4"><i class="fa-solid fa-sim-card"></i></div>
+      <div> <i class="fa-solid fa-money-bill-1-wave"></i> </div>
       <div class="vid-content-cont">
-        <h5 class="fw-bolder" style="color:rgb(255, 84, 47)">GET YOUR SIM CARD</h5>
-        <p class="fw-bold mb-0 small-text" style="color:#140e38;">Visit any Telecom Gallery or Mobile Shop and port the number. You can get your number ported to any network, on your Name.</p>
+        <h5 class="fw-bolder" style="color:rgb(255, 84, 47)">MAKE THE PAYMENT</h5>
+        <p class="fw-bold mb-0" style="color:#140e38;">Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p>
        </div>
   
     </div>
   
   </div>
-   <div class="mobile-cont" > 
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 18px;"loading="eager" class="vid-vid"></iframe>
-</div>
-<div class="rid-content flex-column ms-lg-4" data-aos="flip-right">
-  <div class="d-flex align-items-center">
-    <div class="pe-4"> <i class="fa-solid fa-money-bill-1-wave"></i> </div>
-    <div class="vid-content-cont">
-      <h5 class="fw-bolder" style="color:rgb(255, 84, 47)">MAKE THE PAYMENT</h5>
-      <p class="fw-bold mb-0" style="color:#140e38;">Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p>
-     </div>
-
-  </div>
-
 </div>
 
 </div>
-<div class="vid-content flex-column mt-4" data-aos="fade-up">
+
+
+
+<div class="vid-content flex-column" data-aos="fade-up">
   <div class="d-flex align-items-center">
     <div class="pe-4"><i class="fa-solid fa-barcode"></i></div>
     <div class="vid-content-cont">
@@ -513,11 +548,11 @@
 
 <section style="margin-top:5rem">
 <div class="container-fluid">
-  <div class="container">
+  <div class="container-lg px-sm-3 px-md-0">
     <h1 class="text-center mb-5 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">DREAM NUMBER</span></h1>
 
     <div class="row ">
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 px-2">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 px-2 mb-sm-2 mb-lg-0">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -546,7 +581,7 @@
         </div>
       </div>
 
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -609,7 +644,7 @@
     </div>
 
     <div class="row mt-4 ">
-      <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12 col-18 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -638,7 +673,7 @@
 </div>
       </div>
 
-      <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12 col-18">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -668,7 +703,7 @@
       </div>
 
 
-      <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12 col-18 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 ">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -700,7 +735,7 @@
 
     </div>
     <div class="row mt-4 ">
-      <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12 col-18 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -729,7 +764,7 @@
 </div>
       </div>
 
-      <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12 col-18">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -759,7 +794,7 @@
       </div>
 
 
-      <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12 col-18 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 ">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -803,7 +838,47 @@
   </section>
   </div>
 
+<section>
+  <div class="container-lg d-flex flex-column align-items-center py-5">
+    <h2 class="mb-0 fw-bold">VIP FRIEND ZONE
+    </h2>
+    <h5 class="mb-0" style="color:#08c;">Apke swaal, Hmare jwaab</h5>
+ 
+  <div class="row mt-5">
+<div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-20">
+  <div class="d-flex flex-column text-center align-items-center">
+  <h5 class="fw-bold mb-4">Will it be in Prepaid or postpaid?</h5>
+  <div class="col-video-cont">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 18px;"loading="eager" class="vid-vid"></iframe>
+  </div>
+<div class="mt-4">
+<p><span class="fa-solid fa-check"></span>&nbsp; Our any number is Portable (can be activated) to any state, any operator, and any nature (Prepaid/Postpaid) as customer choice.</p>
+<p><span class="fa-solid fa-check"></span>&nbsp; हमारा कोई भी नंबर, किसी भी राज्य, किसी भी कम्पनी में प्रीपेड या पोस्टपेड, जैसे भी कस्टमर चाहे पोर्ट / चालू किया जा सकता है।</p>
+</div>
 
+
+  </div>
+</div>
+<div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-20 mt-lg-0">
+<div class="d-flex flex-column text-center align-items-center">
+  <h5 class="fw-bold mb-4">How the Number will be delivered?</h5>
+  <div class="col-video-cont">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 18px;"loading="eager" class="vid-vid"></iframe>
+  </div>
+  <div class="mt-4">
+  <p class="mb-1"><span class="fa-solid fa-check"></span>&nbsp; You'll receive the UPC after the order will be placed.</p>
+  <p class="mb-1"><span class="fa-solid fa-check"></span>&nbsp; Thereafter, You just need to visit any of your nearest Sim retailer shops.</p>
+  <p class="mb-0"><span class="fa-solid fa-check"></span>&nbsp; Start the MNP process to activate your VIP Number.</p>
+
+  </div>
+  
+ 
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
 
 
 </main>
@@ -870,8 +945,7 @@
          duration:1000}
       );
     </script>
-    <script src="./Js/particles.js"></script>
-    <script src="./Js/app.js"></script>
+    
 
 </body>
 
