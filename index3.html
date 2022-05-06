@@ -21,6 +21,7 @@
   <!-- <div id="loader" class="center">
     <img src="./Assets/logo.png" alt="" style="width:100%;height: 100%;"/>
   </div> -->
+  <div class="d-none d-lg-block">
 <div class="container-fluid d-none d-lg-block" style="background:#ffa800">
     <div class="container nav-top">
     <div class="d-flex justify-content-between align-items-center h-100 w-100" style="color:white">
@@ -46,10 +47,7 @@
 
 </div>
 </div>
-
-
     <header>
-  
    <nav class="navbar navbar-expand-lg d-none d-lg-block" style=" background: #ffa800;"> 
         <div class="container-lg container-fluid" data-aos="fade-right">
           <a class="navbar-brand" href="#"><div><img src="Assets/orangeLogo.png" ></div></a>
@@ -85,36 +83,35 @@
       </nav>
     </header>
 
-
-
-
-<section class="mobile-navbar d-lg-none d-sm-block">
-<div class="container-fluid p-0" style="background:#ffa800;">
-  <div id="myNav" class="overlay w-100 h-100" style="position: absolute;"> 
+    <section class="mobile-navbar d-block d-lg-none">
+      <div class="container-fluid p-0" style="background:#ffa800;">
+          <!-- style="position: relative;left: 0; top:10;z-index: 555;" -->
+        <div id="myNav" class="overlay"> 
+        
+      <div class="d-flex align-items-center justify-content-between px-4 pt-2">
+        <a href="#"><div class="mob-logo-cont"><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
+        <button class="border-0 d-flex justify-content-center align-items-center nav-mob-toggler">
+          <span class="fa-solid fa-bars" id="nav-mob-icon" style="background:#ffa800;"></span>
+        </button>
+      </div>
       
-<div class="d-flex align-items-center justify-content-between px-3 w-100" style="position: relative;left: 0; top:10;z-index: 555;">
-  <a href="#"><div class="mob-logo-cont"><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
-  <button class="border-0 d-flex justify-content-center align-items-center nav-mob-toggler">
-    <span class="fa-solid fa-bars" id="nav-mob-icon" style="background:#ffa800;"></span>
-  </button>
-</div>
-
-    <div class="overlay-content d-flex justify-content-center">
-      <div>
-      <a href="#">HOME</a>
-      <a href="#">VIP NUMBERS </a>
-      <a href="#">Sold Out</a>
-      <a href="#">About Us</a>
-      <a href="#">Gallery</a>
-      <a href="#">Contact us</a>
-    </div>
-    </div>
-  </div>
-
-
-</div>
-</section>
-
+          <div class="overlay-content d-flex justify-content-center align-items-center" onscroll="aj()">
+            <div>
+              <h1>
+            <a href="#">HOME</a>
+            <a href="#">VIP NUMBERS</a>
+            <a href="#">Sold Out</a>
+            <a href="#">About Us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact us</a>
+          </h1>
+          </div>
+          </div>
+        </div>
+      
+      
+      </div>
+      </section>
 
 <main>
 <div class="carousel-cont">
@@ -228,9 +225,9 @@
 <option value="Contains">Contains</option>
 <option value="Not-contains">Not-contains</option>
     </select>
-  <div class="mx-3 d-flex" style="width:25rem;border:rgb(28, 30, 55);">
+  <div class="mx-3 d-flex mb-3 mb-lg-0" style="width:auto;">
     <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search number" 
-    style="border:1.5px solid rgb(28, 30, 55)">
+    style="border:2px solid #fe5858;padding:0.6rem;border-radius: 8px;">
     <button class="btn mx-3 text-white" style="background: #05d561">Search</button>
   </div>
    
@@ -401,7 +398,7 @@
 
 <div class="video-wrapper w-100 h-100 d-flex flex-column align-items-center" style="position: relative; margin-top: 5rem;padding: 2rem 0;">
 <div class="d-flex flex-column align-items-center w-100 h-100">
- <h1 class="mt-5 fw-bold pb-2" style="color:#fff;border-bottom: 3px solid rgb(255, 84, 47)" >QUICK STEPS TO BUY YOUR VIP NUMBER</h1> 
+ <h1 class="mt-5 fw-bold pb-2 text-center" style="color:#fff;border-bottom: 3px solid rgb(255, 84, 47)" >QUICK STEPS TO BUY YOUR VIP NUMBER</h1> 
 
 <div class="vid-content flex-column" style="margin-top: 4rem;" data-aos="fade-down">
   <div class="d-flex align-items-center">
@@ -416,30 +413,28 @@
 </div>
 
 
-
-<div class="row py-3 px-lg-3 px-4 d-flex align-items-center">
-  <div class="col col-xl-3 col-lg-3 col-md-3 col-sm-12">
-    <div class="rid-content flex-column " data-aos="flip-left">
-      <div class="d-flex align-items-center">
-        <div><i class="fa-solid fa-sim-card"></i></div>
+<div class="px-3">
+<div class="row py-3 d-flex align-items-center">
+  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+    <div class="rid-content flex-column" data-aos="flip-left">
+      <div class="d-flex flex-column">
+        <div class="d-flex align-items-center mb-2"><h5 class="fw-bolder mb-0" style="color:rgb(255, 84, 47)">GET YOUR SIM CARD</h5><i class="fa-solid fa-sim-card ms-3"></i></div>
         <div class="vid-content-cont">
-          <h5 class="fw-bolder" style="color:rgb(255, 84, 47)">GET YOUR SIM CARD</h5>
           <p class="fw-bold mb-0 small-text" style="color:#140e38;">Visit any Telecom Gallery or Mobile Shop and port the number. You can get your number ported to any network, on your Name.</p>
          </div>
       </div>
     </div>
  </div>
- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 px-0 px-lg-1">
   <div class="mobile-cont" > 
     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 18px;"loading="eager" class="vid-vid"></iframe>
 </div>
 </div>
 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
   <div class="rid-content flex-column" data-aos="flip-right">
-    <div class="d-flex align-items-center">
-      <div> <i class="fa-solid fa-money-bill-1-wave"></i> </div>
+    <div class="d-flex flex-column">
+      <div class="d-flex align-items-center mb-2"><h5 class="fw-bolder mb-0" style="color:rgb(255, 84, 47)">MAKE THE PAYMENT</h5><i class="fa-solid fa-money-bill-1-wave ms-3"></i> </div>
       <div class="vid-content-cont">
-        <h5 class="fw-bolder" style="color:rgb(255, 84, 47)">MAKE THE PAYMENT</h5>
         <p class="fw-bold mb-0" style="color:#140e38;">Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p>
        </div>
   
@@ -449,7 +444,7 @@
 </div>
 
 </div>
-
+</div>
 
 
 <div class="vid-content flex-column" data-aos="fade-up">
@@ -548,11 +543,11 @@
 
 <section style="margin-top:5rem">
 <div class="container-fluid">
-  <div class="container-lg px-sm-3 px-md-0">
+  <div class="container-lg px-3">
     <h1 class="text-center mb-5 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">DREAM NUMBER</span></h1>
 
     <div class="row ">
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 px-2 mb-sm-2 mb-lg-0">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 px-2 mb-2 mb-lg-0 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -561,7 +556,7 @@
           </div>
         </div>
 
-        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white">
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white ">
       <h2 class="mb-0">98887-88887</h2>
       <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
         </div>
@@ -581,7 +576,7 @@
         </div>
       </div>
 
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -611,7 +606,7 @@
       </div>
 
 
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -644,7 +639,7 @@
     </div>
 
     <div class="row mt-4 ">
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -673,7 +668,7 @@
 </div>
       </div>
 
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -703,7 +698,7 @@
       </div>
 
 
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -735,7 +730,7 @@
 
     </div>
     <div class="row mt-4 ">
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -764,7 +759,7 @@
 </div>
       </div>
 
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-sm-2 mb-lg-0">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -794,7 +789,7 @@
       </div>
 
 
-      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 pull-up">
         <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
         <div class="d-flex flex-column pb-1">
           <div class="d-flex justify-content-around align-items-center col-div">
@@ -832,15 +827,864 @@
 </section>
 
 
-<div class="container-fluid" style="padding: 60px; background: #ffa800;margin-top: 80px;">
-  <section style="width: 80%;margin: 0 auto;" class="px-2">
+<div class="container-fluid" style="padding: 6rem 2rem; background: #ffa800;margin-top: 80px;">
+  <section style="width: 100%;margin: 0 auto;" class="px-2">
     <img src="./Assets/GIF-banner.gif" style="width: 100%;border-radius:25px;">
   </section>
   </div>
 
 <section>
   <div class="container-lg d-flex flex-column align-items-center py-5">
-    <h2 class="mb-0 fw-bold">VIP FRIEND ZONE
+    <h2 class="mb-0 fw-bold" style="color:rgb(255, 84, 47);">VIP FRIEND ZONE</span>
+    </h2>
+    <h5 class="mb-0" style="color:#08c;">Apke swaal, Hmare jwaab</h5>
+ 
+  <div class="row mt-5">
+<div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-20">
+  <div class="d-flex flex-column text-center align-items-center">
+  <h5 class="fw-bold mb-4">Will it be in Prepaid or postpaid?</h5>
+  <div class="col-video-cont">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
+  </div>
+<div class="mt-4">
+<p><span class="fa-solid fa-check"></span>&nbsp; Our any number is Portable (can be activated) to any state, any operator, and any nature (Prepaid/Postpaid) as customer choice.</p>
+<p><span class="fa-solid fa-check"></span>&nbsp; हमारा कोई भी नंबर, किसी भी राज्य, किसी भी कम्पनी में प्रीपेड या पोस्टपेड, जैसे भी कस्टमर चाहे पोर्ट / चालू किया जा सकता है।</p>
+</div>
+
+
+  </div>
+</div>
+<div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-20 mt-lg-0">
+<div class="d-flex flex-column text-center align-items-center">
+  <h5 class="fw-bold mb-4">How the Number will be delivered?</h5>
+  <div class="col-video-cont">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
+  </div>
+  <div class="mt-4">
+  <p class="mb-1"><span class="fa-solid fa-check"></span>&nbsp; You'll receive the UPC after the order will be placed.</p>
+  <p class="mb-1"><span class="fa-solid fa-check"></span>&nbsp; Thereafter, You just need to visit any of your nearest Sim retailer shops.</p>
+  <p class="mb-0"><span class="fa-solid fa-check"></span>&nbsp; Start the MNP process to activate your VIP Number.</p>
+
+  </div>
+  
+ 
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+
+
+</main>
+<footer class="footer-07">
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-md-12 text-center d-flex flex-column align-items-center">
+  <h2 class="footer-heading fw-bold"><a href="#" class="logo">VIP Number Store</a></h2>
+  <h5 class="menu fw-bold" style="background: white;padding: 1rem;border-radius:8px;">
+  <a href="#" class="me-3 " style="color: #ffa800">Home</a>
+  <a href="#" class="me-3" style="color: #ffa800" >Vip Numbers</a>
+  <a href="#" class="me-3" style="color: #ffa800">Sold Out</a>
+  <a href="#" class="me-3" style="color: #ffa800">About Us</a>
+  <a href="#" class="me-3" style="color: #ffa800">Gallery</a>
+  <a href="#" style="color: #ffa800">Contact</a>
+  </h5>
+  <ul class="ftco-footer-social d-flex align-items-center mt-3 ps-0">
+  <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><span class="fa-brands fa-twitter"></span></a></li>
+  <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><span class="fa-brands fa-facebook-f"></span></a></li>
+  <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram"><span class="fa-brands fa-instagram"></span></a></li>
+  </ul>
+  </div>
+ </div>
+
+ 
+  <div class="row mt-4 foot-r w-100 justify-content-around" > 
+  <div class="col-3">
+    <div class="d-flex flex-column align-items-center">
+      <h2 class="mb-3 text-center">WE ACCEPT</h2>
+      <p class="mb-2 text-center"><a href="#">Terms & conditions</a></p>
+      <p class="mb-2"><a href="#">Privacy policy</a></p>
+      <p class="mb-2"><a href="#">Refund policy</a></p>
+     
+      </div>
+  </div>
+
+<div class="col-6">
+<div class="d-flex flex-column align-items-center">
+ <h2 class="mb-3">CONTACT US</h2>
+ <p class="mb-2 text-center">Shop No 23, Old idea point, Main market, Police station Road, Anupgarh Distt. Sri ganganagar Rajasthan 335701</p>
+<p>Email:<span class="foot-email"> cs@vipnumberstore.in</span></p>
+</div>      
+</div>
+
+<div class="col-3">
+<div class="d-flex flex-column align-items-center">
+  <h2 class="mb-3">SUPPORT</h2>
+ <p class="mb-2">Contact Us</p>
+  <p class="mb-0">FAQ'S</p>
+</div>
+</div>
+
+</div>
+
+  </div>
+  </footer>
+</div>
+  <div class="d-block d-lg-none">
+    <section class="mobile-navbar">
+      <div class="container-fluid p-0" style="background:#ffa800;">
+          <!-- style="position: relative;left: 0; top:10;z-index: 555;" -->
+        <div id="myNav" class="overlay"> 
+        
+      <div class="d-flex align-items-center justify-content-between px-4 pt-2">
+        <a href="#"><div class="mob-logo-cont"><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
+        <button class="border-0 d-flex justify-content-center align-items-center nav-mob-toggler">
+          <span class="fa-solid fa-bars" id="nav-mob-icon" style="background:#ffa800;"></span>
+        </button>
+      </div>
+      
+          <div class="overlay-content d-flex justify-content-center align-items-center" onscroll="aj()">
+            <div>
+              <h1>
+            <a href="#">HOME</a>
+            <a href="#">VIP NUMBERS</a>
+            <a href="#">Sold Out</a>
+            <a href="#">About Us</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact us</a>
+          </h1>
+          </div>
+          </div>
+        </div>
+      
+      
+      </div>
+      </section>
+
+<main>
+<div class="carousel-cont">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      
+    </div> -->
+    <div class="carousel-inner">
+      <!-- <div class="carousel-item ">
+        <div class="carousel-img-cont slide-1">
+     <div class="hero-text-container d-flex justify-content-start align-items-center h-100 ">
+       <div class="d-flex flex-column align-items-center">
+   <h1 class="text-center" data-aos="fade-up"
+  ><p>Fastest Activation</p>
+  <p>VIP Number</p></h1>
+  <div data-aos="fade-up" data-aos-duration="1500"> Now just a click away!</div>
+  <button class="btn" data-aos="zoom-in-up" data-aos-duration="1800">Buy Now</button>
+       </div>
+     </div>
+
+      </div>
+      </div> -->
+      <!-- <div class="carousel-item">
+        <div class="carousel-img-cont slide-2 d-flex align-items-center justify-content-center" >
+          <div class="hero-bext-container">
+            <div class="d-flex flex-column align-items-center">
+        <h1 class="text-center fw-bolder"><p>One Stop Destination</p>
+       <p>For VIP Numbers</p></h1>
+       <div class="animated-num">88000-00193</div>
+
+            </div>
+          </div>
+     
+           </div>
+      </div> -->
+
+      <div class="carousel-item active"  style=" background: #ffa800;">
+        <section class="mt-4" >
+          <div class="container">
+            <div class="row pb-5">
+              <div
+                class="col col-xl-6 col-lg-12 col-md-12 col-sm-12"
+                data-aos="fade-right"
+              >
+                <div class="col1 mt-4 pt-4 ps-5">
+                  <h1 class="banner-title">Vip number</h1>
+                  <hr />
+                  <p class="banner-para">Get your vip number at one click.</p>
+                  <p class="banner-subpara">
+                    India's Best and Reliable prime numbers provider
+                  </p>
+                  <button class="btn btn-primary">Buy now</button>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-12 col-md-12 col-sm-0 carousel-img-cont-2">
+                <div class="mt-4 bannerImage">
+                  <img
+                    src="./Assets/bannerImage.svg"
+                    alt="bannerImage"
+                    data-aos="fade-left"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <div class="carousel-control-div">
+      <span class="fa-solid fa-angle-left" aria-hidden="true">
+      </div>
+      </span>
+ <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <div class="carousel-control-div">
+      <span class="fa-solid fa-angle-right" aria-hidden="true"></span>
+     </div>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="ticker w-100 h-100">
+  <div class="hwrap"><div class="hmove">
+    <h5 class="hitem">Unique Numbers</h5>
+    <h5 class="hitem">AB AB AB Numbers</h5>
+    <h5 class="hitem">AAA BBB Numbers</h5>
+    <h5 class="hitem">123456 Numbers</h5>
+    <h5 class="hitem">Mirror Numbers</h5>
+    <h5 class="hitem">Semi Mirror Numbers</h5>
+    <h5 class="hitem">Two digit Numbers</h5>
+    <h5 class="hitem">786 Numbers</h5>
+    <h5 class="hitem">Triple Numbers</h5>
+
+
+  </div></div>
+</div>
+
+<section class="mt-4 search">
+  <div class="d-flex justify-content-lg-center align-items-center flex-lg-row flex-column-reverse">
+    <select id="search-select" name="cars">
+    <option value="Anywhere">Anywhere</option>
+    <option value="Starts With">Starts With</option>
+<option value="Ends With">Ends With</option>
+<option value="Contains">Contains</option>
+<option value="Not-contains">Not-contains</option>
+    </select>
+  <div class="mx-3 d-flex mb-3 mb-lg-0" style="width:auto;">
+    <input type="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Search number" 
+    style="border:2px solid #fe5858;padding:0.6rem;border-radius: 8px;">
+    <button class="btn mx-3 text-white" style="background: #05d561">Search</button>
+  </div>
+   
+  </div>
+
+
+</section>
+
+
+
+   <section style="margin-top: 5rem;">
+        <div style="padding: 0 5%;">
+          <div class="row">
+            <div class="col col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="col3 mt-4 pt-4 d-flex flex-column align-items-center">
+                <h1 class="discover-title text-center" data-aos="fade-left">Vip Number</h1>
+                <hr class="w-100"/>
+                <p class="discover-para text-center" data-aos="fade-right" data-aos-duration="1200">
+                  Categories
+                </p>
+                <button class="btn d-flex justify-content-center mt-lg-3 mt-0 mb-lg-0 mb-2">Discover Categories</button>
+              </div>
+            </div>
+            <div class="col col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="col4 d-flex justify-content-center flex-row">
+                      <div class="d-flex justify-content-around align-items-center flex-column">
+                        <div class="detail-card p-4 pull-up">
+                          <div class="icon">
+                            <i class="fa-solid fa-fingerprint fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">Unique Number</h1>
+                        </div>
+                        <div class="detail-card p-4 mt-3 pull-up" >
+                          <div class="icon">
+                            <i class="fa-solid fa-a fa-2x"></i>
+                          </div>
+                          <h1 class="launch-number mt-3">AB AB AB Numbers</h1>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-around flex-column mx-3">
+                        <div class="detail-card mt-4 p-4 pull-up">
+                          <div class="icon">
+                            <i class="fa-solid fa-b fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">AAA BBB Numbers</h1>
+                        </div>
+                        <div class="detail-card p-4 mt-4 pull-up" >
+                          <div class="icon">
+                            <i class="fa-solid fa-1 fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">123456 Numbers</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col4 d-flex justify-content-center flex-row">
+                      <div class="d-flex justify-content-around align-items-center flex-column">
+                        <div class="detail-card p-4 pull-up">
+                          <div class="icon">
+                            <i class="fa-solid fa-fingerprint fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">Mirror Number</h1>
+                        </div>
+                        <div class="detail-card p-4 mt-3 pull-up" >
+                          <div class="icon">
+                            <i class="fa-solid fa-a fa-2x"></i>
+                          </div>
+                          <h1 class="launch-number mt-3">
+                            Doubling Numbers
+                          </h1>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-around flex-column mx-3">
+                        <div class="detail-card mt-4 p-4 pull-up">
+                          <div class="icon">
+                            <i class="fa-solid fa-b fa-2x"></i>
+                          </div>
+                          <h1 class="launch-number mt-3">2 digit Number</h1>
+                        </div>
+                        <div class="detail-card p-4 mt-4 pull-up" >
+                          <div class="icon">
+                            <i class="fa-solid fa-1 fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">786 Numbers</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col4 d-flex justify-content-center flex-row">
+                      <div class="d-flex justify-content-around align-items-center flex-column">
+                        <div class="detail-card p-4 pull-up" >
+                          <div class="icon">
+                            <i class="fa-solid fa-fingerprint fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">Triple Number</h1>
+                        </div>
+                        <div class="detail-card p-4 mt-3 pull-up" >
+                          <div class="icon">
+                            <i class="fa-solid fa-a fa-2x"></i>
+                          </div>
+                          <h1 class="launch-number mt-3">Tetra Numbers</h1>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-around flex-column mx-3">
+                        <div class="detail-card mt-4 p-4 pull-up">
+                          <div class="icon">
+                            <i class="fa-solid fa-b fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">Penta Numbers</h1>
+                        </div>
+                        <div class="detail-card p-4 mt-4 pull-up" >
+                          <div class="icon">
+                            <i class="fa-solid fa-1 fa-2x"></i>
+                          </div>
+
+                          <h1 class="launch-number mt-3">Hexa Numbers</h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev discovery-btn"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev" 
+                >
+                  <span
+                    class="fa-solid fa-angle-left"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next discovery-btn"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="fa-solid fa-angle-right"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<div class="video-wrapper w-100 h-100 d-flex flex-column align-items-center" style="position: relative; margin-top: 5rem;padding: 2rem 0;">
+<div class="d-flex flex-column align-items-center w-100 h-100">
+ <h1 class="mt-5 fw-bold pb-2 text-center" style="color:#fff;border-bottom: 3px solid rgb(255, 84, 47)" >QUICK STEPS TO BUY YOUR VIP NUMBER</h1> 
+
+<div class="vid-content flex-column" style="margin-top: 4rem;" data-aos="fade-down">
+  <div class="d-flex align-items-center">
+    <div class="pe-4"> <i class="fa-solid fa-handshake"></i> </div>
+    <div class="vid-content-cont">
+      <h5 class="fw-bolder" style="color:rgb(255, 84, 47)">FIND YOUR DESIRED NUMBER </h5>
+      <p class="fw-bold mb-0" style="color:#140e38;">Select your favourable mobile number. The one you like and which suits your personality.</p>
+     </div>
+
+  </div>
+
+</div>
+
+
+<div class="px-3">
+<div class="row py-3 d-flex align-items-center">
+  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+    <div class="rid-content flex-column" data-aos="flip-left">
+      <div class="d-flex flex-column">
+        <div class="d-flex align-items-center mb-2"><h5 class="fw-bolder mb-0" style="color:rgb(255, 84, 47)">GET YOUR SIM CARD</h5><i class="fa-solid fa-sim-card ms-3"></i></div>
+        <div class="vid-content-cont">
+          <p class="fw-bold mb-0 small-text" style="color:#140e38;">Visit any Telecom Gallery or Mobile Shop and port the number. You can get your number ported to any network, on your Name.</p>
+         </div>
+      </div>
+    </div>
+ </div>
+ <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 px-0 px-lg-1">
+  <div class="mobile-cont" > 
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 18px;"loading="eager" class="vid-vid"></iframe>
+</div>
+</div>
+<div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+  <div class="rid-content flex-column" data-aos="flip-right">
+    <div class="d-flex flex-column">
+      <div class="d-flex align-items-center mb-2"><h5 class="fw-bolder mb-0" style="color:rgb(255, 84, 47)">MAKE THE PAYMENT</h5><i class="fa-solid fa-money-bill-1-wave ms-3"></i> </div>
+      <div class="vid-content-cont">
+        <p class="fw-bold mb-0" style="color:#140e38;">Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p>
+       </div>
+  
+    </div>
+  
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<div class="vid-content flex-column" data-aos="fade-up">
+  <div class="d-flex align-items-center">
+    <div class="pe-4"><i class="fa-solid fa-barcode"></i></div>
+    <div class="vid-content-cont">
+      <h5 class="fw-bolder" style="color:rgb(255, 84, 47)" >GET THE UNIQUE PORTING CODE</h5>
+      <p class="fw-bold mb-0" style="color:#140e38;">You will receive a Unique Porting Code (UPC) along with invoice within 24 hour on your Registered Mobile Number.</p>
+     </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<!-- <section style="margin-top: 5rem";>
+<h1 class="text-center mb-5 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">DREAM NUMBER</span></h1>
+
+  <div class="d-flex flex-column align-items-center card-cont">
+  <div class="d-flex justify-content-center" >
+    <div class="card align-items-center pull-up" style="width: 20%;">
+      <img class="card-img-top" src="./Assets/number.gif" alt="Card image cap">
+      <div class="card-body text-center">
+        <h3 class="card-title"><span >9090 7979</span> 32</h3>
+        <p class="card-subtitle mb-2 fw-bold">Sum total: 66=3</p>
+        <div class="d-flex ">
+          <a href="#" class="btn me-3">View Details</a>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+      <div class="card align-items-center mx-5 pull-up" style="width: 20%;">
+        <img class="card-img-top" src="./Assets/number.gif" alt="Card image cap">
+        <div class="card-body text-center">
+          <h3 class="card-title"><span>7900</span> 3 <span>93000</span></h3>
+          <p class="card-subtitle mb-2 fw-bold">Sum total: 66=3</p>
+          <div class="d-flex ">
+            <a href="#" class="btn me-3">View Details</a>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="card align-items-center pull-up" style="width: 20%;">
+        <img class="card-img-top" src="./Assets/number.gif" alt="Card image cap">
+        <div class="card-body text-center">
+          <h3 class="card-title">89539 <span>00108</span></h3>
+          <p class="card-subtitle mb-2 fw-bold">Sum total: 66=3</p>
+          <div class="d-flex ">
+            <a href="#" class="btn me-3">View Details</a>
+            <a href="#" class="btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+     
+  </div>
+<div class="d-flex justify-content-center mt-4">
+  <div class="card align-items-center pull-up" style="width: 20%;">
+    <img class="card-img-top" src="./Assets/number.gif" alt="Card image cap">
+    <div class="card-body text-center">
+      <h3 class="card-title">79 <span>02 05 06 07</span></h3>
+      <p class="card-subtitle mb-2 fw-bold">Sum total: 66=3</p>
+      <div class="d-flex ">
+        <a href="#" class="btn me-3">View Details</a>
+        <a href="#" class="btn ">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="card mx-5 align-items-center pull-up" style="width: 20%;">
+    <img class="card-img-top" src="./Assets/number.gif" alt="Card image cap">
+    <div class="card-body text-center">
+      <h3 class="card-title"><span>96828 96845</span></h3>
+      <p class="card-subtitle mb-2 fw-bold">Sum total: 66=3</p>
+      <div class="d-flex">
+        <a href="#" class="btn me-3">View Details</a>
+        <a href="#" class="btn ">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="card align-items-center pull-up" style="width:20%;">
+    <img class="card-img-top" src="./Assets/number.gif" alt="Card image cap">
+    <div class="card-body text-center">
+      <h3 class="card-title">90 90 <span>20 90</span> - 78</h3>
+      <p class="card-subtitle mb-2 fw-bold">Sum total: 66=3</p>
+      <div class="d-flex ">
+        <a href="#" class="btn me-3">View Details</a>
+        <a href="#" class="btn ">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</section> -->
+
+
+<section style="margin-top:5rem">
+<div class="container-fluid">
+  <div class="container-lg px-3">
+    <h1 class="text-center mb-5 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">DREAM NUMBER</span></h1>
+
+    <div class="row ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 px-2 mb-2 mb-lg-0 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white ">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+        </div>
+      </div>
+
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+
+    </div>
+
+    <div class="row mt-4 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+
+    </div>
+    <div class="row mt-4 ">
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center pt-3 col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+
+      <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 pull-up">
+        <div style="border:2px solid orange;border-radius: 12px; padding:10px 0">
+        <div class="d-flex flex-column pb-1">
+          <div class="d-flex justify-content-around align-items-center col-div">
+            <i class="fa-solid fa-crown"> </i>
+            <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center col-div-2 text-white">
+      <h2 class="mb-0">98887-88887</h2>
+      <a href="#" style="font-size: 10px;color: white;">Similar Numbers</a>
+        </div>
+
+     <div class="d-flex justify-content-center py-2">
+  Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+     </div>
+
+     <div class="d-flex justify-content-center align-items-center card-icon-cont">
+
+    <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
+    <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
+    <button>Buy</button> 
+
+     </div>
+</div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<div class="container-fluid" style="padding: 6rem 2rem; background: #ffa800;margin-top: 80px;">
+  <section style="width: 100%;margin: 0 auto;" class="px-2">
+    <img src="./Assets/GIF-banner.gif" style="width: 100%;border-radius:25px;">
+  </section>
+  </div>
+
+<section>
+  <div class="container-lg d-flex flex-column align-items-center py-5">
+    <h2 class="mb-0 fw-bold" style="color:rgb(255, 84, 47);">VIP FRIEND ZONE</span>
     </h2>
     <h5 class="mb-0" style="color:#08c;">Apke swaal, Hmare jwaab</h5>
  
@@ -887,14 +1731,14 @@
   <div class="row justify-content-center">
   <div class="col-md-12 text-center d-flex flex-column align-items-center">
   <h2 class="footer-heading fw-bold"><a href="#" class="logo">VIP Number Store</a></h2>
-  <h5 class="menu">
-  <a href="#" class="me-3">Home</a>
-  <a href="#" class="me-3">Vip Numbers</a>
-  <a href="#" class="me-3">Sold Out</a>
-  <a href="#" class="me-3">About Us</a>
-  <a href="#" class="me-3">Gallery</a>
-  <a href="#">Contact</a>
-  </h5>
+  <h7 class="menu fw-bold" style="background: white;padding: 1rem;border-radius:8px;">
+  <a href="#" class="me-3 " style="color: #ffa800">Home</a>
+  <a href="#" class="me-3" style="color: #ffa800" >Vip Numbers</a>
+  <a href="#" class="me-3" style="color: #ffa800">Sold Out</a>
+  <a href="#" class="me-3" style="color: #ffa800">About Us</a>
+  <a href="#" class="me-3" style="color: #ffa800">Gallery</a>
+  <a href="#" style="color: #ffa800">Contact</a>
+  </h7>
   <ul class="ftco-footer-social d-flex align-items-center mt-3 ps-0">
   <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><span class="fa-brands fa-twitter"></span></a></li>
   <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><span class="fa-brands fa-facebook-f"></span></a></li>
@@ -905,17 +1749,25 @@
 
  
   <div class="row mt-4 foot-r w-100 justify-content-around" > 
-  <div class="col-3">
+  <div class="col-xl-3 col-lg-3 col-md-6 col-6">
     <div class="d-flex flex-column align-items-center">
-      <h2 class="mb-3">WE ACCEPT</h2>
-      <p class="mb-2 "><a href="#">Terms & conditions</a></p>
+      <h2 class="mb-3 text-center">WE ACCEPT</h2>
+      <p class="mb-2 text-center"><a href="#">Terms & conditions</a></p>
       <p class="mb-2"><a href="#">Privacy policy</a></p>
       <p class="mb-2"><a href="#">Refund policy</a></p>
      
       </div>
   </div>
 
-<div class="col-6">
+  <div class="col-xl-3 col-lg-3 col-md-6 col-6">
+    <div class="d-flex flex-column align-items-center">
+      <h2 class="mb-3">SUPPORT</h2>
+     <p class="mb-2">Contact Us</p>
+      <p class="mb-0">FAQ'S</p>
+    </div>
+    </div>
+
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mt-4">
 <div class="d-flex flex-column align-items-center">
  <h2 class="mb-3">CONTACT US</h2>
  <p class="mb-2 text-center">Shop No 23, Old idea point, Main market, Police station Road, Anupgarh Distt. Sri ganganagar Rajasthan 335701</p>
@@ -923,19 +1775,13 @@
 </div>      
 </div>
 
-<div class="col-3">
-<div class="d-flex flex-column align-items-center">
-  <h2 class="mb-3">SUPPORT</h2>
- <p class="mb-2">Contact Us</p>
-  <p class="mb-0">FAQ'S</p>
-</div>
-</div>
+
 
 </div>
 
   </div>
   </footer>
-
+</div>
 
     <script src="./Js/js/bootstrap.min.js"></script>
     <script src="./Js/index.js" ></script>

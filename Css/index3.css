@@ -18,7 +18,8 @@ li{
     list-style-type: none;
 }
 body{
-    font-family: 'Montserrat' !important;
+  
+    
 }
 
 .navbar-brand{
@@ -31,7 +32,7 @@ height: auto;
     height: 100%;
 }
 .nav-link{
-    font-family: 'Montserrat';
+  font-family: 'Roboto', sans-serif;
     color:#fff !important;
    font-weight: 600;
    text-transform: uppercase;
@@ -221,7 +222,7 @@ height: 50px;
       background: url("../Assets/cropped (2).jpg") no-repeat center ;
     background-size: 100% 100%;
       overflow: none;
-      border-radius: 30px;
+      border-radius: 45px;
      padding:0.9rem 0.8rem;
      height:18rem;
    background-color: #ffa800;
@@ -235,9 +236,7 @@ height: 50px;
 .video-wrapper .layout-wrapper h1{
 color:white
 }
-.vid-content-cont{
-  color:white !important;
-}
+
   .vid-content{
     max-width: 35vw;
       border: 1.5px solid #1ee01eb0;
@@ -249,13 +248,14 @@ color:white
   }
   .rid-content{
     border: 1.5px solid #1ee01eb0;
-    padding: 20px 18px;
+    padding:2rem 1rem;
     border-radius: 10px;
     background-color: white;
+    font-size: 14px;
 }
 
 .rid-content i{
-    font-size: 50px;
+    font-size: 30px;
     color:#1ee01eb0;
 }
 
@@ -302,7 +302,7 @@ footer{
     color:white;
     padding: 3em 0;
 }
-   footer a{
+   footer a,  footer a:hover{
      color:white;
    }
 
@@ -316,13 +316,17 @@ font-size:30px;
 font-weight: bold;
 }
 
-.ftco-animate span:hover{
-    color: #1ee01eb0;
-}
 
 .foot-r p{
 font-size: 16px;
 font-weight: bold;
+}
+footer .menu a:hover {
+border-bottom:2px solid #ee9617
+}
+
+footer .menu a {
+  padding-bottom: 3px;
 }
 
 
@@ -376,7 +380,7 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 22rem;
+    width: auto;
     height: auto;
    background:rgba(255, 168, 0,0.2);
     border-radius: 10px;
@@ -433,10 +437,6 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
   }
 
   
-.foot-email:hover{
- color:#1ee01eb0;
-
-}
 .card-cont .card{
 background: rgba(255,168,0,0.4);
 padding-top: 1rem;
@@ -509,23 +509,23 @@ color: black;
  }
 
  .overlay-content{
-   position: relative;
-   top: 0.5rem;
   z-index: 999;  
   background-color:#fff;
-  overflow-x: hidden;
   transition: 0.5s;
   text-align: center;
+  position: fixed;
+  transition: width 0.6s;
+  overflow: hidden;
   width: 0;
   height: 0}
+
  .overlay-content a {
   padding: 8px;
   text-decoration: none;
-  font-size: 18px;
   font-weight: bold;
   color: #ffa800;
   display: block;
-  transition: 0.3s;
+  transition: all 0.4s;
   text-transform: uppercase;
   border-bottom: 1px solid rgb(238, 236, 236);
   font-family: 'Roboto', sans-serif;
@@ -559,8 +559,8 @@ background: #ee9617;
   background-size: 100% 100%;
     overflow: none;
     border-radius: 30px;
-   padding:0.9rem 0.8rem;
-   height: 40vh;
+   padding:1rem;
+   height: 20rem;
  background-color: #ffa800;
    
 }
@@ -571,11 +571,9 @@ background: #ee9617;
         height: 100%;
     }
 
-    .phone-outer-div{
-        flex-direction: column;
-    }
+    
 .vid-content{
-max-width: 90%;
+max-width: 95%;
 }
 
 
@@ -605,5 +603,10 @@ max-width: 90%;
   .col4 .detail-card {
     width: auto;
   }
-  
+  .detail-card .launch-number {
+    font-size: 16px;}
+
+    .rid-content h5{
+      font-size: 14px;
+    }
 }
