@@ -32,9 +32,13 @@ nav form {
 border: 2px solid rgba(242,56,0,1) !important;
 border-radius: 25px;
 z-index: 1;
-padding :2px 0 2px 0.5rem;
+padding :2px 0 2px 0.8rem;
 }
-nav form input, nav form button{
+
+nav form select option{
+padding: 0.4rem;
+}
+nav form input, nav form button ,nav form select{
   border: none !important;
   box-shadow: none !important;
   outline: none !important;
@@ -558,6 +562,14 @@ background: #ee9617;
   color: #fff;
 }
 
+.col-btn{
+  background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
+  color: white;
+  border: #f44b01;
+  text-transform: uppercase;
+  padding:0.6rem 0;
+}
+
 .step-icon-cont p{
   color:white;
   font-size:18px ;}
@@ -572,6 +584,10 @@ background: #ee9617;
     background-clip: padding-box;
     border: 2px solid rgba(0,0,0,.15);
     border-radius: 0.25rem;
+}
+
+.nav-mob-toggler{
+  background: white;
 }
 
 @media screen and (max-width:768px){
@@ -630,4 +646,17 @@ max-width: 95%;
     .rid-content h5{
       font-size: 14px;
     }
+
+    .step-icon-cont p{
+      font-size: 1.2rem;
+    }
+
+.contact {
+  order:1;
 }
+.support {
+  order:2
+}
+}
+
+
