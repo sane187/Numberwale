@@ -18,13 +18,30 @@ li{
     list-style-type: none;
 }
 body{
-  
+  font-family: 'Montserrat';
+  width: 100%;
+  height: 100%;
     
 }
 
 .navbar-brand{
-width: 150px;
+width: 80px;
 height: auto;
+}
+nav form {
+border: 2px solid rgba(242,56,0,1) !important;
+border-radius: 25px;
+z-index: 1;
+padding :2px 0 2px 0.5rem;
+}
+nav form input, nav form button{
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+nav form button:hover{
+  background: transparent !important;
+  color:rgba(242,56,0,1) !important
 }
 
 .navbar-brand img{
@@ -33,7 +50,7 @@ height: auto;
 }
 .nav-link{
   font-family: 'Roboto', sans-serif;
-    color:#fff !important;
+    color:#f44b01 !important;
    font-weight: 600;
    text-transform: uppercase;
 }
@@ -42,7 +59,7 @@ height: auto;
     height: 3.5px;
     width: 50%;
     display: none;
-    background: #1ee01eb0 ; 
+    background: #F78002; 
     position: relative;
     left: 50%;
     margin-top: 4px;
@@ -61,7 +78,7 @@ height: auto;
 }
 
 .nav-top{
-    padding: 2em 0;
+    padding: 0.6em 0;
 }
 
 .col1 .banner-title,
@@ -70,7 +87,7 @@ height: auto;
   font-size: 30px;
   text-transform: uppercase;
   font-family: 'Montserrat';
-  color: rgb(47, 48, 67);
+  color: #f44b01;
   font-weight: 700;
 }
 .col1 hr,
@@ -92,20 +109,18 @@ height: auto;
   color: #fff;
   font-family: 'Montserrat';
 }
-.col1 .btn,
-.col3 .btn {
- 
-  font-size: 20px;
+.col1 .btn{
+   font-size: 16px;
   text-transform: uppercase;
   font-family: 'Montserrat';
-  border-radius: 10px;
+  border-radius: 20px;
 }
-.col1 .btn-primary,
-.col3 .btn-primary {
-  background:#1ee01eb0!important;
-  border-color: #1ee01eb0 !important;
+.col1 .btn-primary{
+  background:white!important;
+  border-color: white !important;
+  color:#f44b01 !important;
+  font-weight: bold;
 }
-
 
 .carousel-img-cont{
     height:72vh !important;
@@ -129,17 +144,6 @@ height: auto;
 .slide-1{
     background: url("../Assets/Slide-2.jpg") no-repeat center ;
     background-size: cover;
-}
-.slide-2{
-    background: url("../Assets/group.jpg") no-repeat center ;
-    background-size: cover;
-    position: relative;
-}
-.slide-2::after{
-    content: "";
-    position: absolute;
-    inset: 0px;
-    background: rgba(102, 102, 158, 0.85);
 }
 
 .hero-text-container{
@@ -178,7 +182,7 @@ height: auto;
    font-size: 18px;
 }
 .fa-angle-left,.fa-angle-right{
-    color:#1ee01eb0;
+    color:rgb(244, 75, 1);
 font-size: 30px;
 z-index: 2;
 }
@@ -298,7 +302,7 @@ color:white
 }
 footer{
   
-   background: #ffa800;
+   background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
     color:white;
     padding: 3em 0;
 }
@@ -367,7 +371,7 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
   }
 
   .col3 button{
-    background-color:#1ee01eb0; 
+   background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
      color:white;
     padding: 8px 20px;
     border-radius: 20px;
@@ -382,9 +386,9 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
     flex-direction: column;
     width: auto;
     height: auto;
-   background:rgba(255, 168, 0,0.2);
+   background:rgb(244, 75, 1,0.1);
     border-radius: 10px;
-    border: 2px solid #1ee01eb0;
+    border: 2px solid rgb(244, 75, 1);
   }
   .col4 .detail-card:hover {
     box-shadow: rgba(238, 29, 55, 0.2) 0px 7px 29px 0px;
@@ -392,7 +396,7 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
   .detail-card .launch-number {
     font-size: 26px;
     font-family: 'Montserrat';
-    color:#1ee01eb0;
+    color:rgb(244, 75, 1);
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0px !important;
@@ -404,7 +408,7 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
   .detail-card .icon {
     width: 50px;
     height: 50px;
-    background-color: #1ee01eb0;
+    background-color: rgb(244, 75, 1);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -418,12 +422,12 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
     text-transform: uppercase;
   }
   .col4 .btn-primary {
-    background:#1ee01eb0;
-    border-color:#1ee01eb0;
+    background:rgb(244, 75, 1);
+    border-color:rgb(244, 75, 1);
   }
   .col4 .btn-primary:hover {
-    background:#1ee01eb0;
-    border-color: #1ee01eb0;
+    background:rgb(244, 75, 1);
+    border-color: rgb(244, 75, 1);
   }
   .col4 .detail-card .sumTotal {
     font-size: 22px;
@@ -470,12 +474,21 @@ border: none;
   color:#FFD700;
   font-size: 18px;
 }
+.col-div{
+  background:linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
-.col-div-2{
- background-color: #ffa800;
- padding: 8px 0;
 }
-
+.col-div-2{
+ padding: 8px 0;
+ color:#f44b01 !important;
+ 
+}
+.col-div-3{
+  background: #e6e6e6;
+}
 .card-icon-cont button{
 padding: 7px;
 background: #1ee01eb0;
@@ -504,7 +517,7 @@ color: black;
  /* Mobile Nav*/
  .mob-logo-cont{
    height: auto;
-   width: 8rem;
+   width: 4rem;
    overflow: hidden;
  }
 
@@ -535,11 +548,19 @@ font-size: 1.8rem;
 color: white;
 background: #ee9617;
 }
-.fa-check{
+.step-icon-cont i{
   color: #1ee01eb0;
-  font-size: 1.2rem
- 
+  font-size: 1.6rem;
+ padding-top:4px
 }
+
+.col-20 h5{
+  color: #fff;
+}
+
+.step-icon-cont p{
+  color:white;
+  font-size:18px ;}
 #search-select{
    padding: 0.5rem 18px;
     margin: 0;

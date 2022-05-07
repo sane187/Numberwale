@@ -8,3 +8,16 @@
 body{
     font-family: 'Roboto' !important;
 }
+
+.categories-cont{
+    padding: 1rem;
+    background: #F3F1F6;
+}
+
+.category-name{
+    padding :0.8rem 0 0.8rem 0.8rem;
+    background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    color:white;
+   
+   
+}
