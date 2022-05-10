@@ -6,10 +6,12 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 a{
     text-decoration: none !important;
+    color: black;
    
 }
 
@@ -276,12 +278,6 @@ color:white
       font-size:15px
   }
 
-  .card{
-      background: url("../Assets/backgroundjpg.jpg") no-repeat top;
-      
-  }
-  
-
   .navbar-toggler{
      
       box-shadow: none !important;
@@ -313,6 +309,30 @@ footer{
    footer a,  footer a:hover{
      color:white;
    }
+   #hard-btn{
+     font-size: 1.4rem;
+     color:rgba(242,56,0,1);
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: none !important;
+}
+
+.bg-cont{
+  background: url("../Assets/imagesn.png") no-repeat bottom center;
+  background-size: contain; 
+transition: background 0.6s;
+}
+
+.bg-cont:hover{
+  background: url("../Assets/imagesn.png") no-repeat top center
+}
+
+#collapseExample form select,#collapseExample form input{
+padding:0.6rem;
+border:none;
+font-size: 1.2rem;
+}
+
 
 footer h2 a{
     color:#fff !important; 
@@ -529,7 +549,6 @@ color: black;
   z-index: 999;  
   background-color:#fff;
   transition: 0.5s;
-  text-align: center;
   position: fixed;
   transition: width 0.6s;
   overflow: hidden;
@@ -537,20 +556,38 @@ color: black;
   height: 0}
 
  .overlay-content a {
-  padding: 8px;
+  padding: 1rem 1.2rem;
+  width: 100%;
   text-decoration: none;
   font-weight: bold;
-  color: #ffa800;
+  color: #F23900 !important;
   display: block;
-  transition: all 0.4s;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgb(238, 236, 236);
+  border-bottom: 1.5px solid rgb(238, 236, 236);
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
 }
+
+.overlay-content h1{
+  font-size: 2rem !important;
+
+}
+
+
+
+/* @keyframes bounce {
+  0%, 20%, 100% {transform: translateY(0);} 
+  40% {transform: translateY(-30px);} 
+  60% {transform: translateY(-30px);} }
+
+.overlay-content a span:hover{
+  animation: bounce ease;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+} */
 .overlay button{
-font-size: 1.8rem;
-color: white;
-background: #ee9617;
+font-size: 2.5rem;
+color: #F23900;
 }
 .step-icon-cont i{
   color: #1ee01eb0;
@@ -587,10 +624,18 @@ background: #ee9617;
 }
 
 .nav-mob-toggler{
+  padding: 0.2rem;
   background: white;
+
 }
 
 @media screen and (max-width:768px){
+
+.col1 .banner-para{
+  font-size: 3rem;
+}
+
+
   .mobile-cont{
     background: none ;
   background-size: 100% 100%;

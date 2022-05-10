@@ -4,20 +4,73 @@
     scroll-behavior: smooth;
 }
 
-
-body{
-    font-family: 'Roboto' !important;
+.filter-cont button{
+    color:white;
+    background: #000;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border:none;
 }
+.filter-cont a{
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+  
+    margin-left: 0.4rem;
+}
+
+.filter-cont a,.filter-cont button,.filter-cont select{
+    padding: 0.4rem 0.8rem;
+}
+.filter-cont a:hover{
+    background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
+    color:#fff
+}
+
+.born{
+    background: url("../Assets/imagesn.png") no-repeat bottom center;
+    background-size: contain; 
+  transition: background 0.6s;
+}
+
+.born:hover{
+    background: url("../Assets/imagesn.png") no-repeat top center
+}
+#hard-btn{
+    padding: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: none !important;
+}
+
+#collapseExample form select{
+    border:none;
+    padding:4px;
+}
+
 
 .categories-cont{
     padding: 1rem;
-    background: #F3F1F6;
+    background: #fff;
 }
 
 .category-name{
-    padding :0.8rem 0 0.8rem 0.8rem;
-    background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
-    color:white;
-   
-   
+    padding :0.7rem 1.4rem;
+    background:#f3f1f6;
+    font-size:1rem;
+    transition:all 0.2s;
+    font-family: 'Roboto',sans-serif;
+}
+.category-name:hover{
+    transform: scale(1.1);
+    background:linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
+    color: white;
+}
+
+.step-row span{
+padding:0.4rem 0.6rem;
+background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
+color: white;
+line-height: 34px;
 }

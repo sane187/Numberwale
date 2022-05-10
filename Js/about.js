@@ -1,3 +1,21 @@
+function animateValue(id, start, end, duration) {
+    if (start === end) return;
+    var range = end - start;
+    var current = start;
+    var increment = end > start? 20 : -20;
+    var stepTime = Math.abs(Math.floor(duration / range));
+    var obj = document.getElementById(id);
+    var timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+animateValue("value", 1000, 10000, 10000);
+
 let menuButton=document.querySelector(".nav-mob-toggler");
 let overlayDiv=document.querySelector(".overlay-content");
 
@@ -39,23 +57,6 @@ const toggleMenu =()=>{
 }
 
 menuButton.addEventListener("click", toggleMenu);
-// const aj =()=>{
-//     console.log("scroll")
-//     window.scrollTo(500, 0);
-// }
-
-// overlayDiv.addEventListener("scroll",aj)
-
-
-// document.onreadystatechange = function() {
-// 	if (document.readyState !== "complete") {
-// 		document.querySelector("body").style.visibility = "hidden";
-// 		document.querySelector("#loader").style.visibility = "visible";
-// 	} else {
-// 		document.querySelector("#loader").style.display = "none";
-// 		document.querySelector("body").style.visibility = "visible";
-// 	}
-// };
 
 
 let bool=false;
