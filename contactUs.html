@@ -19,7 +19,7 @@
 <body>
     <div class="content-wrapper">
         <div class="d-block d-lg-none">
-        <section class="mobile-navbar">
+          <section class="mobile-navbar">
             <div class="container-fluid p-0" style="background:white">
               <div id="myNav" class="overlay"> 
               
@@ -33,13 +33,13 @@
                 <div class="overlay-content d-flex">
                   <div class="w-100" style="padding-top: 5rem">
                     <h1>
-                  <a href="#"><span class="fa-solid fa-house me-4"></span>HOME</a>
-                  <a href="#"><span class="fa-solid fa-crown me-4"></span>VIP Numbers</a>
-                  <a href="#"><span class="fa-solid fa-clipboard-check me-4 ps-2"></span>Sold Out</a>
+                  <a href="./index3.html"><span class="fa-solid fa-house me-4"></span>HOME</a>
+                  <a href="./vipNumber.html"><span class="fa-solid fa-crown me-4"></span>VIP Numbers</a>
+                  <a href="./soldOut.html"><span class="fa-solid fa-clipboard-check me-4 ps-2"></span>Sold Out</a>
                   <a href="./About.html"><span class="fa-solid fa-users-line me-4"></span>About Us</a>
-                  <a href="#"><span class="fa-solid fa-photo-film me-4"></span>Gallery</a>
-                  <a href="#"><span class="fa-solid fa-square-phone-flip me-4"></span>Contact us</a>
-                  <a href="#"><span class="fa-solid fa-user me-4"></span>Sign IN</a>
+                  <a href="./offer.html"><span class="fa-solid fa-photo-film me-4"></span>Offers</a>
+                  <a href="./contactUs.html"><span class="fa-solid fa-square-phone-flip me-4"></span>Contact us</a>
+                  <a href=""><span class="fa-solid fa-user me-4"></span>Sign IN</a>
         
                 </h1>
                 </div>
@@ -48,30 +48,41 @@
             </div>
             </section>
             <section style="position: fixed;bottom:0px;left:0px;background: #f4e0c5;border-radius:10px 10px 0 0;width: 80%;z-index:3">
-                <div class="d-flex flex-column align-items-center">
-                
-                   <a class="btn py-3" id="hard-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                     Search filter
-                   </a>  
+              <div class="d-flex flex-column align-items-center">
+              
+                 <a class="btn py-3" id="hard-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                   Search filter
+                 </a>  
+               
+               <div class="collapse py-3" id="collapseExample">
+                 <form class="form-inline px-2 mt-4 d-flex flex-column">
+                   <select class="custom-select " id="inputGroupSelect01">
+                     <option selected>Anywhere</option>
+                     <option >Sum Total</option>
+                     <option value="1">Starts with</option>
+                     <option value="2">Ends with</option>
+                     <option value="2">Contains with</option>
+                     <option value="2">Not Contains</option>
+                   </select>
+        
+                   <div class="d-flex align-items-center my-2 px-2" style="border:2px solid #fff">
+                    <label for="range" class="text-center budget-label">Set Budget</label>
+                    <input type="range" id="range" name="range" 
+                           min="0" max="50000" value="0,50000" step="500" class="ms-3" multiple>
+                          
+                  </div>
+                  
+        
+        
+                   <div class="d-inline-flex mt-2 w-100 pe-2">
+                 <input class="form-control p-2 rounded-4" type="search" placeholder="Search number" aria-label="Search">
+                 <button class="btn btn-outline-danger rounded-4 ms-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+               </div>
+               </form>
+               </div>
+              </div>
                  
-                 <div class="collapse py-3" id="collapseExample">
-                   <form class="form-inline px-2 mt-4">
-                     <select class="custom-select ms-2" id="inputGroupSelect01">
-                       <option selected>Anywhere</option>
-                       <option value="1">Starts with</option>
-                       <option value="2">Ends with</option>
-                       <option value="2">Contains with</option>
-                       <option value="2">Not Contains</option>
-                     </select>
-                     <div class="d-inline-flex mt-2 w-100 px-2">
-                   <input class="form-control p-2" type="search" placeholder="Search number" aria-label="Search">
-                   <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                 </div>
-                 </form>
-                 </div>
-                </div>
-                   
-               </section>
+             </section>
             <section class="mt-5">
                 <div class="container-fluid px-5">
                 <div class="row">
@@ -206,52 +217,54 @@
         </div>
 
         <div class="d-none d-lg-block">
-            <header>
-                <nav class="navbar navbar-expand-lg d-none d-lg-block py-0" id="navbar-top" style="background: white;" > 
-                     <div class="container-lg " data-aos="fade-right">
-                       <a class="navbar-brand" href="#"><div><img src="Assets/orangeLogo.png" ></div></a>
-                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon fa-solid fa-bars"></span>
-                       </button>
-                       <div class="collapse navbar-collapse " id="navbarNav">
-                         <form class="form-inline my-2 my-lg-0 mx-auto d-flex">
-                             <select class="custom-select" id="inputGroupSelect01">
-                               <option selected>Anywhere</option>
-                               <option value="1">Starts with</option>
-                               <option value="2">Ends with</option>
-                               <option value="2">Contains with</option>
-                               <option value="2">Not Contains</option>
-                             </select>
-                           <input class="form-control mr-sm-2 " type="search" placeholder="Search number" aria-label="Search">
-                           <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                         </form>
-                         <ul class="navbar-nav pb-4" data-aos="fade-right">
-                           <li class="nav-item">
-                             <a class="nav-link" aria-current="page" href="#">Home</a>
-                           </li>
-                           <li class="nav-item">
-                             <a class="nav-link" href="#">Vip Numbers</a>
-                           </li> 
-                           <li class="nav-item">
-                             <a class="nav-link" href="#">Sold out</a>
-                           </li>
-                           <li class="nav-item">
-                             <a class="nav-link" href="./About.html">About</a>
-                           </li>
-                           <li class="nav-item">
-                             <a class="nav-link" href="#">Gallery</a>
-                           </li>
-                           <li class="nav-item">
-                             <a class="nav-link" href="#">Contact us</a>
-                           </li>
-                           <li class="nav-item">
-                             <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
-                           </li>
-                         </ul>
-                       </div>
-                     </div>
-                   </nav>
-                 </header>
+          <header>
+            <nav class="navbar navbar-expand-lg d-none d-lg-block py-0" id="navbar-top" style="background: white;" > 
+                 <div class="container-lg " data-aos="fade-right">
+                   <a class="navbar-brand" href="./index3.html"><div><img src="Assets/orangeLogo.png" ></div></a>
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+                   </button>
+                   <div class="collapse navbar-collapse " id="navbarNav">
+                     <form class="form-inline my-2 my-lg-0 mx-auto d-flex">
+                         <select class="custom-select" id="inputGroupSelect01">
+                           <option selected>Anywhere</option>
+                           <option >Sum Total</option>
+                           <option value="1">Starts with</option>
+                           <option value="2">Ends with</option>
+                           <option value="2">Contains with</option>
+                           <option value="2">Not Contains</option>
+                         </select>
+                       <input class="form-control mr-sm-2 " type="search" placeholder="Search number" aria-label="Search">
+                       <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                     </form>
+                     <ul class="navbar-nav pb-4" data-aos="fade-right">
+                       <li class="nav-item">
+                         <a class="nav-link" aria-current="page" href="./index3.html">Home</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="./vipNumber.html">Vip Numbers</a>
+                       </li> 
+                       <li class="nav-item">
+                         <a class="nav-link" href="./soldOut.html">Sold out</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="./About.html">About</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="./offer.html">Offer</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="contactUs.html">Contact us</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+               </nav>
+             </header>
+
 <section class="mt-5">
     <div class="container-fluid px-5">
     <div class="row">
@@ -330,6 +343,8 @@
         <section style="margin:2rem 0;">
             <iframe src="https://www.google.com/maps/d/embed?mid=1_1pf_1Iaysa43B0zkVy39x3nTVhU5d6d" width="100%" height="450"></iframe>
         </section>
+
+        
         <footer class="footer-07">
             <div class="container">
             <div class="row justify-content-center">

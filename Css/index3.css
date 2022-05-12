@@ -228,52 +228,8 @@ height: 50px;
     100% {opacity:1;}
   }
 
-  .mobile-cont{
-      background: url("../Assets/cropped (2).jpg") no-repeat center ;
-    background-size: 100% 100%;
-      overflow: none;
-      border-radius: 45px;
-     padding:0.9rem 0.8rem;
-     height:18rem;
-   background-color: #ffa800;
-     
-  }
-.video-wrapper{
-   background: #ffa800;
- 
-}
 
-.video-wrapper .layout-wrapper h1{
-color:white
-}
 
-  .vid-content{
-    max-width: 35vw;
-      border: 1.5px solid #1ee01eb0;
-      padding: 25px 20px;
-      border-radius: 10px;
-      color:white;
-      background-color: white;
-
-  }
-  .rid-content{
-    border: 1.5px solid #1ee01eb0;
-    padding:2rem 1rem;
-    border-radius: 10px;
-    background-color: white;
-    font-size: 14px;
-}
-
-.rid-content i{
-    font-size: 30px;
-    color:#1ee01eb0;
-}
-
-  .vid-content i{
-      font-size: 50px;
-      color:#1ee01eb0;
-  }
- 
   .small-text{
       font-size:15px
   }
@@ -319,12 +275,14 @@ footer{
 
 .bg-cont{
   background: url("../Assets/imagesn.png") no-repeat bottom center;
-  background-size: contain; 
 transition: background 0.6s;
+border-radius:25px;
+background-color: #fff;
+
 }
 
 .bg-cont:hover{
-  background: url("../Assets/imagesn.png") no-repeat top center
+  background: #fff url("../Assets/imagesn.png") no-repeat top center
 }
 
 #collapseExample form select,#collapseExample form input{
@@ -496,48 +454,44 @@ border: none;
 }
 .col-div i{
   color:#FFD700;
-  font-size: 18px;
+  font-size: 20px;
 }
 .col-div{
-  background:linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
-  color: white;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
+  color: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 
 }
-.col-div-2{
- padding: 8px 0;
- color:#f44b01 !important;
- 
+.col-div h4{
+font-weight: bold;
 }
 .col-div-3{
   background: #e6e6e6;
 }
+.col-div-2{
+  font-size: 14px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
 .card-icon-cont button{
-padding: 7px;
-background: #1ee01eb0;
+padding: 8px;
+background: #FF5F01;
 border-radius: 5px;
 color: white;
 border: none;
 }
 
-.card-icon-cont button:nth-child(1) {
-background-color: white;
-color: black;
+.card-icon-cont .btn-eye{
+  background: #e6e6e6 !important;
+  color: #000 !important;
 }
-
 .col-18{
-   
- 
   border-radius: 12px;
-
 }
 
-#loader{
-  height: 50vh;
-  width: 50vw;
 
-}
  /* Mobile Nav*/
  .mob-logo-cont{
    height: auto;
@@ -573,18 +527,6 @@ color: black;
 
 }
 
-
-
-/* @keyframes bounce {
-  0%, 20%, 100% {transform: translateY(0);} 
-  40% {transform: translateY(-30px);} 
-  60% {transform: translateY(-30px);} }
-
-.overlay-content a span:hover{
-  animation: bounce ease;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-} */
 .overlay button{
 font-size: 2.5rem;
 color: #F23900;
@@ -654,9 +596,6 @@ color: #F23900;
     }
 
     
-.vid-content{
-max-width: 95%;
-}
 
 
 .hero-text-container h1{
@@ -704,4 +643,15 @@ max-width: 95%;
 }
 }
 
+.budget-label{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width:1200px){
+  .nav-link{
+    font-size: 10px;
+  }
+}
 

@@ -3,7 +3,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-
+#inputGroupOffer::before{
+  margin-right: 1rem;
+}
 .filter-cont button{
     color:white;
     background: #000;
@@ -29,13 +31,13 @@
 }
 
 .born{
-    background: url("../Assets/imagesn.png") no-repeat bottom center;
+    background: url("../Assets/imagesn.png") no-repeat bottom left;
     background-size: contain; 
   transition: background 0.6s;
 }
 
 .born:hover{
-    background: url("../Assets/imagesn.png") no-repeat top center
+    background: url("../Assets/imagesn.png") no-repeat top left
 }
 #hard-btn{
     padding: 0;
@@ -74,3 +76,64 @@ background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 10
 color: white;
 line-height: 34px;
 }
+
+.col-div-v1 i{
+    color:#FFD700;
+    font-size: 14px;
+  }
+  .col-div-v1{
+  
+    color: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  
+  }
+  .col-div-v1 h5{
+  font-weight: bold;
+  }
+  .col-div-v3{
+    background: #e6e6e6;
+  }
+  .col-div-v2{
+   
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .card-vicon-cont button{
+  padding: 6px;
+  background: #FF5F01;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  }
+  
+  .card-vicon-cont .btn-eye{
+    background: #e6e6e6 !important;
+    color: #000 !important;
+  }
+  .col-18{
+    border-radius: 12px;
+  }
+
+  @media screen and (max-width:450px){
+    .filter-cont button{
+      color:white;
+      background: #000;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 5px;
+      border:none;
+  }
+  .filter-cont a{
+      color: #000;
+      font-size: 0.8rem;
+      font-weight: bold;
+    
+      margin-left: 0.4rem;
+  }
+  
+  .filter-cont a,.filter-cont button,.filter-cont select{
+      padding: 0.2rem 0.4rem;
+  }
+  }

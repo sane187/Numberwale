@@ -58,23 +58,23 @@ menuButton.addEventListener("click", toggleMenu);
 // };
 
 
-let bool=false;
- var z = document.querySelector("#hard-btn");
- let a =document.querySelector("#collapseExample");
+
+// let bool=false;
+//  var z = document.querySelector("#hard-btn");
+//  let a =document.querySelector("#collapseExample");
 
 
 
-z.addEventListener("click",function myFunction() {
-if(!bool){
-bool=true;
-a.style.display="block";
-}
+// z.addEventListener("click",function myFunction() {
+// if(!bool){
+// bool=true;
+// a.style.display="block";
+// }
 
-else{
-    a.style.display="none";
-    bool=false;
-}
+// else{
+//     a.style.display="none";
+//     bool=false;
+// }
 
-})
-
+// })
 

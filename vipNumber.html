@@ -18,73 +18,54 @@
 </head>
 <body>
   <div class="content-wrapper">
-
-    <header>
-        <nav class="navbar navbar-expand-lg d-none d-lg-block" style=" background: fff;"> 
-             <div class="container-lg container-fluid" data-aos="fade-right">
-               <a class="navbar-brand" href="#"><div><img src="Assets/orangeLogo.png" ></div></a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon fa-solid fa-bars"></span>
-               </button>
-               <div class="collapse navbar-collapse " id="navbarNav">
-                 <ul class="navbar-nav ms-auto" data-aos="fade-right">
-                   <li class="nav-item">
-                     <a class="nav-link" aria-current="page" href="#">Home</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">Vip Numbers</a>
-                   </li> 
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">Sold out</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">About</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">Gallery</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#">Contact us</a>
-                   </li>
-                   <li class="nav-item">
-                     <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
-                   </li>
-                 </ul>
-               </div>
-             </div>
-           </nav>
-         </header>
-     
-         <section class="mobile-navbar d-block d-lg-none">
-           <div class="container-fluid p-0" style="background:linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);">
-               <!-- style="position: relative;left: 0; top:10;z-index: 555;" -->
-             <div id="myNav" class="overlay"> 
-             
-           <div class="d-flex align-items-center justify-content-between px-4 pt-2">
-             <a href="#"><div class="mob-logo-cont"><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
-             <button class="border-0 d-flex justify-content-center align-items-center nav-mob-toggler">
-               <span class="fa-solid fa-bars" id="nav-mob-icon" style="color:orange;"></span>
-             </button>
+<div class="d-none d-lg-block">
+  <header>
+    <nav class="navbar navbar-expand-lg d-none d-lg-block py-0" id="navbar-top" style="background: white;" > 
+         <div class="container-lg " data-aos="fade-right">
+           <a class="navbar-brand" href="./index3.html"><div><img src="Assets/orangeLogo.png" ></div></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+           </button>
+           <div class="collapse navbar-collapse " id="navbarNav">
+             <form class="form-inline my-2 my-lg-0 mx-auto d-flex">
+                 <select class="custom-select" id="inputGroupSelect01">
+                   <option selected>Anywhere</option>
+                   <option selected>Sum Total</option>
+                   <option value="1">Starts with</option>
+                   <option value="2">Ends with</option>
+                   <option value="2">Contains with</option>
+                   <option value="2">Not Contains</option>
+                 </select>
+               <input class="form-control mr-sm-2 " type="search" placeholder="Search number" aria-label="Search">
+               <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+             </form>
+             <ul class="navbar-nav pb-4" data-aos="fade-right">
+               <li class="nav-item">
+                 <a class="nav-link" aria-current="page" href="./index3.html">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./vipNumber.html">Vip Numbers</a>
+               </li> 
+               <li class="nav-item">
+                 <a class="nav-link" href="./soldOut.html">Sold out</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./About.html">About</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./offer.html">Offer</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="./contactUs.html">Contact us</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+               </li>
+             </ul>
            </div>
-           
-               <div class="overlay-content d-flex justify-content-center align-items-center">
-                 <div>
-                   <h1>
-                 <a href="#">HOME</a>
-                 <a href="#">VIP NUMBERS</a>
-                 <a href="#">Sold Out</a>
-                 <a href="#">About Us</a>
-                 <a href="#">Gallery</a>
-                 <a href="#">Contact us</a>
-               </h1>
-               </div>
-               </div>
-             </div>
-           
-           
-           </div>
-           </section>
-
+         </div>
+       </nav>
+     </header>
 
 <section style="margin:4rem 0">
   <div class="container">
@@ -132,13 +113,15 @@
 </form>
 
 </div>
+
 <div class="d-flex mb-4 mt-2 align-items-center">
 <div class="d-flex filter-cont align-items-center ">
   <button>Sort By <span class="fa-solid fa-filter ms-1"></span></button> <a href="">Price Low to High</a> <a href="">Price High to Low</a>
 </div>
 <div class="ms-3">
-<select class="custom-select fw-bold" style="border: none;" id="inputGroupSelect01" >
+<select class="custom-select fw-bold" style="background:#FF5F01;color:whitesmoke; padding:0.6rem;" id="inputGroupOffer">
   <option selected>Anywhere</option>
+  <option >Sum Total</option>
   <option value="1">Starts with</option>
   <option value="2">Ends with</option>
   <option value="2">Contains with</option>
@@ -147,64 +130,103 @@
 </div>
 </div>
 
-<div>
-  <section  style="background: #e6e6e6; padding: 2rem 0.6rem;border-radius: 12px;">
+
+
+  <section  style="background: #EDDFC4; padding: 2rem 0.6rem;border-radius: 12px;">
     <div class="container-fluid">   
         <div class="row ">
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
     </div>
           </div>
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         </div>
+    </div>
+    </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
+            
+    
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
+            </div>
+    
+         <div class="d-flex justify-content-center col-div-v3 py-1">
+      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+         </div>
+    
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
@@ -212,186 +234,207 @@
           </div>
     
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
+        
     
         </div>
     
-        <div class="row mt-4 ">
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+        <div class="row mt-4">
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
     </div>
           </div>
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div ">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         </div>
+    </div>
+    </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
+            
+    
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
+            </div>
+    
+         <div class="d-flex justify-content-center col-div-v3 py-1">
+      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+         </div>
+    
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
     </div>
           </div>
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
+        
     
         </div>
-        <div class="row mt-4 ">
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+       
+        <div class="row mt-4">
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
     </div>
           </div>
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         </div>
+    </div>
+    </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
+            
+    
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
+            </div>
+    
+         <div class="d-flex justify-content-center col-div-v3 py-1">
+      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+         </div>
+    
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
@@ -399,93 +442,103 @@
           </div>
     
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
+        
     
         </div>
-        <div class="row mt-4 ">
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+       
+        <div class="row mt-4">
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
     </div>
           </div>
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
             </div>
     
-         <div class="d-flex justify-content-center col-div-3">
+         <div class="d-flex justify-content-center col-div-v3 py-1">
       Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
          </div>
     
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
+         </div>
+    </div>
+    </div>
+          </div>
+          <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+            <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                    <i class="fa-solid fa-crown"> </i>
+                    <h5 class="mb-0">₹3500/-</h5>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
+            
+    
+            <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+          <h2 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h2>
+          <small>SIMILAR NUMBERS</small>
+            </div>
+    
+         <div class="d-flex justify-content-center col-div-v3 py-1">
+      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+         </div>
+    
+         <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+        <div class="ms-5">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
     
          </div>
     </div>
@@ -493,226 +546,10 @@
           </div>
     
     
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
+        
     
         </div>
-        <div class="row mt-4 ">
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
-    
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
-    
-        </div>
-        <div class="row mt-4 ">
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
-    
-          <div class="col col-xl-4 col-lg-4 col-md-4 col-sm-12 col-18 mb-2 mb-lg-0 pull-up">
-            <div style="border:2px solid orange;border-radius: 12px;background: #fff ">
-            <div class="d-flex flex-column born">
-              <div class="d-flex justify-content-around align-items-center col-div pb-1">
-                <i class="fa-solid fa-crown"> </i>
-                <h5 class="mb-0"><small class="number-price"><del>4,758</del> ₹4,138/-</small></h5>
-              </div>
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 ">
-          <h3 class="mb-0">98887-88887</h3>
-          
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
-    
-        <button class="me-2"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-heart"></i> 0</button> 
-        <button class="me-2"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> 
-    
-         </div>
-    </div>
-    </div>
-          </div>
-    
-    
-        </div>
+       
         <div class="row">
       <div class="col-12">
         <button style="width:100%;" class="col-btn mt-4"><i class="fa-solid fa-caret-down me-2"></i> More Numbers</button>
@@ -726,7 +563,7 @@
     </section>
 
 
-</div>
+
 
 
                </div>
@@ -739,34 +576,589 @@
     </div>
 
 </section>
+<footer class="footer-07">
+  <div class="container">
+  <div class="row justify-content-center">
+  <div class="col-md-12 text-center d-flex flex-column align-items-center">
+  <h2 class="footer-heading fw-bold"><a href="#" class="logo">VIP Number Store</a></h2>
+  <h5 class="menu fw-bold" style="background: white;padding: 1rem;border-radius:8px;">
+  <a href="#" class="me-3 " style="color: rgb(244, 75, 1)">Home</a>
+  <a href="#" class="me-3" style="color: rgb(244, 75, 1)" >Vip Numbers</a>
+  <a href="#" class="me-3" style="color: rgb(244, 75, 1)">Sold Out</a>
+  <a href="#" class="me-3" style="color: rgb(244, 75, 1)">About Us</a>
+  <a href="#" class="me-3" style="color: rgb(244, 75, 1)">Gallery</a>
+  <a href="#" style="color: rgb(244, 75, 1)">Contact</a>
+  </h5>
+  <ul class="ftco-footer-social d-flex align-items-center mt-3 ps-0">
+  <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><span class="fa-brands fa-twitter"></span></a></li>
+  <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><span class="fa-brands fa-facebook-f"></span></a></li>
+  <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram"><span class="fa-brands fa-instagram"></span></a></li>
+  </ul>
+  </div>
+ </div>
 
+ 
+  <div class="row mt-4 foot-r w-100 justify-content-around" > 
+  <div class="col-3">
+    <div class="d-flex flex-column align-items-center">
+      <h2 class="mb-3 text-center">WE ACCEPT</h2>
+      <p class="mb-2 text-center"><a href="#">Terms & conditions</a></p>
+      <p class="mb-2"><a href="#">Privacy policy</a></p>
+      <p class="mb-2"><a href="#">Refund policy</a></p>
+     
+      </div>
+  </div>
 
-<div class="d-block d-md-none">
-  <section style="position: fixed;bottom:0px;left:0px;padding:0.6rem 0;background: #f4e0c5;border-radius:10px 10px 0 0;width: 48%;z-index:3">
-   <div class="d-flex flex-column align-items-center">
-   
-      <a class="btn" id="hard-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-        Search filter
-      </a>  
-    
-    <div class="collapse" id="collapseExample">
-      <form class="form-inline px-2 mt-4">
-        <select class="custom-select ms-2" id="inputGroupSelect01">
-          <option selected>Anywhere</option>
-          <option value="1">Starts with</option>
-          <option value="2">Ends with</option>
-          <option value="2">Contains with</option>
-          <option value="2">Not Contains</option>
-        </select>
-        <div class="d-inline-flex mt-2 w-100 px-2">
-      <input class="form-control ps-1" type="search" placeholder="Search number" aria-label="Search">
-      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-    </form>
-    </div>
-   </div>
+<div class="col-6">
+<div class="d-flex flex-column align-items-center">
+ <h2 class="mb-3">CONTACT US</h2>
+ <p class="mb-2 text-center">Shop No 23, Old idea point, Main market, Police station Road, Anupgarh Distt. Sri ganganagar Rajasthan 335701</p>
+<p>Email:<span class="foot-email"> cs@vipnumberstore.in</span></p>
+</div>      
+</div>
+
+<div class="col-3">
+<div class="d-flex flex-column align-items-center">
+  <h2 class="mb-3">SUPPORT</h2>
+ <p class="mb-2">Contact Us</p>
+  <p class="mb-0">FAQ'S</p>
+</div>
+</div>
+
+</div>
+
+  </div>
+  </footer>
+</div>
+<div class="d-block d-lg-none">
+  <section class="mobile-navbar">
+    <div class="container-fluid p-0" style="background:white">
+      <div id="myNav" class="overlay"> 
       
-  </section>
+    <div class="d-flex align-items-center justify-content-between px-4 pt-2">
+      <a href="#"><div class="mob-logo-cont pb-2" ><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
+      <button class="border-0 d-flex justify-content-center align-items-center nav-mob-toggler">
+        <span class="fa-solid fa-bars" id="nav-mob-icon" ></span>
+      </button>
+    </div>
+    
+        <div class="overlay-content d-flex">
+          <div class="w-100" style="padding-top: 5rem">
+            <h1>
+          <a href="./index3.html"><span class="fa-solid fa-house me-4"></span>HOME</a>
+          <a href="./vipNumber.html"><span class="fa-solid fa-crown me-4"></span>VIP Numbers</a>
+          <a href="./soldOut.html"><span class="fa-solid fa-clipboard-check me-4 ps-2"></span>Sold Out</a>
+          <a href="./About.html"><span class="fa-solid fa-users-line me-4"></span>About Us</a>
+          <a href="./offer.html"><span class="fa-solid fa-photo-film me-4"></span>Offers</a>
+          <a href="./contactUs.html"><span class="fa-solid fa-square-phone-flip me-4"></span>Contact us</a>
+          <a href=""><span class="fa-solid fa-user me-4"></span>Sign IN</a>
+
+        </h1>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section style="position: fixed;bottom:0px;left:0px;background: #f4e0c5;border-radius:10px 10px 0 0;width: 80%;z-index:3">
+      <div class="d-flex flex-column align-items-center">
+      
+         <a class="btn py-3" id="hard-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+           Search filter
+         </a>  
+       
+       <div class="collapse py-3" id="collapseExample">
+         <form class="form-inline px-2 mt-4 d-flex flex-column">
+           <select class="custom-select " id="inputGroupSelect01">
+             <option selected>Anywhere</option>
+             <option >Sum Total</option>
+             <option value="1">Starts with</option>
+             <option value="2">Ends with</option>
+             <option value="2">Contains with</option>
+             <option value="2">Not Contains</option>
+           </select>
+
+           <div class="d-flex align-items-center my-2 px-2" style="border:2px solid #fff">
+            <label for="range" class="text-center budget-label">Set Budget</label>
+            <input type="range" id="range" name="range" 
+                   min="0" max="50000" value="0,50000" step="500" class="ms-3" multiple>
+                  
+          </div>
+          
+
+
+           <div class="d-inline-flex mt-2 w-100 pe-2">
+         <input class="form-control p-2 rounded-4" type="search" placeholder="Search number" aria-label="Search">
+         <button class="btn btn-outline-danger rounded-4 ms-2" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+       </div>
+       </form>
+       </div>
+      </div>
+         
+     </section>
+
+
+    <section style="margin:4rem 0">
+      <div class="container">
+      <div class="d-flex flex-column">
+         <h1 class="text-center fw-bold">Follow 4 Easy Steps to buy VIP Number</h1>
+       <div class="row mt-4 step-row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-12"  data-aos="fade-up">
+          <div class="bg info"><p><span class="me-2">1</span>Select your favourable mobile number. The one you like and which suits your personality.</p></div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12"  data-aos="fade-down">
+            <div class="bg info"><p><span class="me-2">2</span>Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p></div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12"  data-aos="fade-up">
+            <div class="bg info"><p><span class="me-2">3</span>You will receive a Unique Porting Code (UPC) along with invoice within 24 hour on your Registered Mobile Number.</p></div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-12"  data-aos="fade-down">
+            <div class="bg info"><p><span class="me-2">4</span>Visit any Telecom Gallery or Mobile Shop and port the number. You can get your number ported to any network, on your Name.</p></div>
+          </div>
+       </div>
+      </div>
+    </div>
+    </section>
+    <form class="form-inline mx-3 d-flex">
+    
+      <input class="form-control mr-sm-2 " type="search" placeholder="Search Number" aria-label="Search">
+      <button class="btn btn-outline-danger " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <div class="d-flex my-4 justify-content-center flex-column align-items-center mx-2">
+      <div class="d-flex filter-cont align-items-center ">
+        <button>Sort By <span class="fa-solid fa-filter ms-1"></span></button> <a href="">Price Low to High</a> <a href="">Price High to Low</a>
+      </div>
+      <div>
+     
+      </div>
+      </div>
+
+    <section  style="background: #EDDFC4; padding: 2rem 1rem;border-radius: 12px;">
+      <div class="container-fluid">   
+          <div class="row ">
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 mb-4 mb-md-0 pull-up">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-v3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+      
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+           
+      
+      
+          
+      
+          </div>
+      
+          <div class="row mt-4">
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up mb-4 mb-md-0">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-v3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+      
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+           
+      
+      
+          
+      
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up mb-4 mb-md-0">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-v3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+      
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+           
+      
+      
+          
+      
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up mb-4 mb-md-0">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-v3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+      
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+           
+      
+      
+          
+      
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up mb-4 mb-md-0">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div-v1 mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-v2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-v3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-vicon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+      
+            <div class="col-12 col-xl-4 col-lg-4 col-md-6 col-18 pull-up">
+              <div style="border-radius: 25px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                  <div class="d-flex justify-content-around align-items-center col-div mt-2">
+                      <i class="fa-solid fa-crown"> </i>
+                      <h4 class="mb-0">₹3500/-</h4>
+                    </div>
+              <div class="d-flex flex-column bg-cont">
+               
+              
+      
+              <div class="d-flex flex-column align-items-center col-div-2 mt-3">
+                  <h6 style="text-transform:uppercase" class="mb-0">Get your <strong>business</strong> Number</h6>
+            <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+            <small>SIMILAR NUMBERS</small>
+              </div>
+      
+           <div class="d-flex justify-content-center col-div-3 py-1">
+        Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+           </div>
+      
+           <div class="d-flex justify-content-center align-items-center card-icon-cont py-3">
+      <div>
+          <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+          <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
+          <div class="ms-5">
+          <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+          <button>Buy</button> </div>
+      
+           </div>
+      </div>
+      </div>
+            </div>
+           
+      
+      
+          
+      
+          </div>
+          <div class="row">
+        <div class="col-12">
+          <button style="width:100%;" class="col-btn mt-4"><i class="fa-solid fa-caret-down me-2"></i> More Numbers</button>
+        </div>
+      
+          </div>
+      
+       
+      
+      </div>
+      </section>
+      <footer class="footer-07">
+        <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-md-12 text-center d-flex flex-column align-items-center">
+        <h2 class="footer-heading fw-bold"><a href="#" class="logo">VIP Number Store</a></h2>
+        <h5 class="menu fw-bold" style="background: white;padding: 1rem;border-radius:8px;">
+        <a href="#" class="me-3 " style="color: rgb(244, 75, 1)">Home</a>
+        <a href="#" class="me-3" style="color: rgb(244, 75, 1)" >Vip Numbers</a>
+        <a href="#" class="me-3" style="color: rgb(244, 75, 1)">Sold Out</a>
+        <a href="#" class="me-3" style="color: rgb(244, 75, 1)">About Us</a>
+        <a href="#" class="me-3" style="color: rgb(244, 75, 1)">Gallery</a>
+        <a href="#" style="color: rgb(244, 75, 1)">Contact</a>
+        </h5>
+        <ul class="ftco-footer-social d-flex align-items-center mt-3 ps-0">
+          <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><span class="fa-brands fa-twitter"></span></a></li>
+          <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><span class="fa-brands fa-facebook-f"></span></a></li>
+          <li class="ftco-animate me-3"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram"><span class="fa-brands fa-instagram"></span></a></li>
+        </ul>
+        </div>
+       </div>
+      
+       
+        <div class="row mt-4 foot-r w-100 justify-content-around" > 
+        <div class="col-md-3 col-5 contact  mt-3 mt-md-0">
+          <div class="d-flex flex-column align-items-center">
+            <h2 class="mb-3 text-center">WE ACCEPT</h2>
+            <p class="mb-2 text-center"><a href="#">Terms & conditions</a></p>
+            <p class="mb-2"><a href="#">Privacy policy</a></p>
+            <p class="mb-2"><a href="#">Refund policy</a></p>
+           
+            </div>
+        </div>
+      
+      <div class="col-md-6 col-12 ">
+      <div class="d-flex flex-column align-items-center">
+       <h2 class="mb-3">CONTACT US</h2>
+       <p class="mb-2 text-center">Shop No 23, Old idea point, Main market, Police station Road, Anupgarh Distt. Sri ganganagar Rajasthan 335701</p>
+      <p>Email:<span class="foot-email"> cs@vipnumberstore.in</span></p>
+      </div>      
+      </div>
+      
+      <div class="col-md-3 col-5 support mt-3 mt-md-0">
+      <div class="d-flex flex-column align-items-center">
+        <h2 class="mb-3">SUPPORT</h2>
+       <p class="mb-2">Contact Us</p>
+        <p class="mb-0">FAQ'S</p>
+      </div>
+      </div>
+      
+      </div>
+      
+        </div>
+        </footer>
 </div>
 
   </div>
@@ -778,6 +1170,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="./Js/vipNumber.js" ></script>
+    <script src="./Js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({

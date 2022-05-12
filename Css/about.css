@@ -1,7 +1,7 @@
-*{
-    margin: 0;
+*{ margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'Montserrat';
@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Montserrat' !important;
+   
 }
 .banner-cont{
     color: #343f52;
@@ -52,7 +53,7 @@ font-size:1.1rem ;
 
 
 .col4 figure{
-width: auto;
+width: 100%;
 height: auto;
 overflow: hidden;
 }
