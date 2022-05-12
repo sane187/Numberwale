@@ -644,11 +644,22 @@ color: #F23900;
 }
 
 .budget-label{
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
-
-
+input[type=range]::-webkit-slider-thumb {
+  
+  
+  border-radius: 5px;
+  background: #FFFFFF !important;
+  cursor: pointer;
+  -webkit-appearance: none;
+ 
+}
+input[type=range]::-webkit-slider-runnable-track {
+ background: orangered;
+ border-radius:10px;
+}
 @media screen and (max-width:1200px){
   .nav-link{
     font-size: 10px;
