@@ -286,7 +286,7 @@ background-color: #fff;
 }
 
 #collapseExample form select,#collapseExample form input{
-padding:0.6rem;
+
 border:none;
 font-size: 1.2rem;
 }
@@ -576,7 +576,9 @@ color: #F23900;
 .col1 .banner-para{
   font-size: 3rem;
 }
-
+.col3 .discover-para {
+  font-size: 3rem;
+}
 
   .mobile-cont{
     background: none ;
@@ -648,21 +650,26 @@ color: #F23900;
   font-weight: bold;
 }
 input[type=range]::-webkit-slider-thumb {
-  
-  
-  border-radius: 5px;
-  background: #FFFFFF !important;
+
   cursor: pointer;
   -webkit-appearance: none;
- 
 }
+
 input[type=range]::-webkit-slider-runnable-track {
- background: orangered;
- border-radius:10px;
+ background: #F23900;
+ border-radius: 10px;
 }
+
 @media screen and (max-width:1200px){
   .nav-link{
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width:440px){
+  .footer-07 .menu{
+  line-height: 30px;
+
   }
 }
 

@@ -79,7 +79,10 @@ overflow: hidden;
     font-size: 14px;
 }
 .banner-cont p {
-    font-size: 1rem;
+    font-size: 14px;
+}
+.banner-cont small {
+    font-size: 12px;
 }
     }
     @media screen and (max-width:590px){
