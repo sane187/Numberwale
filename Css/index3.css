@@ -261,6 +261,7 @@ footer{
    background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
     color:white;
     padding: 3em 0;
+    
 }
    footer a,  footer a:hover{
      color:white;
@@ -669,7 +670,34 @@ input[type=range]::-webkit-slider-runnable-track {
 @media screen and (max-width:440px){
   .footer-07 .menu{
   line-height: 30px;
-
+font-family: 'Roboto', sans-serif !important;
   }
+}
+
+
+@media screen and (max-width:584px){
+  
+.bg-cont .col-div-2 h6{
+  font-size: 10px !important;
+}
+.bg-cont .col-div-2 h1{
+  font-size: 1rem !important;
+}
+.bg-cont .col-div-2 small{
+  font-size: 10px !important;
+}
+
+.col-div-3{
+  font-size: 10px;
+}
+
+.card-icon-cont button{
+  padding: 4px !important;
+font-size: 10px;
+  }
+  
+
+
+
 }
 
