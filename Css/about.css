@@ -15,9 +15,15 @@ body{
 .banner-cont{
     color: #343f52;
 }
-
+.banner-cont .display-1{
+    font-size: 3rem;
+}
 .banner-cont p{
-    font-size: 1.6rem;}
+    font-size: 1.3rem;}
+
+    .banner-cont small {
+        font-size: 12px;
+    }
 
 .col3 h6{
 font-weight: bold;
