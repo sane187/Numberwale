@@ -87,36 +87,31 @@ nav form button:hover{
     padding: 0.6em 0;
 }
 
-.col1 .banner-title,
-.col3 .discover-title,
-.step-title {
-  font-size: 30px;
+.col1 .banner-title
+ {
   text-transform: uppercase;
   font-family: 'Montserrat';
   color: #f44b01;
   font-weight: 700;
 }
-.col1 hr,
-.col3 hr,
-.steps hr,
-.col7 hr {
+.col1 hr{
   border-top: 2px solid #1ee01eb0;
   width: 10vw;
 }
 .col1 .banner-para {
-  font-size: 56px;
+  font-size: 30px;
   text-transform: uppercase;
   font-family: 'Montserrat';
   line-height: 68px;
   color: #fff;
 }
 .col1 .banner-subpara {
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
   font-family: 'Montserrat';
 }
 .col1 .btn{
-   font-size: 16px;
+   font-size: 14px;
   text-transform: uppercase;
   font-family: 'Montserrat';
   border-radius: 20px;
@@ -129,7 +124,7 @@ nav form button:hover{
 }
 
 .carousel-img-cont{
-    height:72vh !important;
+    height:56vh !important;
     width: 100%;
     overflow: hidden;
     object-fit: cover;
@@ -253,7 +248,7 @@ height: 50px;
 
 
 .pull-up:hover{
-    transform: translateY(-4px) scale(1.04) !important;
+    transform: translateY(-4px) scale(1.02) !important;
     z-index: 333;
 }
 footer{
@@ -277,7 +272,7 @@ footer{
 .bg-cont{
   background: url("../Assets/imagesn.png") no-repeat bottom center;
 transition: background 0.6s;
-border-radius:25px;
+
 background-color: #fff;
 
 }
@@ -472,12 +467,11 @@ font-weight: bold;
 }
 .col-div-2{
   font-size: 14px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+ 
 }
 
 .card-icon-cont button{
-padding: 8px;
+padding: 4px 12px;
 background: #FF5F01;
 border-radius: 5px;
 color: white;
@@ -625,7 +619,7 @@ color: #F23900;
   }
   
   .col4 .detail-card {
-    width: auto;
+    min-width: auto;
   }
   .detail-card .launch-number {
     font-size: 16px;}
@@ -650,16 +644,76 @@ color: #F23900;
   font-size: 1rem;
   font-weight: bold;
 }
-input[type=range]::-webkit-slider-thumb {
 
-  cursor: pointer;
+
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
   -webkit-appearance: none;
+   appearance: none;
+   background: transparent;
+   cursor: pointer;
+   
 }
 
-input[type=range]::-webkit-slider-runnable-track {
- background: #F23900;
- border-radius: 10px;
+/* Removes default focus */
+input[type="range"]:focus {
+ outline: none;
 }
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.42rem;  
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+ -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -11.2px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: #fff;
+  height: 1.75rem;
+  width: 1rem;
+  border-radius:5px
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {   
+ border: 1px solid #053a5f;
+ outline: 3px solid #053a5f;
+ outline-offset: 0.125rem; 
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+
+  /*custom styles*/
+  background-color: #fff;
+  height: 2rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+ border: 1px solid #053a5f;
+ outline: 3px solid #053a5f;
+ outline-offset: 0.125rem; 
+}
+
 
 @media screen and (max-width:1200px){
   .nav-link{

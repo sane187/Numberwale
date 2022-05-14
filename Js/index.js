@@ -39,42 +39,50 @@ const toggleMenu =()=>{
 }
 
 menuButton.addEventListener("click", toggleMenu);
-// const aj =()=>{
-//     console.log("scroll")
-//     window.scrollTo(500, 0);
-// }
-
-// overlayDiv.addEventListener("scroll",aj)
 
 
-// document.onreadystatechange = function() {
-// 	if (document.readyState !== "complete") {
-// 		document.querySelector("body").style.visibility = "hidden";
-// 		document.querySelector("#loader").style.visibility = "visible";
-// 	} else {
-// 		document.querySelector("#loader").style.display = "none";
-// 		document.querySelector("body").style.visibility = "visible";
-// 	}
-// };
+const select=document.querySelector(".vip-select");
+const pills=document.querySelector("#select-pills");
 
+let filterArr=[];
 
+select.addEventListener("change",function(event){
+  const val=event.target.value;
+  if(!filterArr.includes(val))
+  {filterArr.push(val);
+  pillsDisplay();
+}
+})
 
-// let bool=false;
-//  var z = document.querySelector("#hard-btn");
-//  let a =document.querySelector("#collapseExample");
+const clearCategory=()=>{
+  filterArr.splice(0,filterArr.length);
+  pills.innerHTML="";
+  
+}
 
+const pillsDisplay =()=>{
+  pills.innerHTML="";
+filterArr.forEach((item,index)=>{
 
+  const pillDiv=document.createElement("div");
+pillDiv.className="pill-div";
 
-// z.addEventListener("click",function myFunction() {
-// if(!bool){
-// bool=true;
-// a.style.display="block";
-// }
-
-// else{
-//     a.style.display="none";
-//     bool=false;
-// }
-
-// })
-
+  const p=document.createElement("p");
+  p.innerText=item;
+  p.className="pills-content";
+  const btn=document.createElement("button")
+  btn.innerText="X";
+  btn.classList.add("pill-btn",`${index}`); 
+  btn.addEventListener('click', function(e){
+    let rmv = e.target.classList[1];
+    if (rmv > -1) {
+      filterArr.splice(rmv, 1);}
+      pillsDisplay();
+  }
+  );
+  pillDiv.append(p);
+  pillDiv.append(btn);
+  pills.append(pillDiv);
+  
+})
+}
