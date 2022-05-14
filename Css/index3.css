@@ -330,7 +330,7 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
 
  
   .col3 .discover-para {
-    font-size: 56px;
+    font-size: 40px;
     text-transform: uppercase;
     font-family: 'Montserrat';
     line-height: 70px;
@@ -466,6 +466,9 @@ background: #FF5F01;
 border-radius: 5px;
 color: white;
 border: none;
+}
+.card-img-top{
+  height: 8rem;
 }
 
 .card-icon-cont .btn-eye{
