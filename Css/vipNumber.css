@@ -127,31 +127,7 @@ line-height: 34px;
     border-radius: 12px;
   }
 
-  .pills-content{
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: bold;
-   }
-
-.pill-div{
-  padding: 4px 8px;
-  border-radius: 10px;
-  border: 2px solid #FF5F01;
-  margin-left: 8px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-}
-.pill-div button{
-  border: none;
-  background: #fff;
-  margin-left: 6px;
- font-weight: bold;
-}
-
-   #select-pills .pill-div:nth-child(1){
-margin-left: 0px;
-   }
+ 
   
 
   @media screen and (max-width:450px){

@@ -272,7 +272,8 @@ footer{
 .bg-cont{
   background: url("../Assets/imagesn.png") no-repeat bottom center;
 transition: background 0.6s;
-
+border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
 background-color: #fff;
 
 }
@@ -281,7 +282,7 @@ background-color: #fff;
   background: #fff url("../Assets/imagesn.png") no-repeat top center
 }
 
-#collapseExample form select,#collapseExample form input{
+#collapseExample form input{
 
 border:none;
 font-size: 1.2rem;
@@ -567,9 +568,9 @@ color: #F23900;
 }
 
 @media screen and (max-width:768px){
-
-.col1 .banner-para{
-  font-size: 3rem;
+  .col1 .banner-para{
+  font-size: 1rem;
+  font-weight: bold;
 }
 .col3 .discover-para {
   font-size: 3rem;
@@ -719,6 +720,43 @@ input[type="range"]:focus::-moz-range-thumb {
   .nav-link{
     font-size: 10px;
   }
+  #collapseExample .vip-select{
+    border:none;
+    padding:0.4rem;
+    border: 1px solid red;
+    border-radius: 10px;
+    background: rgba(237, 223, 196,0.3);
+    font-size: 14px;
+    font-family: 'Roboto',sans-serif;
+}
+  .pills-content{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: bold;
+   }
+
+.pill-div{
+  
+  padding: 2px 4px;
+  border-radius: 10px;
+  border: 1.5px solid #FF5F01;  margin-left: 8px;
+  margin-top:10px;
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+}
+.pill-div button{
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  margin-left: 6px;
+ font-weight: bold;
+}
+
+   #select-pills .pill-div:nth-child(1){
+margin-left: 0px;
+   }
+
 }
 
 @media screen and (max-width:440px){
@@ -726,11 +764,14 @@ input[type="range"]:focus::-moz-range-thumb {
   line-height: 30px;
 font-family: 'Roboto', sans-serif !important;
   }
+  
 }
 
 
 @media screen and (max-width:584px){
-  
+  .bg-cont{
+    background: #fff;
+  }
 .col-div h4 {
   font-size: 1rem;
 }
