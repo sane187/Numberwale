@@ -86,3 +86,29 @@ pillDiv.className="pill-div";
   
 })
 }
+
+const eng=document.getElementById("eng-btn");
+const hin=document.getElementById("hin-btn");
+const eng1 =document.querySelector(".eng-text");
+const hin1 =document.querySelector(".hin-text");
+
+
+
+
+const toggleEng =()=>{
+ 
+  if(eng.classList.length<1){
+  eng.classList.add("active");
+  eng1.style.display="block";
+  hin1.style.display="none"
+  hin.classList.remove("active")
+}
+
+
+}
+
+const toggleHin =()=>{
+  if(hin.classList.length<1){ hin.classList.add("active"); hin1.style.display="block";eng.classList.remove("active"); hin.style.border
+  eng1.style.display="none"}
+  
+}

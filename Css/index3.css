@@ -11,7 +11,7 @@
 
 a{
     text-decoration: none !important;
-    color: black;
+    color: black ;
    
 }
 
@@ -59,29 +59,17 @@ nav form button:hover{
     color:#f44b01 !important;
    font-weight: 600;
    text-transform: uppercase;
-}
-.nav-link::after{
-    content: "";
-    height: 3.5px;
-    width: 50%;
-    display: none;
-    background: #F78002; 
-    position: relative;
-    left: 50%;
-    margin-top: 4px;
-    transform: translatex(-50%);
-    transition: all 1s ease;
-}
-.nav-link:hover::after{
-    display: block ;
+   border: 1.5px solid #f44b01;
+   border-radius: 8px;
+   margin-left: 5px;
 }
 
-.navbar-nav{
-    height: 1.8rem;
+.nav-link:hover{
+  background-color: #f44b01;
+  color:#fff !important;
 }
-#navbarNav{
-    height: 100%;
-}
+
+
 
 .nav-top{
     padding: 0.6em 0;
@@ -365,30 +353,32 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
     flex-direction: column;
     width: auto;
     height: auto;
-   background:rgb(244, 75, 1,0.1);
+   background:#FFF;
     border-radius: 10px;
-    border: 2px solid rgb(244, 75, 1);
+    border: 2px solid #e6e6e6;
   }
+
+  .detail-card .card-body{
+   display: flex;
+   align-items: center;
+  }
+  
   .col4 .detail-card:hover {
     box-shadow: rgba(238, 29, 55, 0.2) 0px 7px 29px 0px;
   }
   .detail-card .launch-number {
-    font-size: 26px;
+    font-size: 1rem;
     font-family: 'Montserrat';
     color:rgb(244, 75, 1);
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 0px !important;
+    
   }
   
-  .detail-card .fa-solid {
-    color: #fafafa;
-  }
   .detail-card .icon {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(244, 75, 1);
-    border-radius: 50%;
+   
+    border-radius:5px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -468,7 +458,6 @@ font-weight: bold;
 }
 .col-div-2{
   font-size: 14px;
- 
 }
 
 .card-icon-cont button{
@@ -534,7 +523,7 @@ color: #F23900;
 }
 
 .col-20 h5{
-  color: #fff;
+  color: #2f3043;
 }
 
 .col-btn{
@@ -546,8 +535,8 @@ color: #F23900;
 }
 
 .step-icon-cont p{
-  color:white;
-  font-size:18px ;}
+  color:#2f3043;
+  font-size:16px ;}
 #search-select{
    padding: 0.5rem 18px;
     margin: 0;
@@ -565,80 +554,6 @@ color: #F23900;
   padding: 0.2rem;
   background: white;
 
-}
-
-@media screen and (max-width:768px){
-  .col1 .banner-para{
-  font-size: 1rem;
-  font-weight: bold;
-}
-.col3 .discover-para {
-  font-size: 3rem;
-}
-
-  .mobile-cont{
-    background: none ;
-  background-size: 100% 100%;
-    overflow: none;
-    border-radius: 30px;
-   padding:1rem;
-   height: 20rem;
- background-color: #ffa800;
-   
-}
-  .hitem{
-    width: 40%;
-  }
-    .navbar-nav{
-        height: 100%;
-    }
-
-    
-
-
-.hero-text-container h1{
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 30px;
-  
-}
-
-.hero-text-container div{
-    font-size: 18px;
-}
-.hero-bext-container h1{
-    font-size: 32px;
-    line-height: 68px;
- }
- .hero-bext-container .animated-num{
-     font-size: 40px;
-     line-height: 60px;
-     animation-name: example;
-     animation-duration: 2s;
-     animation-iteration-count: infinite;
-    color: rgb(255, 84, 47);
-  }
-  
-  .col4 .detail-card {
-    min-width: auto;
-  }
-  .detail-card .launch-number {
-    font-size: 16px;}
-
-    .rid-content h5{
-      font-size: 14px;
-    }
-
-    .step-icon-cont p{
-      font-size: 1.2rem;
-    }
-
-.contact {
-  order:1;
-}
-.support {
-  order:2
-}
 }
 
 .budget-label{
@@ -715,15 +630,109 @@ input[type="range"]:focus::-moz-range-thumb {
  outline-offset: 0.125rem; 
 }
 
+.nav-tabs a{
+text-transform: uppercase;
+color: black;
+font-size: 12px;
+}
 
-@media screen and (max-width:1200px){
+.nav-tabs a.active{
+  color:#053a5f;
+  border: 2px solid #053a5f;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.hin-text{display: none;}
+@media screen and (max-width:768px){
+
+  .bg-cont{
+    border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+  }
+
+  .col1 .banner-para{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.col3 .discover-para {
+  font-size: 2.1rem;
+}
+
+  .mobile-cont{
+    background: none ;
+  background-size: 100% 100%;
+    overflow: none;
+    border-radius: 30px;
+   padding:1rem;
+   height: 20rem;
+ background-color: #ffa800;
+   
+}
+  .hitem{
+    width: 40%;
+  }
+    .navbar-nav{
+        height: 100%;
+    }
+
+    
+
+
+.hero-text-container h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+  
+}
+
+.hero-text-container div{
+    font-size: 18px;
+}
+.hero-bext-container h1{
+    font-size: 32px;
+    line-height: 68px;
+ }
+ .hero-bext-container .animated-num{
+     font-size: 40px;
+     line-height: 60px;
+     animation-name: example;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+    color: rgb(255, 84, 47);
+  }
+  
+  .col4 .detail-card {
+    min-width: auto;
+  }
+  .detail-card .launch-number {
+    font-size: 10px;}
+
+    .rid-content h5{
+      font-size: 14px;
+    }
+
+    .step-icon-cont p{
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+.contact {
+  order:1;
+}
+.support {
+  order:2
+}
+}
+
+@media screen and (max-width:1270px){
   .nav-link{
     font-size: 10px;
   }
   #collapseExample .vip-select{
     border:none;
     padding:0.4rem;
-    border: 1px solid red;
+    border: 1.5px solid #F23900;
     border-radius: 10px;
     background: rgba(237, 223, 196,0.3);
     font-size: 14px;
@@ -739,7 +748,7 @@ input[type="range"]:focus::-moz-range-thumb {
   
   padding: 2px 4px;
   border-radius: 10px;
-  border: 1.5px solid #FF5F01;  margin-left: 8px;
+  border: 1.5px solid #053a5f; 
   margin-top:10px;
   margin-left: 6px;
   display: flex;
@@ -780,11 +789,12 @@ font-family: 'Roboto', sans-serif !important;
   font-size: 9px !important;
 }
 .bg-cont .col-div-2 h1{
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
   margin: 0.2rem 0;
 }
 .bg-cont .col-div-2 small{
   font-size: 10px !important;
+  color: black;
 }
 
 .col-div-3{
@@ -792,7 +802,7 @@ font-family: 'Roboto', sans-serif !important;
 }
 
 .card-icon-cont button{
-  padding: 4px !important;
+  padding: 7px !important;
 font-size: 10px;
   }
   

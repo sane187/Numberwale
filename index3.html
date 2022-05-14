@@ -49,8 +49,8 @@
   </div>
   <header>
     <nav class="navbar navbar-expand-lg d-none d-lg-block py-0" id="navbar-top" style="background: white;" > 
-         <div class="container-lg " data-aos="fade-right">
-           <a class="navbar-brand" href="./index3.html"><div><img src="Assets/orangeLogo.png" ></div></a>
+         <div class="container-fluid px-2" data-aos="fade-right">
+           <a class="navbar-brand ms-3" href="./index3.html"><div><img src="Assets/orangeLogo.png" ></div></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
              <span class="navbar-toggler-icon fa-solid fa-bars"></span>
            </button>
@@ -67,24 +67,24 @@
                <input class="form-control mr-sm-2 " type="search" placeholder="Search number" aria-label="Search">
                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
              </form>
-             <ul class="navbar-nav pb-4" data-aos="fade-right">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index3.html">Home</a>
+             <ul class="navbar-nav me-3" data-aos="fade-right">
+              <li class="nav-item d-flex flex-column align-items-center">
+                <a class="nav-link" aria-current="page" href="./index3.html"><span class="fa-solid fa-house"></span> Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./vipNumber.html">Vip Numbers</a>
+                <a class="nav-link" href="./vipNumber.html"><span class="fa-solid fa-crown"></span> Vip Numbers</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="./soldOut.html">Sold out</a>
+                <a class="nav-link" href="./soldOut.html"><span class="fa-solid fa-square-check"></span> Sold out</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./About.html">About</a>
+                <a class="nav-link" href="./About.html"><i class="fa-solid fa-id-badge"></i> About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./offer.html">Offer</a>
+                <a class="nav-link" href="./offer.html"><i class="fa-solid fa-sack-dollar"></i> Offer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contactUs.html">Contact us</a>
+                <a class="nav-link" href="./contactUs.html"><i class="fa-solid fa-phone"></i> Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
@@ -159,130 +159,139 @@
    <section style="padding: 1.5rem 0;background: rgba(255, 168, 0,0.2);">
     <div style="padding: 0 1rem;">
       <div class="row">
-        <div class="col col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
           <div class="col3 mt-4 pt-4 d-flex flex-column align-items-center">
-            <h1 class="discover-title text-center" data-aos="fade-left">Vip Number</h1>
-            <hr class="w-100"/>
+            <h1 class="discover-title text-center" data-aos="fade-left" style="color: #2f3043;">Vip Number</h1>
+            <hr class="w-100 "/>
             <p class="discover-para text-center" data-aos="fade-right" data-aos-duration="1200">
               Categories
             </p>
             <button class="btn d-flex justify-content-center mt-lg-3 mt-0 mb-lg-0 mb-2">Discover Categories</button>
           </div>
         </div>
-        <div class="col col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
           <div
             id="carouselExampleControls"
             class="carousel slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="col4 d-flex justify-content-center flex-row">
-                  <div class="d-flex justify-content-around align-items-center flex-column">
-                    <div class="detail-card p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-fingerprint fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Unique Number</h1>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="col4 d-flex justify-content-center flex-row px-5">
+              
+                <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top " alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center mt-2 mb-2">Unique Number</h1>
                     </div>
-                    <div class="detail-card p-4 mt-3 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-a fa-2x"></i>
-                      </div>
-                      <h1 class="launch-number mt-3">AB AB AB Numbers</h1>
+                  </div>               
+                
+                  <div class="detail-card pull-up ms-3">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center mt-1 mb-0">Unique Number</h1>
                     </div>
-                  </div>
-                  <div class="d-flex justify-content-around flex-column mx-3">
-                    <div class="detail-card mt-4 p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-b fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">AAA BBB Numbers</h1>
+                  </div>  
+              </div>  
+              <div class="col4 d-flex justify-content-center flex-row px-5 mt-2">
+              
+                <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center mt-1 mb-0">Unique Number</h1>
                     </div>
-                    <div class="detail-card p-4 mt-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-1 fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">123456 Numbers</h1>
+                  </div>               
+                
+                  <div class="detail-card pull-up ms-3">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
                     </div>
-                  </div>
+                  </div>  
+              </div>      
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col4 d-flex justify-content-center flex-row">
-                  <div class="d-flex justify-content-around align-items-center flex-column">
-                    <div class="detail-card p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-fingerprint fa-2x"></i>
-                      </div>
 
-                      <h1 class="launch-number mt-3">Mirror Number</h1>
+            <div class="carousel-item">
+              <div class="col4 d-flex justify-content-center flex-row">
+              
+                <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
                     </div>
-                    <div class="detail-card p-4 mt-3 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-a fa-2x"></i>
-                      </div>
-                      <h1 class="launch-number mt-3">
-                        Doubling Numbers
-                      </h1>
+                  </div>               
+                
+                  <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
                     </div>
-                  </div>
-                  <div class="d-flex justify-content-around flex-column mx-3">
-                    <div class="detail-card mt-4 p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-b fa-2x"></i>
-                      </div>
-                      <h1 class="launch-number mt-3">2 digit Number</h1>
+                  </div>  
+              </div>  
+              <div class="col4 d-flex justify-content-center flex-row">
+              
+                <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
                     </div>
-                    <div class="detail-card p-4 mt-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-1 fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">786 Numbers</h1>
+                  </div>               
+                
+                  <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col4 d-flex justify-content-center flex-row">
-                  <div class="d-flex justify-content-around align-items-center flex-column">
-                    <div class="detail-card p-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-fingerprint fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Triple Number</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-3 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-a fa-2x"></i>
-                      </div>
-                      <h1 class="launch-number mt-3">Tetra Numbers</h1>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-around flex-column mx-3">
-                    <div class="detail-card mt-4 p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-b fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Penta Numbers</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-1 fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Hexa Numbers</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                  </div>  
+              </div>   
             </div>
+            <div class="carousel-item">
+              <div class="col4 d-flex justify-content-center flex-row">
+              
+                <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
+                    </div>
+                  </div>               
+                
+                  <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
+                    </div>
+                  </div>  
+              </div>  
+              <div class="col4 d-flex justify-content-center flex-row">
+              
+                <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
+                    </div>
+                  </div>               
+                
+                  <div class="detail-card pull-up">
+                 
+                    <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                    <div class="card-body p-0">
+                      <h1 class="launch-number text-center">Unique Number</h1>
+                    </div>
+                  </div>  
+              </div>   
+            </div>
+          </div>
             <button
               class="carousel-control-prev discovery-btn"
               type="button"
@@ -315,10 +324,10 @@
   </section>
 
 
-<section  style="background: #EDDFC4;padding: 4rem 0;">
+<section  style="background: #EDDFC4;padding: 2rem 0;">
 
   <div class="container-fluid" >
-    <h1 class="text-center mb-5 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">DREAM NUMBER</span></h1>
+    <h1 class="text-center mb-4 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">DREAM NUMBER</span></h1>
 
     <div class="row gx-2">
       <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-18 pull-up">
@@ -647,13 +656,13 @@
 </section>
 
 
-<section style="background:linear-gradient(to bottom,rgba(247,129,2,1) 0%, rgba(242,56,0,1)  100%);">
-  <div class="container-fluid d-flex flex-column align-items-center py-5">
-    <h2 class="mb-0 fw-bold" style="color:#fff;">VIP FRIEND ZONE</span>
+<section >
+  <div class="container-fluid d-flex flex-column align-items-center py-3">
+    <h2 class="mb-0 fw-bold" style="color:#2f3043;">VIP FRIEND ZONE</span>
     </h2>
-    <h5 class="mb-0" style="color:white;">Apke swaal, Hmare jwaab</h5>
+    <h5 class="mb-0" style="color:#2f3043;">Apke swaal, Hmare jwaab</h5>
  
-  <div class="row mt-5">
+  <div class="row mt-3">
 <div class="col col-xl-6 col-lg-6 col-md-6 col-sm-12 col-20">
   <div class="d-flex flex-column align-items-center">
   <h5 class="fw-bold mb-4">STEPS TO BUY
@@ -693,11 +702,11 @@
   </div>
 </section>
 
-<section style="margin-top:5rem ;background: #EDDFC4;padding: 4rem 0;">
+<section style="background: #EDDFC4;padding: 2rem 0;">
  
     
     <div class="container-fluid" >
-      <h1 class="text-center mb-5 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">VIP NUMBER</span></h1>
+      <h1 class="text-center mb-4 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">VIP NUMBER</span></h1>
   
       <div class="row gx-2">
         <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-18 pull-up">
@@ -1021,7 +1030,7 @@
   
   </section>
 
-<div class="container-fluid" style="padding: 6rem 2rem; background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);margin-top: 80px;">
+<div class="container-fluid" style="padding: 1rem 2rem; background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);">
 
   <section style="width: 100%;margin: 0 auto;" class="px-2">
     <img src="./Assets/GIF-banner.gif" style="width: 100%;border-radius:25px;">
@@ -1092,9 +1101,19 @@
       
     <div class="d-flex align-items-center justify-content-between px-4 pt-2">
       <a href="#"><div class="mob-logo-cont pb-2" ><img src="Assets/orangeLogo.png" style="width: 100%;height:100%"></div></a>
+
+
+<div class="d-flex align-items-center">
+  <li class="nav-item">
+    <a class="nav-link p-2" href="./vipNumber.html"><span class="fa-solid fa-crown me-1"></span>Vip Numbers</a>
+  </li> 
+  <li class="nav-item me-1">
+    <a class="nav-link p-2" href="./offer.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </li> 
       <button class="border-0 d-flex justify-content-center align-items-center nav-mob-toggler">
         <span class="fa-solid fa-bars" id="nav-mob-icon" ></span>
       </button>
+    </div>
     </div>
     
         <div class="overlay-content d-flex">
@@ -1171,10 +1190,10 @@
                   class="col col-xl-6 col-lg-12 col-md-12 col-sm-12"
                   data-aos="fade-right"
                 >
-                  <div class="col1 pt-2">
+                  <div class="col1">
                     <h2 class="banner-title" style="color:white">Vip number</h2>
                     <hr />
-                    <p class="banner-para">Get your vip number at one click.</p>
+                    <p class="banner-para mb-0">Get your vip number at one click.</p>
                     <p class="banner-subpara">
                       India's Best and Reliable prime numbers provider
                     </p>
@@ -1199,37 +1218,37 @@
     </div>
   </div>
   
-  
-  <div class="ticker w-100 h-100">
-    <div class="hwrap"><div class="hmove">
-      <h5 class="hitem">Unique Numbers</h5>
-      <h5 class="hitem">AB AB AB Numbers</h5>
-      <h5 class="hitem">AAA BBB Numbers</h5>
-      <h5 class="hitem">123456 Numbers</h5>
-      <h5 class="hitem">Mirror Numbers</h5>
-      <h5 class="hitem">Semi Mirror Numbers</h5>
-      <h5 class="hitem">Two digit Numbers</h5>
-      <h5 class="hitem">786 Numbers</h5>
-      <h5 class="hitem">Triple Numbers</h5>
-  
-  
-    </div></div>
+  <div class="d-flex align-items-center w-100 justify-content-center py-2">
+    <li class="nav-item">
+    <a class="nav-link p-1" href="./vipNumber.html"><span class="fa-solid fa-heart me-1"></span>Favourites</a>
+  </li> 
+    
+  <li class="nav-item ms-4">
+    <a class="nav-link p-1" href="./offer.html"><i class="fa-solid fa-sack-dollar me-1"></i>Offer</a>
+  </li>
+  <li class="nav-item ms-4">
+    <a class="nav-link p-1" href="./soldOut.html"><i class="fa-solid fa-star me-"></i>Review</a>
+  </li>
+  <li class="nav-item ms-4">
+    <a class="nav-link p-1" href="./soldOut.html"><i class="fa-solid fa-square-check me-1"></i>Sold Out</a>
+  </li>
   </div>
+  
   
   <section style="padding: 1.5rem 0;background: rgba(255, 168, 0,0.2);">
     <div style="padding: 0 5%;">
       <div class="row">
         <div class="col col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
           <div class="col3 pt-2 d-flex flex-column align-items-center">
-            <h1 class="discover-title text-center" data-aos="fade-left">Vip Number</h1>
-            <hr class="w-100"/>
-            <p class="discover-para text-center" data-aos="fade-right" data-aos-duration="1200">
+            <h1 class="discover-title text-center" data-aos="fade-left" style="color: #2f3043;">Vip Number</h1>
+            <hr class="w-100 m-0"/>
+            <p class="discover-para text-center mb-0" data-aos="fade-right" data-aos-duration="1200">
               Categories
             </p>
             <button class="btn d-flex justify-content-center mt-lg-3 mt-0 mb-lg-0 mb-2">Discover Categories</button>
           </div>
         </div>
-        <div class="col col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class=" col-md-12 col-sm-12 col-12">
           <div
             id="carouselExampleControls"
             class="carousel slide"
@@ -1238,110 +1257,119 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="col4 d-flex justify-content-center flex-row">
-                  <div class="d-flex justify-content-around align-items-center flex-column">
-                    <div class="detail-card p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-fingerprint fa-2x"></i>
+                
+                  <div class="detail-card pull-up">
+                   
+                      <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-0">
+                        <h1 class="launch-number text-center mt-2">Unique Number</h1>
                       </div>
-
-                      <h1 class="launch-number mt-3">Unique Number</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-3 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-a fa-2x"></i>
+                    </div>               
+                  
+                    <div class="detail-card pull-up ms-2">
+                   
+                      <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-0">
+                        <h1 class="launch-number text-center mt-2">Unique Number</h1>
                       </div>
-                      <h1 class="launch-number mt-3">AB AB AB Numbers</h1>
-                    </div>
+                    </div>  
+                </div>  
+                <div class="col4 d-flex justify-content-center flex-row mt-2">
+                
+                  <div class="detail-card pull-up">
+                   
+                      <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-0">
+                        <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                      </div>
+                    </div>               
+                  
+                    <div class="detail-card pull-up ms-2">
+                   
+                      <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                      <div class="card-body p-0">
+                        <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                      </div>
+                    </div>  
+                </div>      
                   </div>
-                  <div class="d-flex justify-content-around flex-column mx-3">
-                    <div class="detail-card mt-4 p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-b fa-2x"></i>
-                      </div>
 
-                      <h1 class="launch-number mt-3">AAA BBB Numbers</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-1 fa-2x"></i>
+                  <div class="carousel-item ">
+                    <div class="col4 d-flex justify-content-center flex-row">
+                    
+                      <div class="detail-card pull-up">
+                       
+                          <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                          <div class="card-body p-0">
+                            <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                          </div>
+                        </div>               
+                      
+                        <div class="detail-card pull-up ms-2">
+                       
+                          <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                          <div class="card-body p-0">
+                            <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                          </div>
+                        </div>  
+                    </div>  
+                    <div class="col4 d-flex justify-content-center flex-row mt-2">
+                    
+                      <div class="detail-card pull-up">
+                       
+                          <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                          <div class="card-body p-0">
+                            <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                          </div>
+                        </div>               
+                      
+                        <div class="detail-card pull-up ms-2">
+                       
+                          <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                          <div class="card-body p-0">
+                            <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                          </div>
+                        </div>  
+                    </div>      
                       </div>
-
-                      <h1 class="launch-number mt-3">123456 Numbers</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col4 d-flex justify-content-center flex-row">
-                  <div class="d-flex justify-content-around align-items-center flex-column">
-                    <div class="detail-card p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-fingerprint fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Mirror Number</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-3 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-a fa-2x"></i>
-                      </div>
-                      <h1 class="launch-number mt-3">
-                        Doubling Numbers
-                      </h1>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-around flex-column mx-3">
-                    <div class="detail-card mt-4 p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-b fa-2x"></i>
-                      </div>
-                      <h1 class="launch-number mt-3">2 digit Number</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-1 fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">786 Numbers</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="col4 d-flex justify-content-center flex-row">
-                  <div class="d-flex justify-content-around align-items-center flex-column">
-                    <div class="detail-card p-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-fingerprint fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Triple Number</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-3 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-a fa-2x"></i>
-                      </div>
-                      <h1 class="launch-number mt-3">Tetra Numbers</h1>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-around flex-column mx-3">
-                    <div class="detail-card mt-4 p-4 pull-up">
-                      <div class="icon">
-                        <i class="fa-solid fa-b fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Penta Numbers</h1>
-                    </div>
-                    <div class="detail-card p-4 mt-4 pull-up" >
-                      <div class="icon">
-                        <i class="fa-solid fa-1 fa-2x"></i>
-                      </div>
-
-                      <h1 class="launch-number mt-3">Hexa Numbers</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      <div class="carousel-item ">
+                        <div class="col4 d-flex justify-content-center flex-row">
+                        
+                          <div class="detail-card pull-up">
+                           
+                              <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                              <div class="card-body p-0">
+                                <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                              </div>
+                            </div>               
+                          
+                            <div class="detail-card pull-up ms-2">
+                           
+                              <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                              <div class="card-body p-0">
+                                <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                              </div>
+                            </div>  
+                        </div>  
+                        <div class="col4 d-flex justify-content-center flex-row mt-2">
+                        
+                          <div class="detail-card pull-up">
+                           
+                              <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                              <div class="card-body p-0">
+                                <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                              </div>
+                            </div>               
+                          
+                            <div class="detail-card pull-up ms-2">
+                           
+                              <img src="./Assets/random.jpg" class="card-img-top" alt="...">
+                              <div class="card-body p-0">
+                                <h1 class="launch-number text-center mt-2">Unique Number</h1>
+                              </div>
+                            </div>  
+                        </div>      
+                          </div>
             </div>
             <button
               class="carousel-control-prev discovery-btn d-none d-md-block"
@@ -1376,13 +1404,13 @@
     
   
   <section  style="background: #EDDFC4;padding: 2rem 0;">
-    <div class="container-fluid"> 
-      <div class="container-lg px-3" >
+    <div class="container-fluid p-0"> 
+      <div class="container-lg px-1" >
         <h2 class="text-center mb-3 fw-bold">GET YOUR <span style="color:rgb(255, 84, 47)">DREAM NUMBER</span></h2>
     
         <div class="row gx-1">
           <div class="col-6 col-md-6 col-18 pull-up ">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1391,10 +1419,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1405,7 +1433,7 @@
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
         <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1413,8 +1441,8 @@
     </div>
     </div>
           </div>
-          <div class="col-6 col-md-6 col-18 pull-up">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+          <div class="col-6 col-md-6 col-18 pull-up ">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1423,10 +1451,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1436,8 +1464,8 @@
          <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button></div>
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1445,11 +1473,10 @@
     </div>
     </div>
           </div>
-        </div>
-    
+        </div>   
         <div class="row gx-1 mt-2">
           <div class="col-6 col-md-6 col-18 pull-up ">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1458,10 +1485,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1472,7 +1499,7 @@
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
         <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1480,8 +1507,8 @@
     </div>
     </div>
           </div>
-          <div class="col-6 col-md-6 col-18 pull-up">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+          <div class="col-6 col-md-6 col-18 pull-up ">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1490,10 +1517,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1503,8 +1530,8 @@
          <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button></div>
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1512,10 +1539,10 @@
     </div>
     </div>
           </div>
-        </div>
+        </div> 
         <div class="row gx-1 mt-2">
           <div class="col-6 col-md-6 col-18 pull-up ">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1524,10 +1551,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1538,7 +1565,7 @@
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
         <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1546,8 +1573,8 @@
     </div>
     </div>
           </div>
-          <div class="col-6 col-md-6 col-18 pull-up">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+          <div class="col-6 col-md-6 col-18 pull-up ">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1556,10 +1583,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1569,8 +1596,8 @@
          <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button></div>
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1578,7 +1605,7 @@
     </div>
     </div>
           </div>
-        </div>
+        </div> 
         <div class="row">
       <div class="col-12">
         <button style="width:100%;" class="col-btn mt-3"><i class="fa-solid fa-caret-down me-2"></i> More Numbers</button>
@@ -1592,21 +1619,28 @@
     </section>
   
   
-  <section class="px-2" style="background:linear-gradient(to bottom,rgba(247,129,2,1) 0%, rgba(242,56,0,1)  100%);">
+  <section class="px-2">
     <div class="container-lg d-flex flex-column align-items-center py-2">
-      <h2 class="mb-0 fw-bold" style="color:#fff;">VIP FRIEND ZONE</span>
-      </h2>
-      <h5 class="mb-0" style="color:white;">Apke swaal, Hmare jwaab</h5>
+      <h5 class="fw-bold my-2" style="color:#2f3043;">STEPS TO BUY
+        YOUR VIP NUMBER ?</h5>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="active" aria-current="page" id="eng-btn" onclick="toggleEng()">English</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a id="hin-btn" onclick="toggleHin()">Hindi</a>
+          </li>
+         
+        </ul>
    
-    <div class="row mt-5">
-  <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-20">
+    <div class="row mt-2">
+  <div class="col-12 col-lg-6 col-md-12 col-20 eng-text">
     <div class="d-flex flex-column align-items-center">
-    <h5 class="fw-bold mb-4">STEPS TO BUY
-      YOUR VIP NUMBER ?</h5>
+    
     <div class="col-video-cont">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
     </div>
-  <div class="mt-4 step-icon-cont">
+  <div class="mt-2 step-icon-cont mt-1">
   <p><i class="fa-solid fa-handshake"></i></span>&nbsp; Select your favourable mobile number. The one you like and which suits your personality.</p>
   <p><i class="fa-solid fa-money-bill-1-wave"></i>&nbsp; Once your chosen mobile number is finalised, proceed to checkout and make the payment.</p>
   <p><i class="fa-solid fa-barcode"></i>&nbsp; You will receive a Unique Porting Code (UPC) along with invoice within 24 hour on your Registered Mobile Number.</p>
@@ -1616,13 +1650,13 @@
   
     </div>
   </div>
-  <div class="col-12 col-xl-6 col-lg-6 col-md-12 col-20 mt-5">
+  <div class="col-12 col-lg-6 col-md-12 col-20 hin-text">
   <div class="d-flex flex-column align-items-center">
-    <h5 class="fw-bold mb-4">अपना वीआईपी नंबर खरीदने के लिए कदम ?</h5>
+   
     <div class="col-video-cont">
       <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9kV-wiGKs3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 12px;"loading="eager" class="vid-vid"></iframe>
     </div>
-    <div class="mt-4 step-icon-cont">
+    <div class="mt-1 step-icon-cont">
     <p><i class="fa-solid fa-handshake"></i></span>&nbsp; अपना अनुकूल मोबाइल नंबर चुनें। जिसे आप पसंद करते हैं और जो आपकी पर्सनैलिटी पर सूट करता है।</p>
     <p><i class="fa-solid fa-money-bill-1-wave"></i>&nbsp; एक बार आपका चुना हुआ मोबाइल नंबर फाइनल हो जाने के बाद, चेकआउट के लिए आगे बढ़ें और भुगतान करें।</p>
     <p><i class="fa-solid fa-barcode"></i>&nbsp; आपको अपने पंजीकृत मोबाइल नंबर पर 24 घंटे के भीतर चालान के साथ एक विशिष्ट पोर्टिंग कोड (यूपीसी) प्राप्त होगा।</p>
@@ -1645,7 +1679,7 @@
     
         <div class="row gx-1">
           <div class="col-6 col-md-6 col-18 pull-up ">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1654,10 +1688,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1668,73 +1702,7 @@
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
         <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
-        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> </div>
-    
-         </div>
-    </div>
-    </div>
-          </div>
-          <div class="col-6 col-md-6 col-18 pull-up">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
-                <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
-                    <i class="fa-solid fa-crown"> </i> 
-                    <h4 class="mb-0">₹3500/-</h4>
-                  </div>
-            <div class="d-flex flex-column bg-cont">
-             
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3 py-1">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
-    <div>
-        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
-        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
-        <button>Buy</button> </div>
-    
-         </div>
-    </div>
-    </div>
-          </div>
-        </div>
-        <div class="row gx-1 mt-2">
-          <div class="col-6 col-md-6 col-18 pull-up ">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
-                <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
-                    <i class="fa-solid fa-crown"> </i> 
-                    <h4 class="mb-0">₹3500/-</h4>
-                  </div>
-            <div class="d-flex flex-column bg-cont">
-             
-            
-    
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
-            </div>
-    
-         <div class="d-flex justify-content-center col-div-3 py-1">
-      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
-         </div>
-    
-         <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
-    <div>
-        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1743,7 +1711,7 @@
     </div>
           </div>
           <div class="col-6 col-md-6 col-18 pull-up ">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1752,10 +1720,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1765,8 +1733,8 @@
          <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
-        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button></div>
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1774,10 +1742,10 @@
     </div>
     </div>
           </div>
-        </div>  
+        </div>   
         <div class="row gx-1 mt-2">
-          <div class="col-6 col-md-6 col-18 pull-up">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+          <div class="col-6 col-md-6 col-18 pull-up ">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1786,10 +1754,10 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1800,7 +1768,7 @@
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
         <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
@@ -1808,8 +1776,8 @@
     </div>
     </div>
           </div>
-          <div class="col-6 col-md-6 col-18 pull-up">
-            <div style="border-radius: 20px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+          <div class="col-6 col-md-6 col-18 pull-up ">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
                 <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
                     <i class="fa-solid fa-crown"> </i> 
                     <h4 class="mb-0">₹3500/-</h4>
@@ -1818,10 +1786,44 @@
              
             
     
-            <div class="d-flex flex-column align-items-center col-div-2 mt-3">
-                <h6 style="text-transform:uppercase" class="mb-0 drop-card">Get your <strong>business</strong> Number</h6>
-          <h1 class="mb-md-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
-          <small>SIMILAR NUMBERS</small>
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
+            </div>
+    
+         <div class="d-flex justify-content-center col-div-3 py-1">
+      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+         </div>
+    
+         <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button></div>
+        <div class="ms-md-5 ms-2">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
+    
+         </div>
+    </div>
+    </div>
+          </div>
+        </div> 
+        <div class="row gx-1 mt-2">
+          <div class="col-6 col-md-6 col-18 pull-up ">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
+                    <i class="fa-solid fa-crown"> </i> 
+                    <h4 class="mb-0">₹3500/-</h4>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
+            
+    
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
             </div>
     
          <div class="d-flex justify-content-center col-div-3 py-1">
@@ -1832,7 +1834,39 @@
     <div>
         <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
         <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button> </div>
-        <div class="ms-md-5">
+        <div class="ms-md-5 ms-2">
+        <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
+        <button>Buy</button> </div>
+    
+         </div>
+    </div>
+    </div>
+          </div>
+          <div class="col-6 col-md-6 col-18 pull-up ">
+            <div style="border-radius: 10px;background: #FF5F01;border:1px solid #FF5F01;box-shadow:0 0 10px grey;">
+                <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
+                    <i class="fa-solid fa-crown"> </i> 
+                    <h4 class="mb-0">₹3500/-</h4>
+                  </div>
+            <div class="d-flex flex-column bg-cont">
+             
+            
+    
+            <div class="d-flex flex-column align-items-center col-div-2 mt-1">
+               
+          <h1 class="mb-0 fw-bold">82-<span style="color: #FF5F01;">9095-9095</span></h1>
+         <a href="#"><small>SIMILAR NUMBERS<i class="fa-solid fa-arrow-right-long ms-1"></i></small></a>
+            </div>
+    
+         <div class="d-flex justify-content-center col-div-3 py-1">
+      Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> | <span>R2P</span>
+         </div>
+    
+         <div class="d-flex justify-content-center align-items-center card-icon-cont py-2 py-md-3">
+    <div>
+        <button class="me-1 btn-eye"><i class="fa-solid fa-eye"></i> 0</button> 
+        <button class="me-1"><i class="fa-solid fa-heart"></i> 0</button></div>
+        <div class="ms-md-5 ms-2">
         <button class="me-1"><i class="fa-solid fa-cart-shopping"></i></button> 
         <button>Buy</button> </div>
     
