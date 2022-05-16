@@ -468,7 +468,7 @@ color: white;
 border: none;
 }
 .card-img-top{
-  height: 8rem;
+  height:12rem;
 }
 
 .card-icon-cont .btn-eye{
@@ -648,6 +648,8 @@ font-size: 12px;
 
 .hin-text{display: none;}
 @media screen and (max-width:768px){
+
+.card-img-top{height: 8rem;}
 
   .bg-cont{
     border-bottom-left-radius: 10px;

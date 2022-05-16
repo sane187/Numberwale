@@ -82,10 +82,12 @@
 }
 
 .step-row span{
-padding:0.4rem 0.6rem;
+padding: 0 0.8rem;
+font-size: 1rem;
 background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
 color: white;
 line-height: 34px;
+border-radius: 50%;
 }
 
 .col-div-v1 i{
@@ -126,9 +128,22 @@ line-height: 34px;
   .col-18{
     border-radius: 12px;
   }
+  .step-row{overflow-x:auto;min-width:100% !important;  }
 
- 
-  
+  .step-row .bg{
+    min-width:100% !important;
+
+   }
+   .step-row::-webkit-scrollbar {
+    background-color: #e6e6e6;
+    border-radius: 15px;
+  }
+  .step-row::-webkit-scrollbar-thumb {
+    background-color: #FF5F01;
+    border-radius: 15px;
+   
+    
+  }
 
   @media screen and (max-width:450px){
     .filter-cont button{
@@ -154,7 +169,7 @@ line-height: 34px;
 
 
   .step-row .bg{
-    min-width: 94.2vw !important;
+    min-width: 94vw !important;
    }
    .step-row{overflow-x:auto;max-width:94vw !important;   }
 
@@ -162,8 +177,14 @@ line-height: 34px;
 
   @media screen and (max-width:768px){
     .step-row .bg{
-      min-width: 49vw;
+      min-width: 49vw ;
      }
      .step-row{overflow-x:auto;max-width:100vw;   }
 
   }
+@media screen and (max-width:992px){
+  .step-row span{
+    padding:0.3rem 0.6rem;
+  }
+  
+}
