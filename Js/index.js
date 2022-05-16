@@ -1,21 +1,26 @@
 let menuButton=document.querySelector(".nav-mob-toggler");
 let overlayDiv=document.querySelector(".overlay-content");
 
+
 let showMenu = false;
 window.addEventListener("scroll",function(){
     let nav=document.getElementById("navbar-top");
     if(window.pageYOffset==0){
-     
       nav.classList.remove("fixed-top");
-     
     }
-    if(window.pageYOffset>0){
-     
+    if(window.pageYOffset>0){  
       nav.classList.add("fixed-top");
-    
      }
   })
-  
+  window.addEventListener("scroll",function(){
+    let fixed=document.querySelector("#fixed-overlay");
+    if(window.pageYOffset==0){
+      fixed.style.bottom="25px";
+    }
+    if(window.pageYOffset>0){  
+      fixed.style.bottom="0px";
+     }
+  })
 const toggleMenu =()=>{
     let menuBtn=document.getElementById("nav-mob-icon");
 
