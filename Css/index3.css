@@ -352,10 +352,11 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
     align-items: center;
     flex-direction: column;
     width: auto;
-    height: auto;
+    height: 100%;
    background:#FFF;
     border-radius: 10px;
     border: 2px solid #e6e6e6;
+      box-shadow: grey 0px 7px 7px 0px;
   }
 
   .detail-card .card-body{
@@ -363,9 +364,7 @@ background:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
    align-items: center;
   }
   
-  .col4 .detail-card:hover {
-    box-shadow: rgba(238, 29, 55, 0.2) 0px 7px 29px 0px;
-  }
+  
   .detail-card .launch-number {
     font-size: 1rem;
     font-family: 'Montserrat';
@@ -469,6 +468,7 @@ border: none;
 }
 .card-img-top{
   height:12rem;
+  border-radius: 10px;
 }
 
 .card-icon-cont .btn-eye{
@@ -530,9 +530,10 @@ color: #F23900;
 }
 
 .col-btn{
-  background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
-  color: white;
-  border: #f44b01;
+  background: #e6e6e6;
+  color: black;
+  border:1.5px solid lightslategray;
+  box-shadow: 0 0 6px rgba(0,0,0,0.6);
   text-transform: uppercase;
   padding:0.6rem 0;
 }
@@ -648,7 +649,10 @@ font-size: 12px;
 
 .hin-text{display: none;}
 @media screen and (max-width:768px){
-
+  .col1 hr{
+    
+    width: 40vw;
+  }
 .card-img-top{height: 8rem;}
 
   .bg-cont{
@@ -707,9 +711,7 @@ font-size: 12px;
     color: rgb(255, 84, 47);
   }
   
-  .col4 .detail-card {
-    min-width: auto;
-  }
+ 
   .detail-card .launch-number {
     font-size: 10px;}
 
