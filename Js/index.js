@@ -13,14 +13,23 @@ window.addEventListener("scroll",function(){
      }
   })
   window.addEventListener("scroll",function(){
-    let fixed=document.querySelector("#fixed-overlay");
-    if(window.pageYOffset==0){
-      fixed.style.bottom="25px";
+    if (window.matchMedia("(max-width: 992px)").matches) {
+    
+    
+    let smallnav=document.querySelector("#sm-nav-input");
+   
+     if(window.pageYOffset==0 || window.pageYOffset<100){
+      smallnav.classList.remove("fixed-top","py-2");
     }
-    if(window.pageYOffset>0){  
-      fixed.style.bottom="0px";
+    if(window.pageYOffset>100){  
+      smallnav.classList.add("fixed-top","py-2");
      }
+    }
   })
+
+
+
+
 const toggleMenu =()=>{
     let menuBtn=document.getElementById("nav-mob-icon");
 
