@@ -455,20 +455,21 @@ font-weight: bold;
 .col-div-3{
   background: #e6e6e6;
 }
-.col-div-2{
-  font-size: 14px;
- 
+
+.col-div-2 h1{
+  font-size: 2rem;
 }
 .col-div-2 a{
   color: black !important;
 }
 
 .card-icon-cont button{
-padding: 4px 12px;
+padding: 3px 9px;
 background: #FF5F01;
 border-radius: 5px;
 color: white;
 border: none;
+font-size: 18x;
 }
 .card-img-top{
   height:12rem;
@@ -534,12 +535,13 @@ color: #F23900;
 }
 
 .col-btn{
-  background: rgba(255, 168, 0,0.2);
+  background: #e6e6e6;
   color: black;
-  border:1.5px solid lightslategray;
+  border:1px solid lightslategray;
   box-shadow: 0 0 6px rgba(0,0,0,0.6);
   text-transform: uppercase;
   padding:0.6rem 0;
+  border-radius: 7px;
 }
 
 .step-icon-cont p{
@@ -719,8 +721,8 @@ font-size: 12px;
   .detail-card .launch-number {
     font-size: 10px;}
 
-    .rid-content h5{
-      font-size: 14px;
+    .rid-content h5 ,.address p{
+      font-size: 12px !important;
     }
 
     .step-icon-cont p{
@@ -730,6 +732,7 @@ font-size: 12px;
 
 .contact {
   order:1;
+ 
 }
 .support {
   order:2

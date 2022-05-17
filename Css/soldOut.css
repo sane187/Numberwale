@@ -36,6 +36,16 @@
     -moz-text-fill-color: transparent;
 }
 
+.col-18 figure{
+    z-index:22; position: absolute;top:35%;overflow: hidden;
+    width:5.6rem !important;
+}
+.col-18 img{
+   height: 100%;
+   width: 100%;
+
+}
+
 @media screen and (max-width:510px){
     .gradient-text{
         font-size: 2.5rem;
