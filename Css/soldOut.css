@@ -24,7 +24,7 @@
 .gradient-text {
     text-align: center;
     font-family: 'Roboto',sans-serif;
-    font-size:5.5rem;
+    font-size:5rem;
     border-bottom: 2px solid rgba(242,56,0,1);
     font-weight: bold;
     background-color: #fff;
@@ -37,8 +37,8 @@
 }
 
 .col-18 figure{
-    z-index:22; position: absolute;top:35%;overflow: hidden;
-    width:5.6rem !important;
+    z-index:22; position: absolute;top:45%;overflow: hidden;
+    width:4.2rem !important;
 }
 .col-18 img{
    height: 100%;
@@ -46,8 +46,9 @@
 
 }
 
-@media screen and (max-width:510px){
-    .gradient-text{
-        font-size: 2.5rem;
-    }
+@media screen and (max-width:550px) {
+    .col-18 figure{
+       top:53%;
+        width:2.6rem !important;
+    } 
 }

@@ -15,10 +15,6 @@
     border:none;
 }
 
-
-
-
-
 .filter-cont a{
     color: #000;
     font-size: 0.8rem;
@@ -113,41 +109,7 @@ line-height: 34px;
 border-radius: 50%;
 }
 
-.col-div-v1 i{
-    color:#FFD700;
-    font-size: 14px;
-  }
-  .col-div-v1{
-  
-    color: #fff;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  
-  }
-  .col-div-v1 h5{
-  font-weight: bold;
-  }
-  .col-div-v3{
-    background: #e6e6e6;
-  }
-  .col-div-v2{
-   
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-  
-  .card-vicon-cont button{
-  padding: 6px;
-  background: #FF5F01;
-  border-radius: 5px;
-  color: white;
-  border: none;
-  }
-  
-  .card-vicon-cont .btn-eye{
-    background: #e6e6e6 !important;
-    color: #000 !important;
-  }
+
   .col-18{
     border-radius: 12px;
   }
