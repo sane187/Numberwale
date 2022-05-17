@@ -373,7 +373,7 @@ card5.map(item =>{
     dov.innerHTML= 
     `<div style="border-radius:10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
     <div class="badge-bg-cont">
-   <p class="mb-0 blink_me">20% Off</p>
+   <p class="mb-0 blink_me">20% <br />Off</p>
   </div>
          <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
              <i class="fa-solid fa-crown"> </i>
@@ -417,7 +417,7 @@ card6.map(item =>{
     dov.innerHTML= 
     `  <div style="border-radius: 10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
     <div class="badge-bg-cont">
-   <p class="mb-0 blink_me">20% Off</p>
+   <p class="mb-0 blink_me">20% <br />Off</p>
   </div>
     <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
         <i class="fa-solid fa-crown"> </i> 
