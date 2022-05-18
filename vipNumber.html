@@ -328,7 +328,7 @@
       </div>
     </div>
     </section>
-    <section style="position: fixed;bottom:0px;left:0px;background: #f4e0c5;border-radius:10px 10px 0 0;width: 80%;z-index:1111" id="fixed-overlay">
+    <section style="position: fixed;bottom:0px;left:0px;background: #f4e0c5;border-radius:10px 10px 0 0;width: 70%;z-index:1111" id="fixed-overlay">
       <div class="d-flex flex-column align-items-center">
          <a class="btn py-2" id="hard-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
            Search filter
@@ -351,18 +351,18 @@
             </div>
             <div id="select-pills" class="d-flex flex-wrap"></div>
 
-<button type="button" class="btn mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #e6e6e6; width:60%; color:black;border-radius: 10px;font-weight: bold;">
+<button type="button" class="btn mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #e6e6e6; width:70%; color:black;border-radius: 10px;font-weight: bold;">
  Choose categories
 </button>
 
            <div class="d-flex align-items-center my-2 p-2" style="border:2px solid #fff">
-            <label for="range" class="text-center budget-label">Set Budget</label>
+            <label for="range" class="text-center budget-label" style="font-size:0.85rem ;">Set Budget</label>
             <input type="range" id="range" name="range" 
                    min="0" max="50000" value="0" step="500" class="ms-3" >
                   
           </div>
           
-          <div class="d-flex mt-2 px-2 align-items-center optional-cont">
+          <div class="d-flex px-2 align-items-center optional-cont">
             Optional* 
       <input class="form-control p-1 ms-2" type="search" placeholder="Number not contains" aria-label="Search">
           </div>
@@ -375,6 +375,10 @@
        </div>
       </div>
          
+     </section>
+     <section style="position: fixed;bottom:0px;right:0px;background: #f4e0c5;width: 28%;z-index:1111;border-radius:10px 10px 0 0;padding:0.72rem 0 ;" id="fixed-overlay" class="d-flex justify-content-center">
+      <button type="button" class="btn p-0 text-center" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: rgba(242,56,0,1);border-radius: 10px;font-weight: bold;font-size:1.1rem;  box-shadow: none !important;">Categories
+       </button>
      </section>
 
 
@@ -423,11 +427,11 @@
         <button>Sort By <span class="fa-solid fa-filter ms-1"></span></button> <a href="">Price Low to High</a> <a href="">Price High to Low</a>
       </div>
       <div class="d-flex mt-1">
-      <div class="d-flex mt-2 ps-1 align-items-center optional-cont">
+      <div class="d-flex mt-2 ps-1 align-items-center optional-cont" style="font-size: 0.75rem;">
         Optional* 
   <input class="form-control p-1 ms-1" type="search" placeholder="Number not contains" aria-label="Search">
       </div>
-      <div class="d-flex flex-column align-items-center px-1">
+      <div class="d-flex flex-column align-items-center ps-1">
         <label for="range" class="budget-label-vip mb-2">Set Budget</label>
         <input type="range" id="range" name="range" 
                min="0" max="50000" value="0" step="500" class="me-1" >
