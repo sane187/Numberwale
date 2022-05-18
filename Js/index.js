@@ -112,10 +112,10 @@ window.addEventListener("scroll",function(){
     
     let smallnav=document.querySelector("#sm-nav-input");
    
-     if(window.pageYOffset==0 || window.pageYOffset<100){
+     if(window.pageYOffset==0 || window.pageYOffset<50){
       smallnav.classList.remove("fixed-top","py-2");
     }
-    if(window.pageYOffset>100){  
+    if(window.pageYOffset>50){  
       smallnav.classList.add("fixed-top","py-2");
      }
     }

@@ -137,8 +137,11 @@ border-radius: 50%;
   .step-row::-webkit-scrollbar-thumb {
     background-color: #FF5F01;
     border-radius: 15px;
-   
-    
+
+  }
+
+  .budget-label-vip{
+    font-size: 12px;
   }
 
   @media screen and (max-width:450px){
