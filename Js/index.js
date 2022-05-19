@@ -116,9 +116,12 @@ window.addEventListener("scroll",function(){
    
      if(window.pageYOffset==0 || window.pageYOffset<50){
       smallnav.classList.remove("fixed-top","py-2");
+      smallnav.style.boxShadow="none"
+
     }
     if(window.pageYOffset>50){  
       smallnav.classList.add("fixed-top","py-2");
+      smallnav.style.boxShadow="0 8px 6px -6px black"
      }
     }
   })

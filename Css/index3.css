@@ -62,8 +62,8 @@ nav form button:hover{
    font-weight: 600;
    border-radius: 8px;
    margin-left: 5px;
-   padding: 5px 5px !important;
-   font-size:15.5px;
+   padding: 5px 8px !important;
+   font-size:1rem;
    transition:box-shadow 0.3s ease-out !important;
    
 }
@@ -104,11 +104,27 @@ nav form button:hover{
   font-family: 'Montserrat';
 }
 .col1 .btn{
-   font-size: 14px;
+   font-size: 1rem;
+   display: flex;
+   align-items: center;
   text-transform: uppercase;
   font-family: 'Montserrat';
   border-radius: 20px;
+  
 }
+.col1 .btn span {
+  animation-name: example;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  font-size: 1.2rem;
+}
+@keyframes example {
+  0%   {opacity: 0.5;}
+  25%  {opacity: 1;}
+  50%  {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
 .col1 .btn-primary{
   background:white!important;
   border-color: white !important;
@@ -493,7 +509,7 @@ font-size: 18x;
  /* Mobile Nav*/
  .mob-logo-cont{
    height: auto;
-   width: 4rem;
+   width: 3.5rem;
    overflow: hidden;
  }
 
@@ -520,13 +536,13 @@ font-size: 18x;
   align-items: center;
 }
 
-.overlay-content h1{
-  font-size: 2rem !important;
+.overlay-content h4{
+  font-size: 1.2rem !important;
 
 }
 
 .overlay button{
-font-size: 2rem;
+font-size: 1.2rem;
 color: #F23900;
 }
 .step-icon-cont i{
@@ -747,7 +763,7 @@ font-size: 12px;
 
 @media screen and (max-width:1270px){
   .nav-link{
-    font-size: 10px;
+    font-size: 16px;
   }
   #collapseExample .vip-select{
     border:none;
@@ -832,8 +848,4 @@ font-size: 1.2rem;
 font-size: 10px;
   }
   
-
-
-
 }
-
