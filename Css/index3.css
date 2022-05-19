@@ -59,18 +59,22 @@ nav form button:hover{
   font-family: 'Roboto', sans-serif;
     color:#f44b01 !important;
    font-weight: 600;
-   text-transform: uppercase;
-   border: 1.5px solid #f44b01;
    border-radius: 8px;
    margin-left: 5px;
+   padding: 5px 5px !important;
+   font-size:16px;
+   transition:box-shadow 0.3s ease-out !important;
+   transition: border 2s;
 }
 
 .nav-link:hover{
-  background-color: #f44b01;
-  color:#fff !important;
+ 
+ box-shadow: inset 0 0 0 1px #f44b01;;
 }
 
-
+.video{
+  pointer-events: none;
+}
 
 .nav-top{
     padding: 0.6em 0;
@@ -753,6 +757,7 @@ font-size: 12px;
     background: rgba(237, 223, 196,0.3);
     font-size: 14px;
     font-family: 'Roboto',sans-serif;
+    outline: none;
 }
   .pills-content{
     margin-bottom: 0;
@@ -792,7 +797,7 @@ font-size: 1.2rem;
   }
   #myNav form input, .optional-cont input{
     box-shadow:none !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
   }
 
 }
