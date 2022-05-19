@@ -24,6 +24,7 @@ body{
   width: 100%;
   height: 100vh;
  overflow-x: hidden;
+ 
   
 }
 
@@ -66,7 +67,10 @@ nav form button:hover{
    transition:box-shadow 0.3s ease-out !important;
    
 }
-
+.discover-title{
+  font-family: 'Montserrat';
+  
+}
 .nav-link:hover{
  
  box-shadow: inset 0 0 0 1px #f44b01;;

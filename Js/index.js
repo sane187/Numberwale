@@ -101,9 +101,11 @@ window.addEventListener("scroll",function(){
     let nav=document.getElementById("navbar-top");
     if(window.pageYOffset==0){
       nav.classList.remove("fixed-top");
+      nav.style.boxShadow="none"
     }
     if(window.pageYOffset>0){  
       nav.classList.add("fixed-top");
+      nav.style.boxShadow="0 8px 6px -6px black"
      }
   })
   window.addEventListener("scroll",function(){
@@ -197,6 +199,7 @@ const eng=document.getElementById("eng-btn");
 const hin=document.getElementById("hin-btn");
 const eng1 =document.querySelector(".eng-text");
 const hin1 =document.querySelector(".hin-text");
+const headToggle=document.querySelector(".step-toggle-heading")
 
 
 
@@ -208,6 +211,7 @@ const toggleEng =()=>{
   eng1.style.display="block";
   hin1.style.display="none"
   hin.classList.remove("active")
+  headToggle.innerText="EASY STEPS TO BUY YOUR VIP NUMBER ?"
 }
 
 
@@ -215,7 +219,9 @@ const toggleEng =()=>{
 
 const toggleHin =()=>{
   if(hin.classList.length<1){ hin.classList.add("active"); hin1.style.display="block";eng.classList.remove("active"); hin.style.border
-  eng1.style.display="none"}
+  eng1.style.display="none";
+  headToggle.innerText="अपना वीआईपी नंबर खरीदने के लिए आसान कदम?"
+}
   
 }
 
