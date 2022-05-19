@@ -62,9 +62,9 @@ nav form button:hover{
    border-radius: 8px;
    margin-left: 5px;
    padding: 5px 5px !important;
-   font-size:16px;
+   font-size:15.5px;
    transition:box-shadow 0.3s ease-out !important;
-   transition: border 2s;
+   
 }
 
 .nav-link:hover{
@@ -75,6 +75,9 @@ nav form button:hover{
 .video{
   pointer-events: none;
 }
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;}
 
 .nav-top{
     padding: 0.6em 0;
