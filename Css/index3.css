@@ -125,6 +125,35 @@ nav form button:hover{
   100% {opacity: 1;}
 }
 
+.col-trust{
+  border-radius: 50px;
+background: #e0e0e0;
+box-shadow:  10px 10px 40px #e0e0e0,
+             -10px -10px 40px #bebebe;
+}
+
+.col-trust .card-link{
+  padding: 5px 12px;
+  background: black;
+  color: snow;
+  font-size: 16px;
+  border-radius: 20px;
+  width: 50%;
+}
+.col-trust .card-title{
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+.col-trust .card{
+  border-radius: 20px;
+  background-color: #fff;
+border: 1px solid #e0e0e0;}
+
+    .col-trust .card-text{
+      border-radius: 20px;
+      height: 26.5vh;
+    }
+
 .col1 .btn-primary{
   background:white!important;
   border-color: white !important;
@@ -680,7 +709,10 @@ font-size: 12px;
   .foot-r p{
     font-size: 14px;
   }
-
+  .col-trust .card-text{
+    font-size: 13px;
+    height: auto;
+  }
   .col1 hr{
     
     width: 40vw;
@@ -763,8 +795,14 @@ font-size: 12px;
 
 @media screen and (max-width:1270px){
   .nav-link{
-    font-size: 16px;
+    font-size: 14px;
   }
+  .col-trust .card-text{
+    font-size: 13px;
+   
+  }
+
+
   #collapseExample .vip-select{
     border:none;
     padding:0.4rem;
