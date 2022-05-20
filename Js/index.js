@@ -19,7 +19,7 @@ let cardSmArr=document.querySelectorAll(".card-sm-row")
     dov.classList.add("col-xl-3","col-lg-3","col-md-3","col-18","pull-up")
     dov.innerHTML= 
     `<div style="border-radius:10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
-         <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
+         <div class="d-flex justify-content-between align-items-center col-div px-2 ">
              <i class="fa-solid fa-crown"> </i>
              <h4 class="mb-0">₹3500/-</h4>
            </div>
@@ -61,7 +61,7 @@ cardSm.map(item =>{
     dov.classList.add("col-6","col-md-6","col-18","pull-up")
     dov.innerHTML= 
     `  <div style="border-radius: 10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
-    <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
+    <div class="d-flex justify-content-between align-items-center col-div px-2 my-1">
         <i class="fa-solid fa-crown"> </i> 
         <h4 class="mb-0">₹3500/-</h4>
       </div>
@@ -295,7 +295,7 @@ dov.innerHTML=
 <figure>
   <img src="./Assets/soldout.png" />
 </figure>
-<div class="d-flex justify-content-around align-items-center col-div my-1">
+<div class="d-flex justify-content-between align-items-center col-div px-2">
     <i class="fa-solid fa-crown"> </i>
     <h4 class="mb-0">₹3500/-</h4>
   </div>
@@ -338,7 +338,7 @@ let cardSmSold=document.querySelectorAll(".card-sold-sm-row")
  <figure>
    <img src="./Assets/soldout.png" />
  </figure>
- <div class="d-flex justify-content-around align-items-center col-div my-1">
+ <div class="d-flex justify-content-between align-items-center col-div px-2">
      <i class="fa-solid fa-crown"> </i>
      <h4 class="mb-0">₹3500/-</h4>
    </div>
@@ -384,7 +384,7 @@ card5.map(item =>{
     <div class="badge-bg-cont">
    <p class="mb-0 blink_me">20% <br />Off</p>
   </div>
-         <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
+         <div class="d-flex justify-content-between align-items-center col-div px-2">
              <i class="fa-solid fa-crown"> </i>
              <h4 class="mb-0">₹3500/-</h4>
            </div>
@@ -425,10 +425,8 @@ card6.map(item =>{
     dov.classList.add("col-6","col-md-6","col-18","pull-up")
     dov.innerHTML= 
     `  <div style="border-radius: 10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
-    <div class="badge-bg-cont">
-   <p class="mb-0 blink_me">20% <br />Off</p>
-  </div>
-    <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
+    <div class="ribbon ribbon-top-left"><span>ribbon</span></div>
+    <div class="d-flex justify-content-between align-items-center col-div my-1 px-2">
         <i class="fa-solid fa-crown"> </i> 
         <h4 class="mb-0">₹3500/-</h4>
       </div>

@@ -58,7 +58,7 @@ margin-left: 1.4rem;
 .col5 p{
 font-size:1.1rem ;
 }
-
+  
 
 .col4 figure{
 width: 100%;
@@ -82,6 +82,8 @@ overflow: hidden;
     height: auto;
     overflow: hidden;
 }
+
+
     @media screen and (max-width:480px){
 .col5 p{
     font-size: 14px;

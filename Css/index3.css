@@ -114,7 +114,7 @@ nav form button:hover{
 }
 .col1 .btn span {
   animation-name: example;
-  animation-duration: 1.4s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   font-size: 1.2rem;
 }
@@ -153,7 +153,10 @@ border: 1px solid #e0e0e0;}
       border-radius: 20px;
       height: 26.5vh;
     }
-
+    .btn-reset{
+      width: 40% !important;
+     
+  }
 .col1 .btn-primary{
   background:white!important;
   border-color: white !important;
@@ -300,7 +303,7 @@ footer{
      color:white;
    }
    #hard-btn{
-     font-size: 1.4rem;
+     font-size: 1.3rem;
      color:rgba(242,56,0,1);
     font-weight: bold;
     text-transform: uppercase;
@@ -569,9 +572,55 @@ font-size: 18x;
   font-size: 1.2rem !important;
 
 }
-
 .overlay button{
-font-size: 1.2rem;
+  font-size: 9px;
+}
+.cart-count{
+ margin-left: -3px;
+ margin-top: -5px;
+ font-size:14px ;
+ color: #303030;
+}
+
+.icon-banner .call{
+animation: call linear 4s infinite;
+}
+@keyframes call{
+0%   {transform: rotate(0deg);}
+25%  {transform: rotate(60deg);}
+50%  {transform: rotate(0deg);}
+100% {transform: rotate(60deg);}
+}
+.icon-banner .fav{
+  animation: fav linear 2s infinite;
+  }
+  @keyframes fav{
+  0%   {transform: scale(1.3);}
+  25%  {transform: scale(1);}
+  50%  {transform: scale(1.3);}
+  100% {transform: scale(1);}
+  }
+  .icon-banner .off{
+    animation: off linear 2s infinite;
+    }
+    @keyframes off{
+    0%   {transform: translateY(-5px);}
+    25%  {transform: translateY(0px);}
+    50%  {transform: translateY(-5px);}
+    100% {transform: translateY(0px);}
+    }
+    .icon-banner .star{
+      animation: star ease 2s infinite;
+      }
+      @keyframes star{
+      0%   {transform: rotate(0deg);}
+      25%  {transform: rotate(270deg);}
+      50%  {transform: rotate(0deg);}
+      100% {transform: rotate(270deg);}
+      }
+  
+.overlay button span{
+font-size: 1.3rem;
 color: #F23900;
 }
 .step-icon-cont i{
@@ -610,11 +659,7 @@ color: #F23900;
     border-radius: 0.25rem;
 }
 
-.nav-mob-toggler{
-  padding: 0.2rem;
-  background: white;
 
-}
 
 .budget-label{
   font-size: 1rem;
