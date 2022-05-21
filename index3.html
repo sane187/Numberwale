@@ -122,7 +122,7 @@
                     <p class="banner-subpara">
                       India's Best and Reliable prime numbers provider
                     </p>
-                    <button class="btn btn-primary">Go To Store<span class="fa-solid fa-person-running ms-2"></span></button>
+                    <button class="btn btn-primary">Go To Store</button>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-12 col-md-12 ">
@@ -584,7 +584,7 @@
 <div class="d-flex justify-content-center">
    
   <button class="border-0 d-flex flex-column align-items-center bg-white">
-    <img src="./Assets/cart.png" style="width:1.3rem" alt="cart-img">
+    <img src="./Assets/cart.png" style="width:1.4rem" alt="cart-img">
     My Cart
   </button>
   <span class="cart-count">0</span>
@@ -627,46 +627,83 @@
       </div>
     </div>
     </section>
-    <section style="position: fixed;bottom:0px;left:0px;background: #f4e0c5;border-radius:10px 10px 0 0;width: 100%;z-index:1111" id="fixed-overlay">
-      <div class="d-flex flex-column align-items-center">
-         <a class="btn py-2" id="hard-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-           Search filter <i class="fa-solid fa-filter ms-1"></i>
+    <section style="position: fixed;bottom:0px;left:0px;background: #fff;border-radius:10px 10px 0 0;width: 100%;z-index:1111" id="fixed-overlay">
+      <div class="d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-around w-100 pt-2">
+         <a class="btn foot-icon" id="hard-btn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <i class="fa-solid fa-filter"></i>
+<small >Search Filter</small>
          </a>  
-       
-       <div class="collapse py-3" id="collapseExample">
+         <a class="btn foot-icon" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button" aria-expanded="false">
+         <img src="Assets/grid.png" alt="" />
+<small>Category</small>
+         </a> 
+         <a class="btn foot-icon"  href="./vipNumber.html" role="button" aria-expanded="false" >
+          <i class="fa-solid fa-store"></i>
+ <small>Vip Number</small>
+          </a>
+          <a class="btn foot-icon" data-bs-toggle="collapse" href="" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa-solid fa-heart-circle-check"></i>
+   <small>Wishlist</small>
+            </a> 
+            <a class="btn foot-icon" data-bs-toggle="collapse" href="" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa-solid fa-user"></i>
+     <small>My Account</small>
+              </a>
+        </div>
+       <div class="collapse py-2" id="collapseExample" style="border-top: 1px solid #EDDFC4;">
          <form class="form-inline px-2 mt-4 d-flex flex-column">
-          <div class="ms-3 d-flex align-items-center">
-            <select class="vip-select">
-              <option selected>Anywhere</option>
-              <option value="Sum total">Sum Total</option>
-              <option value="Starts with">Starts with</option>
-              <option value="Ends with">Ends with</option>
-              <option value="Contains with">Contains with</option>
-              <option value="Not Contains">Not Contains</option>
+<div>
+  Number Starts With
+  <select class="ms-3 collapse-select">
+    <option selected>Select</option>
+    <option value="9">9 Series</option>
+    <option value="8">8 Series</option>
+    <option value="7">7 Series</option>
+    <option value="6">6 Series</option>
+  </select>
+</div>
+
+
+          <div class="d-flex align-items-center mt-2">
+            Number Not Contains
+            <select class="vip-select ms-2">
+              <option selected>Select</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
             </select>
-            <div class="ms-3" style="color: #0645ad; cursor: pointer" onclick="clearCategory()">
+            <div class="ms-2" style="color: #0645ad; cursor: pointer" onclick="clearCategory()">
                   Clear
               </div>
             </div>
             <div id="select-pills" class="d-flex flex-wrap"></div>
 
-<button type="button" class="btn mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #e6e6e6; width:60%; color:black;border-radius: 10px;font-weight: bold;">
- Choose categories
-</button>
-
-           <div class="d-flex align-items-center my-2 p-2" style="border:2px solid #fff">
-            <label for="range" class="text-center budget-label">Set Budget</label>
-            <input type="range" id="range" name="range" 
-                   min="0" max="50000" value="0" step="500" class="ms-3" >
-                  
-          </div>
-          
-          <div class="d-flex mt-2 px-2 align-items-center optional-cont">
-            Optional* 
-      <input class="form-control p-1 ms-2" type="search" placeholder="Number not contains" aria-label="Search">
-          </div>
-
-           <button class="btn btn-reset bg-white">RESET <i class="fa-solid fa-arrows-rotate"></i></button>
+            <div class="form-inline d-flex mt-3 align-items-center">
+         <small style="font-size:10px;white-space: nowrap !important;"> SUM-TOTAL Search</small>   
+              <input class="form-control ms-2" min="0" max="99" type="number" placeholder="Search Number" aria-label="Search" style="border:1px solid red;">
+              <button class="btn btn-outline-danger " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+             
+            <div class="d-flex align-items-center my-2 p-2" style="border:2px solid #fff">
+              <label for="range" class="text-center budget-label">Set Budget</label>
+              <input type="range" id="range" name="range" 
+                     min="0" max="50000" value="0" step="500" class="ms-3" >
+                    
+            </div>
+            
+            <section class="range-slider ">
+              <span class="rangeValues d-block"></span>
+              <input value="500" min="500" max="50000" step="500" type="range">
+              <input value="50000" min="500" max="50000" step="500" type="range">
+            </section>
        </form>
        </div>
       </div>
@@ -694,7 +731,7 @@
                     <p class="banner-subpara">
                       India's Best and Reliable prime numbers provider
                     </p>
-                    <button class="btn btn-primary">Go To Store <span class="fa-solid fa-person-running ms-2"></span></button>
+                    <button class="btn btn-primary">Go To Store</button>
                   </div>
                 </div>
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-0 ">
@@ -717,16 +754,16 @@
   
   <div class="d-flex align-items-center w-100 justify-content-center py-2 icon-banner">
     <li class="nav-item ">
-      <a class="nav-link p-1 shadow-none" href="tel:+8100180000"><span class="fa-solid fa-phone call me-2"></span>Contact</a>
+      <a class="nav-link p-1 shadow-none" href="tel:+8100180000"><span class="fa-solid fa-phone call"></span>Contact</a>
     </li> 
     <li class="nav-item ms-2">
-    <a class="nav-link p-1" href="./vipNumber.html"><span class="fa-solid fa-heart fav me-2"></span>Wishlist</a>
+    <a class="nav-link p-1" href="./vipNumber.html"><span class="fa-solid fa-heart fav "></span>Wishlist</a>
   </li> 
   <li class="nav-item ms-2">
-    <a class="nav-link p-1" href="./offer.html"><span class="fa-solid fa-sack-dollar off me-2"></span>Offer</a>
+    <a class="nav-link p-1" href="./offer.html"><span class="fa-solid fa-sack-dollar off"></span>Offer</a>
   </li>
   <li class="nav-item ms-2">
-    <a class="nav-link p-1" href="./soldOut.html"><span class="fa-solid fa-star star me-2"></span>Review</a>
+    <a class="nav-link p-1" href="./soldOut.html"><span class="fa-solid fa-star star"></span>Review</a>
   </li>
  
   </div>
@@ -999,7 +1036,7 @@
           <div class="col-12 col-md-4 col-trust">  
             <div class="card" >
               <div class="card-body">
-                <h6 class="card-title text-center">How We Deliver <i class="fa-solid fa-truck ms-1"></i></h6>
+                <h6 class="card-title text-center">How We Deliver <i class="fa-solid fa-truck ms-1" style="color:rgba(242,56,0,1) ;"></i></h6>
                 
                 <p class="card-text mt-3">Each order is processed asap
                   payment
@@ -1012,7 +1049,7 @@
           <div class="col-12 col-md-4 col-trust mt-2 mt-md-0">    
             <div class="card" >
               <div class="card-body w-100">
-                <h6 class="card-title text-center">Why Trust Us <i class="fa-solid fa-handshake-simple ms-1"></i></h6>             
+                <h6 class="card-title text-center">Why Trust Us <i class="fa-solid fa-handshake-simple ms-1" style="color:rgba(242,56,0,1)"></i></h6>             
                 <p class="card-text mt-3">We are the only #1 Oldest, Trusted
                   And
                   Reputed VIP Number Seller Across India With 13 Years Proven Track Record Of
@@ -1025,7 +1062,8 @@
           <div class="col-12 col-md-4 col-trust mt-2 mt-md-0">    
             <div class="card" >
               <div class="card-body">
-                <h6 class="card-title text-center">Secure Payment <i class="fa-solid fa-money-check-dollar ms-1"></i></h6>
+                <h6 class="card-title text-center">Secure Payment <i class="fa-solid fa-money-check-dollar ms-1"
+                  style="color:rgba(242,56,0,1)"></i></h6>
                 <p  class="card-text mt-3">We work with safe and secure
                   payment
                   options, online banking, credit/debit card, UPI, and even COD. Your money is
