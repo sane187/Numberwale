@@ -688,22 +688,19 @@
 
             <div class="form-inline d-flex mt-3 align-items-center">
          <small style="font-size:10px;white-space: nowrap !important;"> SUM-TOTAL Search</small>   
-              <input class="form-control ms-2" min="0" max="99" type="number" placeholder="Search Number" aria-label="Search" style="border:1px solid red;">
+              <input class="form-control ms-2" min="0" max="99" type="number" placeholder="Sum total search" aria-label="Search" style="border:1px solid red;">
               <button class="btn btn-outline-danger " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
              
-            <div class="d-flex align-items-center my-2 p-2" style="border:2px solid #fff">
-              <label for="range" class="text-center budget-label">Set Budget</label>
-              <input type="range" id="range" name="range" 
-                     min="0" max="50000" value="0" step="500" class="ms-3" >
-                    
+            <div class="d-flex flex-column mt-2" >
+              <h6>Set budget</h6>
+              <div class="rangeslider">
+                <input class="min" name="range_1" type="range" min="1" max="500000" value="1" />
+                <input class="max" name="range_1" type="range" min="1" max="500000" value="500000" />
+                <span class="range_min light left">0</span>
+                <span class="range_max light right">500000</span>
             </div>
-            
-            <section class="range-slider ">
-              <span class="rangeValues d-block"></span>
-              <input value="500" min="500" max="50000" step="500" type="range">
-              <input value="50000" min="500" max="50000" step="500" type="range">
-            </section>
+
        </form>
        </div>
       </div>
@@ -1138,7 +1135,6 @@
     <script src="./Js/js/bootstrap.min.js"></script>
     <script src="./Js/index.js" ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <script>
       AOS.init({
          duration:1000}
