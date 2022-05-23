@@ -112,18 +112,7 @@ nav form button:hover{
   border-radius: 20px;
   
 }
-.col1 .btn span {
-  animation-name: example;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  font-size: 1.2rem;
-}
-@keyframes example {
-  0%   {opacity: 0.5;}
-  25%  {opacity: 1;}
-  50%  {opacity: 0.5;}
-  100% {opacity: 1;}
-}
+
 
 .col-trust{
   border-radius: 50px;
@@ -244,27 +233,6 @@ height: 50px;
 .carousel-indicators button.active{
     background-color: #1ee01eb0;
 }
-.hero-bext-container h1{
-   font-size: 72px;
-   line-height: 68px;
-}
-.hero-bext-container .animated-num{
-    font-size: 70px;
-    line-height: 60px;
-    animation-name: example;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-   color: #fff
- }
- 
-  @keyframes example {
-    0%   {opacity:0;}
-    25%  {opacity:0.2;}
-    50%  {opacity:0.8;}
-    100% {opacity:1;}
-  }
-
-
 
   .small-text{
       font-size:15px
@@ -308,6 +276,7 @@ footer{
      box-shadow: none !important;
      outline: none !important;
      padding:0 !important;
+    
    }
 .foot-icon i{
 color:rgba(242,56,0,1);
@@ -317,7 +286,7 @@ font-size: 1.3rem;
 }
 
 .foot-icon small{
-  display: block;
+ display: block;
   font-size: 10px;
 
 }
@@ -895,6 +864,10 @@ input[type='range']:nth-child(1)::-webkit-slider-thumb{
     position: absolute;
     margin-top: 30px;
     left: 0;
+    padding: 5px;
+    background-color: #053a5f;
+    color: white ;
+    border-radius: 5px;
 }
 
 .rangeslider .right{

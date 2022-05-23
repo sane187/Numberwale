@@ -425,9 +425,10 @@ card6.map(item =>{
     dov.classList.add("col-6","col-md-6","col-18","pull-up")
     dov.innerHTML= 
     `  <div style="border-radius: 10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
-    <div class="ribbon ribbon-top-left"><span>ribbon</span></div>
-    <div class="d-flex justify-content-between align-items-center col-div my-1 px-2">
+    
+    <div class="d-flex justify-content-around align-items-center col-div my-1 px-1">
         <i class="fa-solid fa-crown"> </i> 
+        <div class="ribbon "><span>20% off</span></div>
         <h4 class="mb-0">₹3500/-</h4>
       </div>
 <div class="d-flex flex-column bg-cont">
@@ -477,4 +478,33 @@ max.addEventListener("change",function(e){
   let val=e.target.value;
 range_max.innerText=val
   })
+
+
+  const hardBtn=document.querySelector("#hard-btn");
+  const colNone=document.querySelectorAll(".collapse-none");
+  const cont=document.querySelector(".collapse-icon-cont");
+  const mark=document.querySelector(".x-none-mark");
+
+  const colNoneArr=[...colNone];
+  console.log(colNoneArr);
+  let bool=false;
+  hardBtn.addEventListener("click",function(){
+   
+    if(!bool){
+    colNoneArr.forEach(item=>item.style.display="none");
+    cont.classList.remove("justify-content-around");
+    cont.classList.add("ps-2");
+    mark.style.display="block"
+
+    bool=true;
+  }
+  else{
+    colNoneArr.forEach(item=>item.style.display="block");
+    cont.classList.add("justify-content-around");
+    cont.classList.remove("ps-2");
+    mark.style.display="none"
+    bool=false;
+  }
+  })
+  
   
