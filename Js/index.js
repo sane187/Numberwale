@@ -159,7 +159,7 @@ let filterArr=[];
 
 select.addEventListener("change",function(event){
   const val=event.target.value;
-  if(!filterArr.includes(val))
+  if(!filterArr.includes(val) )
   {filterArr.push(val);
   pillsDisplay();
 }
@@ -494,7 +494,7 @@ range_max.innerText=val
     colNoneArr.forEach(item=>item.style.display="none");
     cont.classList.remove("justify-content-around");
     cont.classList.add("ps-2");
-    mark.style.display="block"
+    mark.style.display="inline-block"
 
     bool=true;
   }
