@@ -976,23 +976,23 @@ font-size: 10px;
 .Trust .trust-title {
   text-align: center;
   margin-top: 10px;
-  font-family: var(--font);
-  color: var(--main-color);
+ font-family: 'Roboto',sans-serif;
+  color: #f44b01;
   font-weight: 700;
 }
 .trust-title .fa-solid {
   margin-left: 6px;
 }
 .trust-english {
-  font-family: var(--font);
+ 
   color: #000;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.06rem;
   line-height: 30px;
   margin-bottom: 0 !important;
 }
 .trust-hindi {
-  font-family: var(--font);
+
   color: #000;
   text-align: left;
   font-size: 1.1rem;
@@ -1000,13 +1000,16 @@ font-size: 10px;
   margin-top: 10px;
 }
 .trust-image {
-  display: flex;
-  justify-content: center;
+ width: 100%;
+ height: 20rem;
+ overflow: hidden;
 }
-.trust-image img {
-  width: 70%;
-  height: 100%;
+.trust-image img{
+width:100%;
+height:100%
+
 }
+
 /* testimonail section */
 .testimonial .testimonial-title {
   text-align: center;
@@ -1063,28 +1066,36 @@ font-size: 10px;
 .back .btn:focus {
   box-shadow: none !important;
 }
-.swiper-pagination-bullet-active {
-  background:#f44b01 !important;
-}
+
 .testimonial-image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .testimonial-image img {
-  width: 30vw;
-  height: 40vh;
+  width: 100%;
+  height: 44vh;
 }
 .owl-dots {
   display: none;
 }
 .owl-nav {
   color:#f44b01 !important;
-  font-size: 40px;
   margin-top: 0 !important;
+  height: auto;
 }
 .owl-carousel {
   height: auto;
+}
+.owl-prev span,.owl-next span{
+  max-height: 1rem;
+  padding-top: 0;
+  font-size:3rem;
+}
+
+.owl-prev:hover,.owl-next:hover{
+  color:#f44b01 !important;
+  background: white !important;
 }
 
 @media screen and (min-width: 786px) and (max-width: 992px) {
@@ -1092,9 +1103,9 @@ font-size: 10px;
   .trust-hindi {
     font-size: 0.9rem;
   }
-  .trust-image img {
-    width: 50%;
-    height: 50%;
+  .trust-image{
+    width: 80%;
+    height:40vh;
   }
   .testimonial-image {
     display: none;
@@ -1111,9 +1122,9 @@ font-size: 10px;
     font-size: 0.7rem;
     line-height: 25px;
   }
-  .trust-image img {
-    width: 40%;
-    height: 40%;
+  .trust-image{
+    width: 100%;
+   height: 20vh;
   }
   .testimonial-image {
     display: none;
@@ -1129,8 +1140,8 @@ font-size: 10px;
     font-size: 0.7rem;
     line-height: 25px;
   }
-  .trust-image img {
-    width: 70%;
+  .trust-image {
+    width: 100%;
     height: auto;
   }
   .testimonial-image {
