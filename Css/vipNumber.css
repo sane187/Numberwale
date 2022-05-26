@@ -25,7 +25,7 @@ body{
 
 .filter-cont a{
     color: #000;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 
@@ -57,54 +57,23 @@ body{
 
 
 .categories-cont{
-    padding: 1rem;
+    padding: 10px 5px;
     background: #fff;
 }
 
 .category-name{
-    padding :0.7rem 1.4rem;
+    padding:0.45rem 0.5rem;
     background:#f3f1f6;
     font-size:1rem;
     transition:all 0.2s;
     font-family: 'Roboto',sans-serif;
 }
-.category-name:hover{
-    transform: scale(1.1);
-    background:linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
-    color: white;
-}
 
-.step-row span{
-padding: 0 0.8rem;
-font-size: 1rem;
-background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);
-color: white;
-line-height: 34px;
-border-radius: 50%;
-}
+
 
 
   .col-18{
     border-radius: 12px;
-  }
-  .step-row{overflow-x:auto;min-width:100% !important;  }
-
-  .step-row .bg{
-    min-width:100% !important;
-    font-weight: bold;
-
-   }
-   .step-row::-webkit-scrollbar {
-    background-color: #fff;
-    border-radius: 15px;
-    border: 2px solid #e6e6e6;
-    box-shadow: grey 0px 4px 4px 0px;
-    
-  }
-  .step-row::-webkit-scrollbar-thumb {
-    background-color: #FF5F01;
-    border-radius: 15px;
-
   }
 
   .budget-label-vip{

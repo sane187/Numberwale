@@ -13,6 +13,8 @@
           margin: 0;
           background-repeat: no-repeat;
           background-attachment: fixed;
+          width: 100%;
+          overflow-x: none;
     
   }
 
@@ -35,9 +37,9 @@
   }
   .wrapper-2 h1{
       font-family: 'Kaushan Script', cursive;
-    font-size:6rem;
+    font-size:3.2rem;
     letter-spacing:3px;
-    color:#F78002 ;
+    color:#fff ;
     margin:0;
     margin-bottom:20px;
   }
@@ -50,7 +52,7 @@
   }
   .go-home{
     color:#fff;
-    background:#F78002;
+    background:#FF6401;
     border:none;
     padding:10px 50px;
     margin:30px 0;
@@ -73,10 +75,33 @@
   }
   .footer-like p a{
     text-decoration:none;
-    color:#F78002;
+    color:#FF6401;
     font-weight:600;
   }
 
 
     
-  
+  .rotate{
+    animation: rot linear 3s infinite;
+  color:#FF6401;
+  font-size:25rem;
+  }
+
+  @keyframes rot {
+    0% { transform: rotate(0deg); }
+    25%{transform: rotate(150deg);}
+    50%{transform: rotate(250deg);}
+    75%{transform: rotate(360deg);}
+    100% {transform: rotate(480deg);}
+  }
+
+  @media screen and (max-width:508px){
+    .rotate{
+
+font-size: 15rem;
+    }
+    .wrapper-2 h1{
+      font-size: 2.6rem;
+    }
+  }
+
