@@ -168,6 +168,7 @@ select.addEventListener("change",function(event){
 const clearCategory=()=>{
   filterArr.splice(0,filterArr.length);
   pills.innerHTML="";
+  select.selectedIndex=0
   
 }
 
@@ -194,6 +195,54 @@ pillDiv.className="pill-div";
   pillDiv.append(p);
   pillDiv.append(btn);
   pills.append(pillDiv);
+  
+})
+}
+
+//--------------------------------------------------
+const select2=document.querySelector(".vip-select-2");
+const pills2=document.querySelector("#select-pills-2");
+
+let filterArr2=[];
+
+select2.addEventListener("change",function(event){
+  const val=event.target.value;
+  if(!filterArr2.includes(val) )
+  {filterArr2.push(val);
+  pillsDisplay2();
+}
+})
+
+const clearCategory2=()=>{
+  filterArr2.splice(0,filterArr2.length);
+  pills2.innerHTML="";
+  select2.selectedIndex=0
+  
+}
+
+const pillsDisplay2 =()=>{
+  pills2.innerHTML="";
+filterArr2.forEach((item,index)=>{
+
+  const pillDiv=document.createElement("div");
+pillDiv.className="pill-div";
+
+  const p=document.createElement("p");
+  p.innerText=item;
+  p.className="pills-content";
+  const btn=document.createElement("button")
+  btn.innerText="X";
+  btn.classList.add("pill-btn",`${index}`); 
+  btn.addEventListener('click', function(e){
+    let rmv = e.target.classList[1];
+    if (rmv > -1) {
+      filterArr2.splice(rmv, 1);}
+      pillsDisplay2();
+  }
+  );
+  pillDiv.append(p);
+  pillDiv.append(btn);
+  pills2.append(pillDiv);
   
 })
 }

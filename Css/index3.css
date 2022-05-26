@@ -817,6 +817,33 @@ input[type='range']::-moz-range-thumb {
 }
 
 }
+.pills-content{
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+ }
+
+.pill-div{
+
+padding: 2px 4px;
+border-radius: 10px;
+border: 1.5px solid #053a5f; 
+margin-top:10px;
+margin-left: 6px;
+display: flex;
+align-items: center;
+}
+.pill-div button{
+border: none;
+background: transparent;
+font-size: 12px;
+margin-left: 6px;
+font-weight: bold;
+}
+
+ #select-pills .pill-div:nth-child(1){
+margin-left: 0px;
+ }
 
 
 
@@ -851,33 +878,7 @@ input[type='range']::-moz-range-thumb {
     font-family: 'Roboto',sans-serif;
     outline: none;
 }
-  .pills-content{
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: bold;
-   }
 
-.pill-div{
-  
-  padding: 2px 4px;
-  border-radius: 10px;
-  border: 1.5px solid #053a5f; 
-  margin-top:10px;
-  margin-left: 6px;
-  display: flex;
-  align-items: center;
-}
-.pill-div button{
-  border: none;
-  background: transparent;
-  font-size: 12px;
-  margin-left: 6px;
- font-weight: bold;
-}
-
-   #select-pills .pill-div:nth-child(1){
-margin-left: 0px;
-   }
 
 }
 
@@ -930,10 +931,37 @@ font-size: 10px;
   .col3 .discover-title{
     font-size: 1.2rem;
   }
+  .pills-content{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+   }
 
+.pill-div{
+  
+  padding: 2px 4px;
+  border-radius: 10px;
+  border: 1.5px solid #053a5f; 
+  margin-top:10px;
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+}
+.pill-div button{
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  margin-left: 6px;
+ font-weight: bold;
+}
+
+   #select-pills .pill-div:nth-child(1){
+margin-left: 0px;
+   }
   
 }
 
+/* This is a single-line comment ............................................. */
 .Trust .trust-title {
   text-align: center;
   margin-top: 10px;

@@ -70,8 +70,6 @@
          </div>
        </nav>
      </header>
-
-
 <section style="background:#fff;margin-top: 1.5rem;">
   <div class="container-fluid" >
     <div class="row align-items-center">
@@ -106,55 +104,62 @@
 <section class="px-1">
     <div class="container-fluid">
         <div class="row mb-3" >
-            <div class="col-xl-3 col-lg-3  d-none d-lg-block">
-                <div class="d-flex flex-column" style="border:1.5px solid #f3f1f6;">
-<div style="background: linear-gradient(to bottom, rgba(242,56,0,1) 0%, rgba(247,129,2,1) 100%);color: white;padding:0.6rem;"><h5 class="mb-0">CATEGORIES</h5></div>
-<div class="d-flex flex-column categories-cont">
-
+            <div class="col-xl-3 col-lg-3 gx-0">
+                <div class="d-flex flex-column p-2" style="border:2px solid #EDDFC4;">
+                  <h6 class="fw-bold">Sum Total Search</h6>
+                  <div class="form-inline d-flex mt-1 align-items-center">
+                    <input class="form-control" min="0" max="99" type="number" placeholder="Sum total search" aria-label="Number" style="border:1px solid orangered;">
+                    <button class="btn btn-outline-danger   " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+                  <div class="d-flex align-items-center mt-2">
+                    <h6 class="mb-0 text-nowrap">Number Starts With</h6>
+                  <select class="ms-3 collapse-select w-100">
+                    <option selected disabled>Select</option>
+                    <option value="9">9 Series</option>
+                    <option value="8">8 Series</option>
+                    <option value="7">7 Series</option>
+                    <option value="6">6 Series</option>
+                  </select>
+                </div>
+                <div class="d-flex align-items-center mt-2 ">
+                  <h6 class="mb-0 text-nowrap">Number Not Contains</h6>    
+                  <select class="ms-2 vip-select-2 w-100">
+                    <option disabled selected>Select</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+                  <div class="ms-2" style="color: #0645ad; cursor: pointer" onclick="clearCategory2()">
+                        Clear
+                    </div>
+                  </div>
+                  <div id="select-pills-2" class="d-flex flex-wrap"></div>
+<div class="mt-2">
+  <h6>Categories</h6>
+  <div class="categories-cont"></div>
 </div>
-
                 </div>
             </div>
 
-            <div class="col-xl-9 col-lg-9 col-md-12 px-0">
+            <div class="col-xl-9 col-lg-9 col-md-12">
                <div class="d-flex flex-column">
                     
-<div class="px-2">
- 
-  <form class="form-inline my-0 my-lg-2 d-flex">
-    
-  <input class="form-control " type="search" placeholder="Search Number" aria-label="Search">
-  <button class="btn btn-outline-danger " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-</form>
 
+
+<div class="d-flex filter-cont align-items-center mt-2">
+  <button>Sort By <span class="fa-solid fa-filter ms-1"></span></button> <a href="" class="ms-2">Price Low to High</a> <a href="">Price High to Low</a>
 </div>
 
-<div class="d-flex mt-2 align-items-center mb-3">
-<div class="d-flex filter-cont align-items-center ">
-  <button>Sort By <span class="fa-solid fa-filter ms-1"></span></button> <a href="">Price Low to High</a> <a href="">Price High to Low</a>
-</div>
- <div class="ms-3 d-flex align-items-center">
-<select class="vip-select-2">
-  <option selected>Anywhere</option>
-  <option value="Sum total">Sum Total</option>
-  <option value="Starts with">Starts with</option>
-  <option value="Ends with">Ends with</option>
-  <option value="Contains with">Contains with</option>
-  <option value="Not Contains">Not Contains</option>
-</select>
-</div>
-<div class="ms-3">Set Budget</div>
-<div class="rangeslider ms-2">
-  <input class="min" name="range_1" type="range" min="0" max="10000000" value="0" />
-  <input class="max" name="range_1" type="range" min="0" max="10000000" value="10000000" />
-  <span class="range_min light left">0</span>
-  <span class="range_max light right">10000000</span>
-</div>
 
-</div>
-<div id="select-pills" class="d-flex"></div>
-  <section  style="background: #fff; padding: 1rem 0rem;border-radius: 12px;">
-    <div class="w-100 px-2">   
+  
+    <div class="w-100 px-2 mt-2">   
       <div class="row g-2 card-vip-row">
       </div>
         <div class="row">
@@ -165,7 +170,7 @@
         </div>
 
     </div>
-    </section>
+   
 
                </div>
 
@@ -173,11 +178,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
 
 <footer class="footer">
   <div class="container-fluid">
