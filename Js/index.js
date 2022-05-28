@@ -1,5 +1,5 @@
-let menuButton=document.querySelector(".nav-mob-toggler");
-let overlayDiv=document.querySelector(".overlay-content");
+
+
 let cardArr=document.querySelectorAll(".card-row")
 let cardSmArr=document.querySelectorAll(".card-sm-row")
  const card=[...cardArr];
@@ -96,109 +96,6 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
 })
 
 //------------------------------------------------------------------------------------------------------//
-let showMenu = false;
-window.addEventListener("scroll",function(){
-    let nav=document.getElementById("navbar-top");
-    if(window.pageYOffset==0){
-      nav.classList.remove("fixed-top");
-      nav.style.boxShadow="none"
-    }
-    if(window.pageYOffset>0){  
-      nav.classList.add("fixed-top");
-      nav.style.boxShadow="0 8px 6px -6px black"
-     }
-  })
-  window.addEventListener("scroll",function(){
-    if (window.matchMedia("(max-width: 992px)").matches) {
-    
-    
-    let smallnav=document.querySelector("#sm-nav-input");
-   
-     if(window.pageYOffset==0 || window.pageYOffset<50){
-      smallnav.classList.remove("fixed-top","py-2");
-      smallnav.style.boxShadow="none"
-
-    }
-    if(window.pageYOffset>50){  
-      smallnav.classList.add("fixed-top","py-2");
-      smallnav.style.boxShadow="0 8px 6px -6px black"
-     }
-    }
-  })
-
-
-const toggleMenu =()=>{
-    let menuBtn=document.getElementById("nav-mob-icon");
-
-    if(showMenu==false){
-    
-        menuBtn.classList.remove("fa-bars");
-        menuBtn.classList.add("fa-xmark");
-        overlayDiv.style.width="100vw";
-        overlayDiv.style.height="100%";
-       showMenu =true;
-    }
-   else{
-    
-    menuBtn.classList.add("fa-bars");
-    menuBtn.classList.remove("fa-xmark");
-    overlayDiv.style.width=0;
-    overlayDiv.style.height="0";
-   showMenu =false;
-   }
-  
-}
-
-menuButton.addEventListener("click", toggleMenu);
-
-
-const select=document.querySelector(".vip-select");
-const pills=document.querySelector("#select-pills");
-
-let filterArr=[];
-
-select.addEventListener("change",function(event){
-  const val=event.target.value;
-  if(!filterArr.includes(val) )
-  {filterArr.push(val);
-  pillsDisplay();
-}
-})
-
-const clearCategory=()=>{
-  filterArr.splice(0,filterArr.length);
-  pills.innerHTML="";
-  select.selectedIndex=0
-  
-}
-
-const pillsDisplay =()=>{
-  pills.innerHTML="";
-filterArr.forEach((item,index)=>{
-
-  const pillDiv=document.createElement("div");
-pillDiv.className="pill-div";
-
-  const p=document.createElement("p");
-  p.innerText=item;
-  p.className="pills-content";
-  const btn=document.createElement("button")
-  btn.innerText="X";
-  btn.classList.add("pill-btn",`${index}`); 
-  btn.addEventListener('click', function(e){
-    let rmv = e.target.classList[1];
-    if (rmv > -1) {
-      filterArr.splice(rmv, 1);}
-      pillsDisplay();
-  }
-  );
-  pillDiv.append(p);
-  pillDiv.append(btn);
-  pills.append(pillDiv);
-  
-})
-}
-
 
 const select2=document.querySelector(".vip-select-2");
 const pills2=document.querySelector("#select-pills-2");
@@ -470,51 +367,7 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
   })
 })
 
-let min=document.querySelector(".min")
-let max=document.querySelector(".max")
-let range_min=document.querySelector(".range_min")
-let range_max=document.querySelector(".range_max")
 
-
-
-
-min.addEventListener("change",function(e){
-let val=e.target.value;
-range_min.innerText=val
-
-})
-max.addEventListener("change",function(e){
-  let val=e.target.value;
-range_max.innerText=val
-  })
-
-
-  const hardBtn=document.querySelector("#hard-btn");
-  const colNone=document.querySelectorAll(".collapse-none");
-  const cont=document.querySelector(".collapse-icon-cont");
-  const mark=document.querySelector(".x-none-mark");
-
-  const colNoneArr=[...colNone];
-  
-  let bool=false;
-  hardBtn.addEventListener("click",function(){
-   
-    if(!bool){
-    colNoneArr.forEach(item=>item.style.display="none");
-    cont.classList.remove("justify-content-around");
-    cont.classList.add("ps-2");
-    mark.style.display="inline-block"
-
-    bool=true;
-  }
-  else{
-    colNoneArr.forEach(item=>item.style.display="block");
-    cont.classList.add("justify-content-around");
-    cont.classList.remove("ps-2");
-    mark.style.display="none"
-    bool=false;
-  }
-  })
   let wishArr=[1,2]
   let cardWish1=document.querySelectorAll(".card-wish-row");
   const cardWish=[...cardWish1];
@@ -558,38 +411,3 @@ range_max.innerText=val
     item.appendChild(dov);
     })
   })
-
-  let Hindi = document.querySelector(".hindi");
-  let English = document.querySelector(".english");
-  let title = document.querySelector(".trust-title");
-  let para = document.querySelector(".trust-details");
-  English.addEventListener("click", ChangeToEnglish);
-  Hindi.addEventListener("click", ChangeToHindi);
-  function ChangeToHindi() {
-    title.innerHTML = `कोई विश्वास मुद्दा है <span class="fa-solid fa-circle-question"></span>`;
-    para.innerHTML = `<p> वीआईपी नंबर स्टोर पूरे भारत में एक ऐसी कंपनी के रूप में जानी जाती है जो प्रदान करती है   2010 से मूल्यवान और उच्च गुणवत्ता वाली सेवाएं। आठ वर्षों के लिए हम
-           में हमारे ग्राहकों को 10,000+ से अधिक नंबर सफलतापूर्वक बेचे हैं  भारत और कभी भी अपने आप को कुशलता से सेवा करने से नहीं रोका। यदि
-           आप अपना पसंदीदा मोबाइल नंबर या फैंसी नंबर खरीदना चाहते हैं
-           आपकी पसंद, VIP नंबर स्टोर सबसे अच्छा ब्रांड ऑफरिंग है जैसे
-           देश में सबसे सस्ती दरों पर सेवा।</p> <p>
-             हमारी सफलता और उपलब्धियों को दीर्घावधि द्वारा निर्धारित किया जा सकता है
-           भारत में कई वीआईपी के साथ हमारे संबंध हैं, जिनके पास है
-           हमसे खुशी-खुशी फैंसी, असाधारण दिखने वाली संख्याएँ ली गईं।</p>`;
-  }
-  function ChangeToEnglish() {
-    title.innerHTML = `Have Any Trust Issue <span class="fa-solid fa-circle-question"></span>`;
-    para.innerHTML = `<p>
-           VIP NUMBER STORE is known across India as a company that provides
-           valuable and high quality services since 2010. For eight years we
-           have successfully sold over 10,000+ number to our customers in
-           India and have never stopped our self from serving efficiently. If
-           you want to buy your favorite mobile number or a fancy number of
-           your choice, VIP Number Store is the best brand offering such
-           service at the most affordable rates in the country.
-         </p>
-         <p>
-           Our success and achievements could be determined by the long-term
-           relations that we have with numerous VIP's in India, who have
-           happily taken fancy, extraordinary looking numbers from us.
-         </p>`;
-  }

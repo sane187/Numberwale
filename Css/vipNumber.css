@@ -25,7 +25,7 @@ body{
 
 .filter-cont a{
     color: #000;
-    font-size: 0.7rem;
+    
     font-weight: bold;
 }
 
@@ -128,4 +128,7 @@ width: 1rem;
  right:35% !important;
  border-radius: 4px;
   }
+  .filter-cont a{
+    font-size: 0.7rem; 
+}
 }
