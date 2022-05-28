@@ -148,6 +148,7 @@
       Number Starts With
       <select class="ms-3 collapse-select">
         <option selected disabled>Select</option>
+        <option value="9">All Series</option>
         <option value="9">9 Series</option>
         <option value="8">8 Series</option>
         <option value="7">7 Series</option>
@@ -179,7 +180,8 @@
                 <div class="mt-2 pb-1 "> SUM-TOTAL Search</div>  
                 <div class="form-inline d-flex mt-1 align-items-center">
               
-                  <input class="form-control" min="0" max="99" type="number" placeholder="Sum total search" aria-label="Number" style="border:1px solid red;">
+       
+        <input class="form-control" min="0" max="99" type="number" placeholder="Sum total search" aria-label="Number" style="border:1px solid red;" oninput="format(this)">
                   <button class="btn btn-outline-danger " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
                  
@@ -187,7 +189,7 @@
                   <h6>SET BUDGET</h6>
                  
                 <section class="range-slider">
-                    <span class="rangeValues "></span>
+                    <span class="rangeValues"></span>
                     <input value="0" min="0"  max="10000000" step="1000" type="range" />
                     <input value="10000000" min="0" max="10000000" step="1000" type="range"/>
                   </section>
@@ -299,7 +301,7 @@ pillDiv.className="pill-div";
       var slides = parent.getElementsByTagName("input");
       var slide1 = parseFloat(slides[0].value);
       var slide2 = parseFloat(slides[1].value);
-console.log(slides)
+
       // Neither slider will clip the other, so make sure we determine which is larger
       if (slide1 > slide2) {
         var tmp = slide2;
@@ -355,7 +357,17 @@ console.log(slides)
   }
   })
 </script>
-        
+<script>
+  function format(input){
+    if(input.value < 0) input.value=Math.abs(input.value);
+    if(input.value.length > 2) input.value = input.value.slice(0, 2);
+    $(input).blur(function() {
+       // if(input.value.length == 1) input.value=0+input.value;
+       // if(input.value.length == 0) input.value='01';
+       //* if you want to allow insert only 2 digits *//
+    });
+}
+  </script>
 </body>
 
 </html>

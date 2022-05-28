@@ -96,14 +96,6 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
 })
 
 //------------------------------------------------------------------------------------------------------//
-
-const select2=document.querySelector(".vip-select-2");
-const pills2=document.querySelector("#select-pills-2");
-
-let filterArr2=[];
-
-
-
 const eng=document.getElementById("eng-btn");
 const hin=document.getElementById("hin-btn");
 const eng1 =document.querySelector(".eng-text");

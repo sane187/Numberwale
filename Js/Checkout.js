@@ -37,7 +37,6 @@ const checkout = [
         `;
   });
   newData = newData.join("");
-  console.log(newData);
   data.innerHTML = newData;
   /* function to get total price */
   const sum = checkout.reduce((accumulator, object) => {

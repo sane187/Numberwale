@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="./Assets/logo.png">
     <link rel="stylesheet" type="text/css" href="./Css/vipNumber.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="./Css/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Css/css/bootstrap.min.css" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="./Css/index3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -44,7 +44,13 @@
     <div class="container-fluid">
         <div class="row mb-3" >
             <div class="col-xl-3 col-lg-3">
-                <div class="d-flex flex-column p-2 pt-4" style="border:2px solid #EDDFC4; box-shadow: 0 0 10px #000;border-radius: 5px;">
+              <form>
+              <div class="mb-2 reset-div" style="display:none;">
+                <button style="border-radius:5px;width:100% ;" class="col-btn fw-bold py-1"
+                type="reset">
+                 RESET<i class="fa-solid fa-arrows-rotate ms-2"></i> </button>
+              </div>
+                <div class="d-flex flex-column p-2 pt-4 vip-col-filter" style="border:2px solid #EDDFC4; box-shadow: 0 0 10px #000;border-radius: 5px;">
                   <h6 class="">SUM-TOTAL Search</h6>
                   <div class="form-inline d-flex align-items-center">
                     <input class="form-control" min="0" max="99" type="number" placeholder="Sum total search" aria-label="Number" style="border:1px solid orangered;" oninput="format(this)">
@@ -102,6 +108,7 @@
   <div class="categories-cont"></div>
 </div>
                 </div>
+                </form>
             </div>
 
             <div class="col-xl-9 col-lg-9 col-md-12 gx-1">
@@ -247,7 +254,12 @@ arr1.forEach((element,index) =>{
 
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>select2.addEventListener("change",function(event){
+    <script>
+      const select2=document.querySelector(".vip-select-2");
+const pills2=document.querySelector("#select-pills-2");
+
+let filterArr2=[];
+    select2.addEventListener("change",function(event){
       const val=event.target.value;
       if(!filterArr2.includes(val) )
       {filterArr2.push(val);
@@ -305,6 +317,23 @@ arr1.forEach((element,index) =>{
     });
 }
   </script>
+<script>
+  let vipColFilter= document.querySelector(".vip-col-filter");
+  let resetDiv= document.querySelector(".reset-div");
+  const {display} = window.getComputedStyle(resetDiv, null);
+
+  resetDiv.addEventListener("click",function(){
+   resetDiv.style.display="none";
+  })
+
+  vipColFilter.addEventListener("input",function(){
+    if(resetDiv.style.display=="none"){
+      resetDiv.style.display="block";
+    }
+  })
+ 
+  </script>
+
 </body>
 
 

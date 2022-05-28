@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="./Css/sign.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="d-none d-lg-block">
+      <div class="wrapper p-5">
+        <div class="sign-container mx-3">
+          <div class="container-fluid p-3">
+            <div class="row align-items-center">
+              <div class="col-xl-6 col-lg-6">
+                <div class="image-column">
+                  <img src="./Assets/sign.svg" />
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6">
+                <div class="sign-section p-4">
+                  <div class="d-flex justify-content-around align-items-center">
+                    <h2 class="link-title">Don't have an account?</h2>
+                    <button class="btn btn-primary">Register</button>
+                  </div>
+                  <div class="welcome-message my-5">
+                    <h2 class="text-center">Hello ! Welcome back.</h2>
+                    <p>
+                      There is no need to remember a password, All you need is your
+                      Email and Mobile Number.
+                    </p>
+                  </div>
+                  <div class="sign-form" action="javascript:void(0);">
+                    <div class="mb-3">
+                      <label for="Email" class="form-label"
+                        >Email Address or Mobile Number</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email or Number"
+                      />
+                      <input
+                        type="text"
+                        class="p-1 mt-2 otp-inp"
+                        placeholder="Enter OTP" style="width:40%; border-radius:2px;border: 1px solid #ced4da;outline: none;display: none;"
+                      />
+                    </div>
+                    <button class="btn btn-primary btn-otp" type="button">Get OTP</button>
+                  </div>
+                  <h3>Don't have account ? <a href="">Sign Up</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-block d-lg-none">
+      <div class="wrapper p-1">
+        <div class="sign-container mx-3">
+          <div class="sign-section p-4">
+            <div class="d-flex justify-content-around align-items-center">
+              <h2 class="link-title">Don't have an account?</h2>
+              <button class="btn btn-primary">Register</button>
+            </div>
+            <div class="welcome-message mt-5 mb-5">
+              <h2 class="text-center">Hello ! Welcome back.</h2>
+              <p>
+                There is no need to remember a password, you need is your email
+                address or mobile number
+              </p>
+            </div>
+            <div class="sign-form">
+              <div class="mb-3">
+                <label for="Email" class="form-label">Email address or Mobile</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email or Number"
+                />
+                <input
+                type="text"
+                class="p-1 mt-2 otp-sm-inp"
+                placeholder="Enter OTP" style="width:40%; border-radius:4px;border: 1px solid #ced4da;outline: none;display: none;"
+              />
+              </div>
+              <button class="btn btn-primary btn-sm-otp">Get OTP</button>
+            </div>
+            <h3>Don't have account ? <a href="">Sign Up</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+     let btn=document.querySelector(".btn-otp");
+     let inp=document.querySelector(".otp-inp");
+     let btnSm=document.querySelector(".btn-sm-otp");
+     let inpSm=document.querySelector(".otp-sm-inp");
+
+     btn.addEventListener("click",function(){
+   console.log(inp)
+          inp.style.display="block";
+     })
+     btnSm.addEventListener("click",function(){
+   console.log(inp)
+          inpSm.style.display="block";
+     })
+    </script>
+  </body>
+</html>
