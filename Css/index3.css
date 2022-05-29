@@ -127,6 +127,7 @@ nav form button:hover{
     padding:0 !important;
    
   }
+
 .foot-icon i{
 color:rgba(242,56,0,1);
 font-weight: bold;
@@ -1102,7 +1103,8 @@ margin-left: 0px;
   width: auto;
   height: auto;
   background-color: #fafafa;
-  border: 5px solid #f44b01;
+  border: 2.5px solid #f44b01;
+  border-radius: 5px;
 }
 .ReviewByUser {
   display: flex;
@@ -1146,13 +1148,13 @@ margin-left: 0px;
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  left: 90% !important;
+  left: 78% !important;
 }
 #carouselExampleControls-Desktop .carousel-control-next {
   background-color: #f44b01 !important;
   width: 40px !important;
   height: 40px !important;
-  margin-right: 15px;
+  right: 15%;
 }
 @media screen and (min-width: 992px) and (max-width: 1100px) {
   .trust-title {
@@ -1223,7 +1225,7 @@ margin-left: 0px;
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    margin-right: 10px;
+    right: 3%;
   }
   #carouselExampleControls-Mobile .carousel-control-next,
   #carouselExampleControls-Mobile .carousel-control-prev {
@@ -1274,7 +1276,7 @@ margin-left: 0px;
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    margin-right: 10px;
+    right: 0%;
   }
   .carousel-inner {
     margin-top: 20px;
@@ -1355,7 +1357,7 @@ margin-left: 0px;
     background-color: #f44b01 !important;
     width: 40px !important;
     height: 40px !important;
-    margin-right: 40px;
+    right: 15%;
   }
   #carouselExampleControls-Mobile .carousel-control-next,
   #carouselExampleControls-Mobile .carousel-control-prev {
