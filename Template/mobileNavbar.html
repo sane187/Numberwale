@@ -21,17 +21,18 @@
       }
       .m-icon{
         font-size: 1.4rem;
-        color: red;
+        color: rgba(242,56,0,1);
         margin-right: 12px;
       }
       .log-out-btn{
         padding:0.4rem 0.8rem;
-        border:1.5px solid red;
-        color: red;
+        border:1.5px solid rgba(242,56,0,1);
+        color: rgba(242,56,0,1);
         font-weight: bold;
         border-radius: 4px;
-        margin: 0 auto;
+       
       }
+      
       </style>
 </head>
 <body>
@@ -91,8 +92,33 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+ 
   <div class="modal-dialog m-0" >
-    <div class="modal-content" style="height:100vh">
+    <div class="modal-content" style="height:100vh">     
+<div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLogin" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exampleModalLabel">Login or Signup</h5>
+        <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" aria-label="Close"></button>
+      </div>
+      <div class="modal-body px-1">
+        <div class="d-flex align-items-center flex-column">
+        <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email / Number"
+                />
+                <small class="text-center mt-2" style="color:#70757a;">By continuing, I agree to the Terms & conditions</small>
+                <button class="btn py-1 px-2 border-0 text-white mt-5" style="background: #FF5F01;width:80% ;">Continue</button>
+<a href="" class="mt-2 text-dark">Login with password</a>
+              </div>
+       
+      </div>
+    
+    </div>
+  </div>
+</div> 
       <div class="modal-header justify-content-start align-items-center border-0 px-1">
         
      <div class="pt-2"><button type="button" class="btn-close p-0" data-bs-dismiss="modal" aria-label="Close" style="background:none;height:auto;width:1.5em">
@@ -105,7 +131,7 @@
            <figure class="mb-0 ">
              <img src="../Assets/user.png" alt="" style="width:3.5rem;height:3.5rem;border-radius: 50%;">
            </figure>
-            <button class="p-2 border-0 text-white ms-3" style="background:#FF5F01;border-radius: 7px;width:60% ; ">login/Signup</button>
+            <button class="p-2 border-0 text-white ms-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" style="background:#FF5F01;border-radius: 7px;width:60% ; ">Login / Signup</button>
             </div>   
           </section>
           <section class="px-3 pb-1">
@@ -165,7 +191,7 @@
             </div></div> <i class="fa-solid fa-chevron-right" ></i>
           </section>
 
-          <div class="d-flex justify-content-center mt-5"><button class="btn log-out-btn">Logout</button></div>
+          <div class="d-flex justify-content-center mt-5 "><button class="btn log-out-btn">Logout</button></div>
         </div>
       </div>
      
