@@ -140,7 +140,7 @@ let cardArr2=document.querySelectorAll(".card-vip-row")
 dov.innerHTML= 
 `
 <div style="border-radius:10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;">
-    <div class="d-flex justify-content-around align-items-center col-div mt-2 mb-1">
+    <div class="d-flex justify-content-between px-2 align-items-center col-div mt-2 mb-1">
         <i class="fa-solid fa-crown"> </i>
         <h4 class="mb-0">₹3500/-</h4>
       </div>
@@ -324,7 +324,7 @@ card6.map(item =>{
     dov.innerHTML= 
     `  <div style="border-radius: 10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
     
-    <div class="d-flex justify-content-around align-items-center col-div my-1 px-1">
+    <div class="d-flex justify-content-betweem align-items-center col-div my-1 px-2">
         <i class="fa-solid fa-crown"> </i> 
         <div class="ribbon "><span>20% off</span></div>
         <h4 class="mb-0">₹3500/-</h4>
@@ -370,7 +370,7 @@ Total -<strong class="mx-2">37</strong> | Sum - <strong class="mx-2">8</strong> 
       dov.innerHTML= 
       `  <div style="border-radius: 10px;background: #FF5F01;border:1.5px solid #e6e6e6;box-shadow:0 0 10px grey;position:relative">
       
-      <div class="d-flex justify-content-around align-items-center col-div my-1 px-1">
+      <div class="d-flex justify-content-between align-items-center col-div my-1 px-2">
           <i class="fa-solid fa-crown"> </i> 
          
           <h4 class="mb-0">₹3500/-</h4>

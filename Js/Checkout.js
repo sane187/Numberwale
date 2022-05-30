@@ -29,7 +29,7 @@ const checkout = [
                     width="60"
                     height="30"
                   />
-    <div class="d-flex justify-content-between selectedNumber">
+    <div class="d-flex  selectedNumber">
                       <h2 class="checkOut-Number">${number}</h2>
                       <h2 class="number-price">${price}</h2>
                     </div>    
