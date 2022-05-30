@@ -289,6 +289,7 @@ let filterArr2=[];
       btn.classList.add("pill-btn",`${index}`); 
       btn.addEventListener('click', function(e){
         let rmv = e.target.classList[1];
+        console.log(rmv)
         if (rmv > -1) {
           filterArr2.splice(rmv, 1);}
           pillsDisplay2();
