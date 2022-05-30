@@ -34,7 +34,16 @@ h3,h5{
 .offer-banner-head p{
     font-size: 1.6rem;
 }
-
+.fa-gift{
+  animation: fav linear 2s infinite;
+  }
+  
+  @keyframes fav{
+  0%   {transform: scale(1.4);}
+  25%  {transform: scale(1);}
+  50%  {transform: scale(1.4);}
+  100% {transform: scale(1);}
+  }
 .badge-bg-cont{
   position: absolute;
   top:36%;

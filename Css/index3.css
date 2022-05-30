@@ -561,7 +561,7 @@ margin-right: 5px;
   animation: fav linear 2s infinite;
   margin-right: 5px;
   }
-  .fa-gift {
+  .fav {
     animation: fav linear 2s infinite;
   }
   @keyframes fav{
