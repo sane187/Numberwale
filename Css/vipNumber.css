@@ -107,28 +107,3 @@ body{
   
 }
 
-@media screen and (max-width:992px) {
-  .vip-carousel-left{
-    width: 1.5rem !important;
-    height:1.75rem !important;
-   background:#FF5F01 !important;
- top:-35px !important;
- left:35% !important;
- border-radius: 4px; 
-  }
-  .vip-carousel-left span,.vip-carousel-right span{
-height: 1rem;
-width: 1rem;
-  }
-  .vip-carousel-right{
-    width: 1.5rem !important;
-    height: 1.75rem !important;
-   background:#FF5F01 !important;
- top:-35px !important;
- right:35% !important;
- border-radius: 4px;
-  }
-  .filter-cont a{
-    font-size: 0.7rem; 
-}
-}
