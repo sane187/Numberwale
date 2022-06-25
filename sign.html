@@ -33,10 +33,6 @@
               </div>
               <div class="col-xl-6 col-lg-6">
                 <div class="sign-section p-4">
-                  <div class="d-flex justify-content-around align-items-center">
-                    <h2 class="link-title">Don't have an account?</h2>
-                    <button class="btn btn-primary">Register</button>
-                  </div>
                   <div class="welcome-message mt-5 mb-5">
                     <h2 class="text-center">Hello ! Welcome back.</h2>
                     <p>
@@ -47,16 +43,18 @@
                   <form class="sign-form">
                     <div class="mb-3">
                       <label for="Email" class="form-label"
-                        >Email or Number</label
+                        >Login / Sign Up</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        placeholder="Enter here"
+                        placeholder="enter email or number"
                       />
                     </div>
-                    <button class="otp btn btn-primary">Get OTP</button>
-                    <h3>Don't have account ? <a href="">Sign Up</a></h3>
+                    <button class="otp btn btn-primary">Continue</button>
+                    <h3>
+                      Don't have account ? <a href="./Register.html">Sign Up</a>
+                    </h3>
                   </form>
                   <div class="otpScreen p-3 d-none">
                     <i
@@ -100,10 +98,6 @@
       <div class="wrapper p-1">
         <div class="sign-container mx-3">
           <div class="sign-section p-4">
-            <div class="d-flex justify-content-around align-items-center">
-              <h2 class="link-title">Don't have an account?</h2>
-              <button class="btn btn-primary">Register</button>
-            </div>
             <div class="welcome-message mt-5 mb-5">
               <h2 class="text-center">Hello ! Welcome back.</h2>
               <p>
@@ -113,15 +107,17 @@
             </div>
             <form class="sign-form-mobile">
               <div class="mb-3">
-                <label for="Email" class="form-label">Email address</label>
+                <label for="Email" class="form-label">Login / Sign Up</label>
                 <input
                   type="email"
                   class="form-control"
-                  placeholder="enter your email address"
+                  placeholder="enter email or number"
                 />
               </div>
-              <button class="otpMobile btn btn-primary">Get OTP</button>
-              <h3>Don't have account ? <a href="">Sign Up</a></h3>
+              <button class="otpMobile btn btn-primary">Continue</button>
+              <h3>
+                Don't have account ? <a href="./Register.html">Sign Up</a>
+              </h3>
             </form>
             <div class="otpScreen-Mobile p-3 d-none">
               <i
@@ -161,107 +157,107 @@
         </div>
       </div>
     </div>
-    <script >
+    <script>
       let btn = document.querySelector(".otp");
-let form = document.querySelector(".sign-form");
-let otpScreen = document.querySelector(".otpScreen");
-let closeModal = document.querySelector(".fa-solid");
-let edit = document.querySelector(".EditNumber");
-let RegisterNumber = document.querySelector(".registered-Number");
-let otp1 = document.getElementById("otp1");
-let otp2 = document.getElementById("otp2");
-let otp3 = document.getElementById("otp3");
-let otp4 = document.getElementById("otp4");
-otp1.addEventListener("input", getOtp);
-otp2.addEventListener("input", getOtp);
-otp3.addEventListener("input", getOtp);
-otp4.addEventListener("input", getOtp);
-let OTP;
-let value = true;
-form.addEventListener("click", function (e) {
-  e.preventDefault();
-});
-btn.addEventListener("click", showOtpScreen);
-edit.addEventListener("click", updateNumber);
-closeModal.addEventListener("click", showForm);
-function showOtpScreen() {
-  form.classList.add("hide");
-  if (otpScreen.classList.contains("d-none")) {
-    otpScreen.classList.remove("d-none");
-  }
-}
-function showForm() {
-  otpScreen.classList.add("d-none");
-  form.classList.remove("hide");
-}
+      let form = document.querySelector(".sign-form");
+      let otpScreen = document.querySelector(".otpScreen");
+      let closeModal = document.querySelector(".fa-solid");
+      let edit = document.querySelector(".EditNumber");
+      let RegisterNumber = document.querySelector(".registered-Number");
+      let otp1 = document.getElementById("otp1");
+      let otp2 = document.getElementById("otp2");
+      let otp3 = document.getElementById("otp3");
+      let otp4 = document.getElementById("otp4");
+      otp1.addEventListener("input", getOtp);
+      otp2.addEventListener("input", getOtp);
+      otp3.addEventListener("input", getOtp);
+      otp4.addEventListener("input", getOtp);
+      let OTP;
+      let value = true;
+      form.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+      btn.addEventListener("click", showOtpScreen);
+      edit.addEventListener("click", updateNumber);
+      closeModal.addEventListener("click", showForm);
+      function showOtpScreen() {
+        form.classList.add("hide");
+        if (otpScreen.classList.contains("d-none")) {
+          otpScreen.classList.remove("d-none");
+        }
+      }
+      function showForm() {
+        otpScreen.classList.add("d-none");
+        form.classList.remove("hide");
+      }
 
-function getOtp() {
-  OTP = parseInt(otp1.value + otp2.value + otp3.value + otp4.value);
-  console.log(OTP);
-}
-function updateNumber() {
-  value = !value;
-  if (value === false) {
-    RegisterNumber.setAttribute("contenteditable", "true");
-    edit.textContent = "save";
-  } else {
-    edit.textContent = "edit";
-    RegisterNumber.removeAttribute("contenteditable");
-  }
-}
-
+      function getOtp() {
+        OTP = parseInt(otp1.value + otp2.value + otp3.value + otp4.value);
+        console.log(OTP);
+      }
+      function updateNumber() {
+        value = !value;
+        if (value === false) {
+          RegisterNumber.setAttribute("contenteditable", "true");
+          edit.textContent = "save";
+        } else {
+          edit.textContent = "edit";
+          RegisterNumber.removeAttribute("contenteditable");
+        }
+      }
     </script>
     <script></script>
-  
+
     <script>
       let FomrMobile = document.querySelector(".sign-form-mobile");
-let OtpMobileBtn = document.querySelector(".otpMobile");
-let MobileForm = document.querySelector(".sign-form-mobile");
-let OtpScreenMobile = document.querySelector(".otpScreen-Mobile");
-let closeMobileModal = document.querySelector(".close");
-let editMobile = document.querySelector(".Edit-mobile");
-let RegisterNumberMobile = document.querySelector(".registered-Number-mobile");
-let val1 = document.getElementById("val1");
-let val2 = document.getElementById("val2");
-let val3 = document.getElementById("val3");
-let val4 = document.getElementById("val4");
-let otp;
-let val = true;
-val1.addEventListener("input", getValue);
-val2.addEventListener("input", getValue);
-val3.addEventListener("input", getValue);
-val4.addEventListener("input", getValue);
-OtpMobileBtn.addEventListener("click", ShowOtpMobileScreen);
-closeMobileModal.addEventListener("click", closeOtpMobileScreen);
-FomrMobile.addEventListener("click", function (e) {
-  e.preventDefault();
-});
-editMobile.addEventListener("click", updateNum);
-function ShowOtpMobileScreen() {
-  MobileForm.classList.add("hide");
-  if (OtpScreenMobile.classList.contains("d-none")) {
-    OtpScreenMobile.classList.remove("d-none");
-  }
-}
-function closeOtpMobileScreen() {
-  OtpScreenMobile.classList.add("d-none");
-  MobileForm.classList.remove("hide");
-}
-function getValue() {
-  otp = parseInt(val1.value + val2.value + val3.value + val4.value);
-  console.log(otp);
-}
-function updateNum() {
-  val = !val;
-  if (val === false) {
-    RegisterNumberMobile.setAttribute("contenteditable", "true");
-    editMobile.textContent = "save";
-  } else {
-    editMobile.textContent = "edit";
-    RegisterNumberMobile.removeAttribute("contenteditable");
-  }
-}
-
+      let OtpMobileBtn = document.querySelector(".otpMobile");
+      let MobileForm = document.querySelector(".sign-form-mobile");
+      let OtpScreenMobile = document.querySelector(".otpScreen-Mobile");
+      let closeMobileModal = document.querySelector(".close");
+      let editMobile = document.querySelector(".Edit-mobile");
+      let RegisterNumberMobile = document.querySelector(
+        ".registered-Number-mobile"
+      );
+      let val1 = document.getElementById("val1");
+      let val2 = document.getElementById("val2");
+      let val3 = document.getElementById("val3");
+      let val4 = document.getElementById("val4");
+      let otp;
+      let val = true;
+      val1.addEventListener("input", getValue);
+      val2.addEventListener("input", getValue);
+      val3.addEventListener("input", getValue);
+      val4.addEventListener("input", getValue);
+      OtpMobileBtn.addEventListener("click", ShowOtpMobileScreen);
+      closeMobileModal.addEventListener("click", closeOtpMobileScreen);
+      FomrMobile.addEventListener("click", function (e) {
+        e.preventDefault();
+      });
+      editMobile.addEventListener("click", updateNum);
+      function ShowOtpMobileScreen() {
+        MobileForm.classList.add("hide");
+        if (OtpScreenMobile.classList.contains("d-none")) {
+          OtpScreenMobile.classList.remove("d-none");
+        }
+      }
+      function closeOtpMobileScreen() {
+        OtpScreenMobile.classList.add("d-none");
+        MobileForm.classList.remove("hide");
+      }
+      function getValue() {
+        otp = parseInt(val1.value + val2.value + val3.value + val4.value);
+        console.log(otp);
+      }
+      function updateNum() {
+        val = !val;
+        if (val === false) {
+          RegisterNumberMobile.setAttribute("contenteditable", "true");
+          editMobile.textContent = "save";
+        } else {
+          editMobile.textContent = "edit";
+          RegisterNumberMobile.removeAttribute("contenteditable");
+        }
+      }
     </script>
     <!--script for mobile end--->
   </body>
