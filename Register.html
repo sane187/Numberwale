@@ -56,23 +56,25 @@
                 class="form-control pin"
                 placeholder="Enter your post code"
                 value=""
-                oninput="fetchState(this)"
+                oninput="Pin(this)"
               />
             </div>
             <div class="col-md-6">
               <label for="city" class="form-label">City</label>
               <input
                 type="text"
-                class="form-control"
-                placeholder="Enter your address 2"
+                class="form-control city"
+                placeholder="Enter your city"
+                value=""
               />
             </div>
             <div class="col-md-6">
               <label for="state" class="form-label">State</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control state"
                 placeholder="Enter your state"
+                value=""
               />
             </div>
             <div class="col-12">
@@ -129,24 +131,28 @@
               <label for="PinCode" class="form-label">Pin code</label>
               <input
                 type="number"
-                class="form-control"
+                class="form-control pin-m"
                 placeholder="Enter your post code"
+                value=""
+                oninput="PinMobile(this)"
               />
             </div>
             <div class="col-md-6">
               <label for="city" class="form-label">city</label>
               <input
                 type="text"
-                class="form-control"
-                placeholder="Enter your address 2"
+                class="form-control city-m"
+                placeholder="Enter your city"
+                value=""
               />
             </div>
             <div class="col-md-6">
               <label for="state" class="form-label">State</label>
               <input
                 type="text"
-                class="form-control"
+                class="form-control state-m"
                 placeholder="Enter your state"
+                value=""
               />
             </div>
             <div class="col-12">
@@ -169,5 +175,55 @@
       </script>
     </div>
     <!---Mobile screen end-->
+    <!--script to fetch state and city Desktop-->
+    <script>
+      let pin = document.querySelector(".pin");
+      let state = document.querySelector(".state");
+      let city = document.querySelector(".city");
+      const Pin = async () => {
+        let userPin = pin.value;
+        if (userPin.length == 6) {
+          const response = await fetch(
+            `https://api.postalpincode.in/pincode/${userPin}`
+          );
+          const data = await response.json();
+          const PinData = data.map((items) => {
+            const { PostOffice } = items;
+            return PostOffice;
+          });
+          PinData[0].map((items) => {
+            const { State, District } = items;
+            state.value = State;
+            city.value = District;
+          });
+        }
+      };
+    </script>
+    <!--script to fetch state and city Desktop end-->
+    <!--script to fetch state and city Mobile-->
+    <script>
+      let pinM = document.querySelector(".pin-m");
+      let stateM = document.querySelector(".state-m");
+      let cityM = document.querySelector(".city-m");
+      const PinMobile = async () => {
+        let userPin = pinM.value;
+        if (userPin.length == 6) {
+          const response = await fetch(
+            `https://api.postalpincode.in/pincode/${userPin}`
+          );
+          const data = await response.json();
+          const PinData = data.map((items) => {
+            const { PostOffice } = items;
+            return PostOffice;
+          });
+          PinData[0].map((items) => {
+            const { State, District } = items;
+            stateM.value = State;
+            cityM.value = District;
+          });
+        }
+      };
+    </script>
+    <!--script to fetch state and city Mobile end-->
   </body>
 </html>
