@@ -744,8 +744,9 @@
       let name = document.querySelector(".link-name");
       let icon = document.querySelector(".icon");
       pathName = window.location.pathname;
-      if (pathName == "./vipNumber.html") {
-        store.href = "./index3.html";
+      console.log(pathName);
+      if (pathName == "/vipNumber.html") {
+        store.href = "/index3.html";
         name.innerHTML = "Home";
         icon.className = "fa-solid fa-house";
       }
