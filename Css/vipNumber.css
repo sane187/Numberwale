@@ -44,8 +44,6 @@ body {
 
 #hard-btn {
   padding: 0;
-  font-weight: bold;
-  text-transform: uppercase;
   box-shadow: none !important;
 }
 
@@ -95,7 +93,7 @@ body {
   .filter-cont button {
     color: white;
     background: #000;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     border-radius: 5px;
     border: none;

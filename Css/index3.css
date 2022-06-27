@@ -73,7 +73,7 @@ nav form button:hover {
 }
 
 .nav-top {
-  padding: 0.6em 0;
+  padding: 0.3em 0;
 }
 
 .col1 .banner-title {
@@ -529,7 +529,7 @@ nav form button:hover {
   font-size: 1.2rem !important;
 }
 .overlay button {
-  font-size: 1rem;
+  font-size: 0.6rem;
 }
 .cart-count {
   margin-left: -3px;
@@ -637,7 +637,11 @@ nav form button:hover {
   padding: 0.6rem 0;
   border-radius: 7px;
 }
-
+#myNav .col-btn {
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: none;
+}
 .step-icon-cont p {
   color: #2f3043;
   font-size: 16px;

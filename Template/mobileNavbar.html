@@ -415,7 +415,11 @@
             </form>
             <div class="d-flex justify-content-center">
               <button
-                style="border-radius: 5px; width: 90%"
+                style="
+                  border-radius: 5px;
+                  width: 90%;
+                  font-size: 0.8rem !important;
+                "
                 class="col-btn mt-3 fw-bold py-1"
               >
                 Reset <i class="fa-solid fa-arrows-rotate ms-2"></i>
@@ -500,13 +504,13 @@
             <small>Category</small>
           </a>
           <a
-            class="btn foot-icon collapse-none"
+            class="btn foot-icon collapse-none store"
             href="./vipNumber.html"
             role="button"
             aria-expanded="false"
           >
-            <i class="fa-solid fa-store"></i>
-            <small>Vip Number</small>
+            <i class="fa-solid fa-store icon"></i>
+            <small class="link-name">Vip Number</small>
           </a>
           <a
             class="btn foot-icon collapse-none"
@@ -727,6 +731,17 @@
           // if(input.value.length == 0) input.value='01';
           //* if you want to allow insert only 2 digits *//
         });
+      }
+    </script>
+    <script>
+      let store = document.querySelector(".store");
+      let name = document.querySelector(".link-name");
+      let icon = document.querySelector(".icon");
+      pathName = window.location.pathname;
+      if (pathName == "/vipNumber.html") {
+        store.href = "/index3.html";
+        name.innerHTML = "Home";
+        icon.className = "fa-solid fa-house";
       }
     </script>
   </body>
