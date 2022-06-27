@@ -337,7 +337,7 @@ nav form button:hover {
   }
 }
 .hmove {
-  animation: tickerh linear 10s infinite;
+  animation: tickerh linear 20s infinite;
 }
 .hmove:hover {
   animation-play-state: paused;
