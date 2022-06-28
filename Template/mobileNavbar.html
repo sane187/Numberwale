@@ -65,81 +65,8 @@
             </div>
             <h5 class="modal-title ms-3" id="exampleModalLabel1">Categories</h5>
           </div>
-          <div class="modal-body px-0">
-            <form class="px-3">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="uniqueNumber"
-                />
-                <label class="form-check-label" for="uniqueNumber">
-                  Unique Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="ABAB" />
-                <label class="form-check-label" for="ABAB">
-                  AB AB Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="AAA" />
-                <label class="form-check-label" for="AAA">
-                  AAA BBB Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="1234" />
-                <label class="form-check-label" for="1234">
-                  123456 Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="mirror" />
-                <label class="form-check-label" for="mirror">
-                  Mirror Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="semi" />
-                <label class="form-check-label" for="semi">
-                  Semi Mirror Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="twoDigit" />
-                <label class="form-check-label" for="twoDigit">
-                  Two Digit Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="786" />
-                <label class="form-check-label" for="786"> 786 Number </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="triple" />
-                <label class="form-check-label" for="triple">
-                  Triple Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="tetra" />
-                <label class="form-check-label" for="tetra">
-                  Tetra Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="pentra" />
-                <label class="form-check-label" for="pentra">
-                  Pentra Number
-                </label>
-              </div>
-              <div class="form-check mt-3">
-                <input class="form-check-input" type="radio" name="hexa" />
-                <label class="form-check-label" for="hexa"> Hexa Number </label>
-              </div>
-            </form>
+          <div class="modal-body px-0" style="padding: 0rem">
+            <form class="px-3 categoryform"></form>
           </div>
         </div>
       </div>
@@ -744,12 +671,35 @@
       let name = document.querySelector(".link-name");
       let icon = document.querySelector(".icon");
       pathName = window.location.pathname;
-      console.log(pathName);
       if (pathName == "/vipNumber.html") {
         store.href = "/index3.html";
         name.innerHTML = "Home";
         icon.className = "fa-solid fa-house";
       }
     </script>
+    <!--script for categories-->
+    <script>
+      let category = document.querySelector(".categoryform");
+      let CategoryDatasm;
+      const fetcDataSm = async () => {
+        const response = await fetch(
+          "http://167.71.237.36/api/v1/customer/fetch_all_categories"
+        );
+        const data = await response.json();
+        CategoryDatasm = data.data;
+        CategoryDatasm.forEach((element, index) => {
+          const carouselItem = document.createElement("div");
+          carouselItem.innerHTML = ` <div class="form-check mt-3">
+                <input class="form-check-input" type="radio" name="hexa" value=${element.category_id}  />
+                <label class="form-check-label" for="hexa">  ${element.category_name} </label>
+              </div>`;
+          carouselItem.classList.add("category-name");
+          category.appendChild(carouselItem);
+        });
+      };
+
+      fetcDataSm();
+    </script>
+    <!--script for categories end-->
   </body>
 </html>
