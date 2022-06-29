@@ -168,7 +168,10 @@
                     <div class="row g-2 card-vip-row"></div>
                     <div class="row">
                       <div class="col-12 d-flex justify-content-center">
-                        <button style="width: 80%" class="col-btn mt-4 mx-auto">
+                        <button
+                          style="width: 80%"
+                          class="col-btn mt-4 mx-auto more"
+                        >
                           <i class="fa-solid fa-caret-down me-2"></i> More
                           Numbers
                         </button>
@@ -255,8 +258,8 @@
             <div class="row g-2 card-sm-row"></div>
             <div class="row">
               <div class="col-12 d-flex justify-content-center w-100">
-                <button style="width: 80%" class="col-btn mt-4">
-                  <i class="fa-solid fa-caret-down me-2"></i> View All
+                <button style="width: 80%" class="col-btn mt-4 more-sm">
+                  <i class="fa-solid fa-caret-down me-2"></i> More Number
                 </button>
               </div>
             </div>
@@ -272,27 +275,30 @@
     </div>
 
     <script src="./Js/js/bootstrap.min.js"></script>
-    <script src="./Js/index.js"></script>
+    <script src="./Js/vipNumber.js"></script>
     <script>
       let categoryCont = document.querySelector(".categories-cont");
-
-      const arr1 = [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        21, 22, 23, 24, 25,
-      ];
-      arr1.forEach((element, index) => {
-        const carouselItem = document.createElement("div");
-
-        carouselItem.innerHTML = `<div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault1" value=${index}>
+      let CategoryData;
+      const fetcData = async () => {
+        const response = await fetch(
+          "http://167.71.237.36/api/v1/customer/fetch_all_categories"
+        );
+        const data = await response.json();
+        CategoryData = data.data;
+        CategoryData.forEach((element, index) => {
+          const carouselItem = document.createElement("div");
+          carouselItem.innerHTML = `<div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault1" value=${element.category_id}>
             <label class="form-check-label" for="flexRadioDefault1" style="font-size:1.1rem">
-              Unique Numbers
+              ${element.category_name}
             </label>
            
           </div>`;
-        carouselItem.classList.add("category-name");
-        categoryCont.appendChild(carouselItem);
-      });
+          carouselItem.classList.add("category-name");
+          categoryCont.appendChild(carouselItem);
+        });
+      };
+      fetcData();
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
