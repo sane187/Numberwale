@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="./Css/index3.css">
         <link rel="stylesheet" type="text/css" href="./Css/contactUs.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
      
@@ -66,33 +67,33 @@
                                 <div class="col-12 col-xl-6 col-lg-6 col-md-12 mt-5 mt-lg-0">
                                 <div class="d-flex flex-column p-3" style="border:1px solid #dedede;box-shadow: 0 5px 15px #dedede; 
                                 border-radius:8px">
-                                    <form class="contact-form">
+                                    <form class="contact-form-sm">
                                         <div class="d-flex flex-column">
                                             <div class="mb-3 me-3 w-100">
                                                 <label for="Name" class="form-label">Name</label>
-                                                <input type="text" class="form-control w-100" id="Name" aria-describedby="emailHelp">                                  
+                                                <input type="text" class="form-control w-100" name="name" aria-describedby="emailHelp">                                  
                                               </div>
                                               <div class="mb-3 w-100">
                                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
                                               
                                               </div>
                                         </div>
                                         <div class="d-flex flex-column">
                                             <div class="mb-3 me-3 w-100">
                                                 <label for="telephone" class="form-label">Telephone</label>
-                                                <input type="number" class="form-control" id="telephone" aria-describedby="emailHelp">                                 
+                                                <input type="number" class="form-control" name="mobile_no" aria-describedby="emailHelp">                                 
                                               </div>
                                               <div class="mb-3 w-100">
                                                 <label for="exampleInputEmail1" class="form-label">Company Name</label>
-                                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                                   
+                                                <input type="text" class="form-control" name="company_name" aria-describedby="emailHelp">                                   
                                               </div>
                                         </div>
                                         <div><div class="mb-3">
                                             <label for="Message" class="form-label">Message</label>
-                                            <input type="email" class="form-control" id="Message" aria-describedby="emailHelp">
+                                            <input type="email" class="form-control" name="message" aria-describedby="emailHelp">
                                           </div></div>
-                                          <button>SEND YOUR MESSAGE</button>
+                                          <button type="button" id="submit-sm">SEND YOUR MESSAGE</button>
                                     </form>                    
                                 </div>
                                 </div>
@@ -164,29 +165,29 @@
                             <div class="d-flex">
                                 <div class="mb-3 me-3 w-100">
                                     <label for="Name" class="form-label">Name</label>
-                                    <input type="text" class="form-control w-100" id="Name" aria-describedby="emailHelp">                                  
+                                    <input type="text" class="form-control w-100" id="name" aria-describedby="emailHelp">                                  
                                   </div>
                                   <div class="mb-3 w-100">
                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                                   
                                   </div>
                             </div>
                             <div class="d-flex">
                                 <div class="mb-3 me-3 w-100">
                                     <label for="telephone" class="form-label">Telephone</label>
-                                    <input type="number" class="form-control" id="telephone" aria-describedby="emailHelp">                                 
+                                    <input type="number" class="form-control" id="mobile_no" aria-describedby="emailHelp">                                 
                                   </div>
                                   <div class="mb-3 w-100">
                                     <label for="exampleInputEmail1" class="form-label">Company Name</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                                   
+                                    <input type="text" class="form-control" id="company_name" aria-describedby="emailHelp">                                   
                                   </div>
                             </div>
                             <div><div class="mb-3">
                                 <label for="Message" class="form-label">Message</label>
                                 <input type="email" class="form-control" id="Message" aria-describedby="emailHelp">
                               </div></div>
-                              <button>SEND YOUR MESSAGE</button>
+                              <button type="button" id="submit">SEND YOUR MESSAGE</button>
                         </form>                    
                     </div>
                     </div>
@@ -219,6 +220,109 @@
          duration:1000}
       );
     </script>
+
+      <script type="module">
+    
+        import config from './conf/index.js';
+        
+        async function postData(url = '', data = {}) {
+          try{
+          const response = await fetch(url, {
+            method: 'POST', 
+            mode: 'cors', 
+            cache: 'no-cache', 
+            credentials: 'same-origin', 
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            redirect: 'follow', 
+            referrerPolicy: 'no-referrer', 
+            body: JSON.stringify(data) 
+          });
+          return response.json(); }
+          catch(err){
+            console.error(err)
+          }
+        }
+        
+        document.getElementById("submit").addEventListener("click",async function(event){
+          
+            const formData=Array.from(document.querySelectorAll('.contact-form input')).reduce((acc,input)=>({...acc,[input.id]:input.value}),{})
+          
+        const res=await postData(config.backendEndpoint+"/contact_us",formData)
+        console.log(res.data)
+        if(res.status==="success"){
+        
+        Toastify({
+          text: "Message Sent",
+          duration: 2000,
+          newWindow: true,
+          close: true,
+          gravity: "top", // `top` or `bottom`
+          position: "right", // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          style: {
+            background: "#32cd32",
+          }}).showToast();
+        // window.location ;
+        setTimeout(()=>window.location.reload(), 2500);
+         }
+        else{
+          Toastify({
+          text: res.msg,
+          duration: 3000,
+          newWindow: true,
+          close: true,
+          gravity: "top", // `top` or `bottom`
+          position: "right", // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          style: {
+            background: "red",
+          }}).showToast();
+        }
+        })
+        
+        
+        document.getElementById("submit-sm").addEventListener("click",async function(event){
+          
+          const formData=Array.from(document.querySelectorAll('.contact-form-sm input')).reduce((acc,input)=>({...acc,[input.name]:input.value}),{})
+          
+        
+        const res=await postData(config.backendEndpoint+"/contact_us",formData)
+        
+        if(res.status==="success"){
+        
+        Toastify({
+        text: "Message Sent",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "#32cd32",
+        }}).showToast();
+        // window.location ;
+        setTimeout(()=>window.location.reload(), 2500);
+        }
+        else{
+        Toastify({
+        text: res.msg,
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "red",
+        }}).showToast();
+        }
+        })
+            </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
     
 </body>
 </html>

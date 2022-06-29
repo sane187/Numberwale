@@ -296,6 +296,8 @@ else{
   }}).showToast();
 }
 })
+
+
 document.getElementById("submit-sm").addEventListener("click",async function(event){
   
   const formData=Array.from(document.querySelectorAll('.register-form-sm input')).reduce((acc,input)=>({...acc,[input.name]:input.value}),{})
