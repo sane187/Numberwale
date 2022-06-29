@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./Css/index3.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./CSS/Register.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
@@ -23,14 +24,16 @@
     <div class="d-none d-lg-block">
       <div class="RegisterBg">
         <div class="Register p-3">
-          <h1 class="register-title">Resgistration form</h1>
-          <form class="row g-3 register-form">
+          <h1 class="register-title">Registration form</h1>
+          <form class="row g-3 register-lg-form" >
             <div class="col-md-6">
               <label for="Name" class="form-label">Name</label>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Enter your name"
+                id="customer_name"
+                
               />
             </div>
             <div class="col-md-6">
@@ -38,14 +41,16 @@
               <input
                 type="number"
                 class="form-control"
+                id="customer_no"
                 placeholder="Enter your mobile no"
               />
             </div>
             <div class="col-md-6">
-              <label for="Passowrd" class="form-label">Passowrd</label>
+              <label for="Passowrd" class="form-label">Password</label>
               <input
                 type="password"
-                class="form-control"
+                class="form-control" 
+                id="password"
                 placeholder="Enter your Passowrd"
               />
             </div>
@@ -55,7 +60,7 @@
                 type="number"
                 class="form-control pin"
                 placeholder="Enter your post code"
-                value=""
+                id="pincode"
                 oninput="Pin(this)"
               />
             </div>
@@ -65,7 +70,7 @@
                 type="text"
                 class="form-control city"
                 placeholder="Enter your city"
-                value=""
+                id="city"
               />
             </div>
             <div class="col-md-6">
@@ -74,7 +79,7 @@
                 type="text"
                 class="form-control state"
                 placeholder="Enter your state"
-                value=""
+                id="state"
               />
             </div>
             <div class="col-12">
@@ -82,11 +87,11 @@
               <input
                 type="text"
                 class="form-control"
-                id="inputAddress"
                 placeholder="enter your address"
+                id="address"
               />
             </div>
-            <button type="submit" class="btn btn-primary">Request otp</button>
+            <button type="button" id="submit" class="btn btn-primary">Request otp</button>
           </form>
         </div>
       </div>
@@ -102,13 +107,15 @@
       <div class="RegisterBg px-2">
         <div class="Register p-3">
           <h1 class="register-title">Resgistration form</h1>
-          <form class="row g-3 register-form">
+          <form class="row g-3 register-form-sm">
             <div class="col-md-6">
               <label for="Name" class="form-label">Name</label>
               <input
                 type="text"
                 class="form-control"
                 placeholder="Enter your name"
+                name="customer_name"  
+                
               />
             </div>
             <div class="col-md-6">
@@ -117,6 +124,7 @@
                 type="number"
                 class="form-control"
                 placeholder="Enter your mobile no"
+                name="customer_no"
               />
             </div>
             <div class="col-md-6">
@@ -125,6 +133,7 @@
                 type="password"
                 class="form-control"
                 placeholder="Enter your passowrd"
+                name="password"
               />
             </div>
             <div class="col-md-6">
@@ -133,8 +142,8 @@
                 type="number"
                 class="form-control pin-m"
                 placeholder="Enter your post code"
-                value=""
                 oninput="PinMobile(this)"
+              name="pincode"
               />
             </div>
             <div class="col-md-6">
@@ -143,7 +152,7 @@
                 type="text"
                 class="form-control city-m"
                 placeholder="Enter your city"
-                value=""
+                name="city"
               />
             </div>
             <div class="col-md-6">
@@ -152,7 +161,7 @@
                 type="text"
                 class="form-control state-m"
                 placeholder="Enter your state"
-                value=""
+                name="state"
               />
             </div>
             <div class="col-12">
@@ -161,9 +170,10 @@
                 type="text"
                 class="form-control"
                 placeholder="Enter your Address"
+                name="address"
               />
             </div>
-            <button type="submit" class="btn btn-primary">Request otp</button>
+            <button type="button" id="submit-sm" class="btn btn-primary">Request otp</button>
           </form>
         </div>
       </div>
@@ -225,5 +235,106 @@
       };
     </script>
     <!--script to fetch state and city Mobile end-->
+
+    <script type="module">
+    
+import config from './conf/index.js';
+
+async function postData(url = '', data = {}) {
+  try{
+  const response = await fetch(url, {
+    method: 'POST', 
+    mode: 'cors', 
+    cache: 'no-cache', 
+    credentials: 'same-origin', 
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    redirect: 'follow', 
+    referrerPolicy: 'no-referrer', 
+    body: JSON.stringify(data) 
+  });
+  return response.json(); }
+  catch(err){
+    console.error(err)
+  }
+}
+
+document.getElementById("submit").addEventListener("click",async function(event){
+  
+    const formData=Array.from(document.querySelectorAll('.register-lg-form input')).reduce((acc,input)=>({...acc,[input.id]:input.value}),{})
+  
+const res=await postData(config.backendEndpoint+"/customer_signup",formData)
+
+if(res.status==="success"){
+console.log(res.msg)
+Toastify({
+  text: "User Added",
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "#32cd32",
+  }}).showToast();
+// window.location ;
+setTimeout(()=>window.location = './sign.html', 3000);
+ }
+else{
+  Toastify({
+  text: res.msg,
+  duration: 3000,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "red",
+  }}).showToast();
+}
+})
+document.getElementById("submit-sm").addEventListener("click",async function(event){
+  
+  const formData=Array.from(document.querySelectorAll('.register-form-sm input')).reduce((acc,input)=>({...acc,[input.name]:input.value}),{})
+  
+
+const res=await postData(config.backendEndpoint+"/customer_signup",formData)
+
+if(res.status==="success"){
+
+Toastify({
+text: "User Added",
+duration: 3000,
+newWindow: true,
+close: true,
+gravity: "top", // `top` or `bottom`
+position: "right", // `left`, `center` or `right`
+stopOnFocus: true, // Prevents dismissing of toast on hover
+style: {
+  background: "#32cd32",
+}}).showToast();
+// window.location ;
+setTimeout(()=>window.location = './sign.html', 3000);
+}
+else{
+Toastify({
+text: res.msg,
+duration: 3000,
+newWindow: true,
+close: true,
+gravity: "top", // `top` or `bottom`
+position: "right", // `left`, `center` or `right`
+stopOnFocus: true, // Prevents dismissing of toast on hover
+style: {
+  background: "red",
+}}).showToast();
+}
+})
+    </script>
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>
