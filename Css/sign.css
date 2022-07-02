@@ -13,6 +13,9 @@
     rgba(255, 194, 175, 1) 100%
   );
 }
+.option-div-cont{
+  display: none;
+}
 .sign-container {
   width: auto;
   height: auto;
@@ -118,14 +121,11 @@
 }
 .otpScreen input,
 .otpScreen-Mobile input {
-  width: 4vw;
-  height: 7vh;
-  border-radius: 10px;
-  margin: 10px 10px;
-  text-align: center;
+  width: 40%;
+  padding: 2px 4px;
   border: 1px solid #f44b01;
 }
-.otpScreen .resend-link,
+.otpScreen,
 .otpScreen-Mobile .resend-link,
 .otpScreen a,
 .otpScreen-Mobile a {
@@ -142,25 +142,29 @@
 .otpScreen-Mobile a:hover {
   color: #f44b01;
 }
-.registered-Number[contenteditable="true"] {
-  background-color: #e6e6e6;
-  padding: 4px 4px;
+
+.option-div{
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #f44b01;
+  border-radius: 20px;
+  font-weight: 600;
+  background: #f44b01;
+  color: wheat;
+  cursor: pointer;
 }
-.registered-Number-mobile[contenteditable="true"] {
-  background-color: #e6e6e6;
-  padding: 4px 4px;
+.login-screen-lg{
+  padding: 15px 15px 10px 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 }
+
 
 @media screen and (max-width: 992px) {
   .sign-container {
     width: 80vw;
     height: auto;
   }
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .sign-section .link-title {
     font-size: 16px;
     margin-right: 20px;
@@ -177,6 +181,10 @@
   }
   .welcome-message p {
     font-size: 1rem;
+  }
+
+  .option-div{
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 786px) and (max-width: 992px) {
