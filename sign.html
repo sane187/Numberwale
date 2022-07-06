@@ -59,7 +59,7 @@
                     <div class="option-div otp">Login with OTP</div> <div class="option-div login-btn ms-3">Login with Password</div>
                   </div>
                   
-                    <h3 class="mb-3">
+                    <h3 class="mb-3 mt-3">
                       Don't have account ? <a href='./Register.html'>Sign Up</a>
                     </h3> 
                    
@@ -72,7 +72,7 @@
                     <h2 class="otp-title">Verify Details</h2>
                     <h3>OTP sent to your mobile number.</h3>
                     <div class="d-flex align-items-center flex-row">
-                      <h5 class="registered-Number mb-1">+91-9530000007</h5>
+                      <h5 class="registered-Number mb-1 mt-3">+91-9530000007</h5>
                       
                     </div>
                     <div class="d-flex flex-row mb-2">
@@ -125,14 +125,18 @@
                 />
               </div>
               <button class="continue-sm btn btn-primary" type="button">Continue</button>
-              <div class="mt-3 option-div-cont-sm justify-content-center" style="display: none">
-                <div class="option-div otp">Login with OTP</div> <div class="option-div login-btn ms-3">Login with Password</div>
-              </div>
-              <h3>
-                Don't have account ? <a href="./Register.html" >Sign Up</a>
-              </h3>
+             
+
             </form>
-            <div class="otpScreen-Mobile p-3 d-none">
+            <h3 >
+              Don't have account ? <a href="./Register.html" >Sign Up</a>
+            </h3>
+            <div class="mt-3 option-div-cont-sm justify-content-center" style="display: none">
+              <div class="option-div otp-sm">Login with OTP</div> <div class="option-div login-btn-sm ms-3">Login with Password</div>
+            </div>
+
+
+            <div class="otpScreen-Mobile p-3 d-none mt-3">
               <i
                 class="fa-solid fa-xmark close d-flex justify-content-end"
                 style="color: #f44b01; cursor: pointer"
@@ -140,29 +144,30 @@
               <h2 class="otp-title">Verify Details</h2>
               <h3>OTP sent to your mobile number.</h3>
               <div class="d-flex align-items-center flex-row">
-                <h3 class="registered-Number-mobile" contenteditable="true">
+                <h3 class="registered-Number-mobile">
                   +91-9530000007
                 </h3>
-                <a
-                  href="#"
-                  style="margin-top: 12px; margin-left: 10px"
-                  class="Edit-mobile"
-                  >Edit</a
-                >
+                
               </div>
 
               <div class="d-flex flex-row">
                 <input type="text" minlength="1" id="val1" />
               </div>
-              <a href="#" class="resend-link">Resend OTP</a>
-              <h2 class="message">
-                - Make sure you entered correct mobile number
-              </h2>
-              <h2 class="message">
-                -You can also
-                <span><a href="#">Login with Password</a></span>
-              </h2>
-            </div>
+             
+            <div class="login-screen-sm d-none mt-3">
+              <p class="mb-1">NUMBER: <span class="ms-3"></span></p>
+               <div class="mb-3 d-flex align-items-center">
+                 <label for="password-inp" class="form-label me-2 mb-0"
+                   >PASSWORD</label
+                 >
+                 <input
+                   type="text" id="password-inp-sm"
+                   class="form-control"
+                   placeholder="Enter password here..." style="width: 40%"
+                 />
+               </div>
+               <button type="btn" class="btn-secondary btn login-call-sm">Login</button>
+             </div>
           </div>
         </div>
       </div>
@@ -319,6 +324,7 @@ cont.classList.add("d-flex");
     console.log("aj")
   }
 }
+
           loginCall.addEventListener("click",async function(){
             let password=document.querySelector("#password-inp").value;
         let num= document.querySelector(".sign-input-lg").value
@@ -447,15 +453,102 @@ else{
    
 
     <script type="module">
+      import config from './conf/index.js';
+
       let continueSm = document.querySelector(".continue-sm");
       let MobileForm = document.querySelector(".sign-form-mobile");
       let OtpScreenMobile = document.querySelector(".otpScreen-Mobile");
       let closeMobileModal = document.querySelector(".close");
       let editMobile = document.querySelector(".Edit-mobile");
       let contSm = document.querySelector(".option-div-cont-sm");
+      let loginSm = document.querySelector(".login-screen-sm");
+      let loginCallSm = document.querySelector(".login-call-sm");
+      let btnsm= document.querySelector(".otp-sm")
 
+      async function customerLoginSm(num,password) {
+  try{
+  const response = await fetch(config.backendEndpoint+`/customer_login`,{
+    method: 'POST', 
+    body:JSON.stringify({
+    "customer_no":`${num}`,
+  "password":`${password}`
+  }),headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    }
+  });
+  return response.json(); }
 
+  catch(err){
+    console.error(err)
+    console.log("aj")
+  }
+}
+      loginCallSm.addEventListener("click",async function(){
+            let password=document.querySelector("#password-inp-sm").value;
+        let num= document.querySelector(".sign-input-sm").value
+        try{
+              let data=await customerLoginSm(num,password);
+              
+              if(data.status==="success"){
+                  const user= await fetch(config.backendEndpoint+`/customer_info`,{
+    method: 'POST', 
+    headers: {
+        "Content-type": "application/json; charset=UTF-8",
+        "token":`${data.token}`
+    }
+  });
+let userData=await user.json();
+
+if(userData.status==="success"){ localStorage.setItem('user', JSON.stringify(userData.data))
+Toastify({
+text: "Logged In Successfully",
+duration: 2500,
+newWindow: true,
+close: true,
+gravity: "top", // `top` or `bottom`
+position: "right", // `left`, `center` or `right`
+stopOnFocus: true, // Prevents dismissing of toast on hover
+style: {
+background: "#32cd32",
+}}).showToast();
+setTimeout(function(){
+window.location.href="/index3.html"
+}, 3000); 
+}; 
+}  
+else{
+  Toastify({
+  text: "Unable to login",
+  duration: 2500,
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "red",
+  }}).showToast();  
+}
+}
+catch(err){
+console.log(err)
+}
+          })
+ 
+  
     
+      document.querySelector(".login-btn-sm").addEventListener("click",function(){
+        const num= document.querySelector(".sign-input-sm").value;
+               document.querySelector(".login-screen-sm span").innerText=num;
+               MobileForm.classList.add("hide");
+               loginSm.classList.remove("d-none");
+              //  btn.innerText="Login with OTP";
+              //  let aj=otpScreen.classList.value.search("d-none");
+              //  if(aj===-1){
+              //   otpScreen.classList.add("d-none");
+              //  }
+         
+          })
         
         continueSm.addEventListener("click",function(){
         let num= document.querySelector(".sign-input-sm").value.length;
@@ -479,7 +572,7 @@ contSm.classList.add("d-flex");
     
 
       
-      let RegisterNumberMobile = document.querySelector(
+      let RegisterNumbersm = document.querySelector(
         ".registered-Number-mobile"
       );
       let val1 = document.getElementById("val1");
@@ -491,16 +584,72 @@ contSm.classList.add("d-flex");
 
       
 
-      OtpMobileBtn.addEventListener("click", ShowOtpMobileScreen);
       closeMobileModal.addEventListener("click", closeOtpMobileScreen);
+    
       
-      editMobile.addEventListener("click", updateNum);
-      function ShowOtpMobileScreen() {
+      async function sendOTP(num) {
+  try{
+  const response = await fetch(config.backendEndpoint+`/send_otp?customer=${num}`, {
+    method: 'POST', 
+    mode: 'cors', 
+    cache: 'no-cache', 
+    credentials: 'same-origin', 
+    redirect: 'follow', 
+    referrerPolicy: 'no-referrer'
+  });
+  return response.json(); }
+  catch(err){
+    console.error(err)
+  }
+}
+
+      async function ShowOtpMobileScreen() {
+        const num= document.querySelector(".sign-input-sm").value;
+btnsm.innerText="Resend OTP";
+               let aj=loginSm.classList.value.search("d-none");
+               if(aj===-1){
+                loginSm.classList.add("d-none");
+               }
+
+ const res=await sendOTP(num);
+ RegisterNumbersm.innerText=num
+ if(res.status==="success" && num.length>0){
+  
+Toastify({
+text: "OTP SENT ",
+duration: 3000,
+newWindow: true,
+close: true,
+gravity: "top", // `top` or `bottom`
+position: "right", // `left`, `center` or `right`
+stopOnFocus: true, // Prevents dismissing of toast on hover
+style: {
+  background: "#32cd32",
+}}).showToast();
+
         MobileForm.classList.add("hide");
         if (OtpScreenMobile.classList.contains("d-none")) {
           OtpScreenMobile.classList.remove("d-none");
-        }
+        }}
+
+            else{
+              Toastify({
+text: "Number not registered",
+duration: 3000,
+newWindow: true,
+close: true,
+gravity: "top", // `top` or `bottom`
+position: "right", // `left`, `center` or `right`
+stopOnFocus: true, // Prevents dismissing of toast on hover
+style: {
+  background: "red",
+}}).showToast();
+            }
       }
+
+      btnsm.addEventListener("click", ShowOtpMobileScreen);
+
+
       function closeOtpMobileScreen() {
         OtpScreenMobile.classList.add("d-none");
         MobileForm.classList.remove("hide");
@@ -509,16 +658,7 @@ contSm.classList.add("d-flex");
         otp = parseInt(val1.value + val2.value + val3.value + val4.value);
         console.log(otp);
       }
-      function updateNum() {
-        val = !val;
-        if (val === false) {
-          RegisterNumberMobile.setAttribute("contenteditable", "true");
-          editMobile.textContent = "save";
-        } else {
-          editMobile.textContent = "edit";
-          RegisterNumberMobile.removeAttribute("contenteditable");
-        }
-      }
+     
          </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 

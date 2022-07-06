@@ -97,7 +97,6 @@
   font-size: 1rem;
   color: #494949;
   font-family: "Poppins";
-  margin-top: 20px;
 }
 .sign-section h3 a {
   text-decoration: none;
@@ -276,7 +275,7 @@
     font-size: 0.8rem;
   }
   .sign-section h3 {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   .sign-form-mobile {
     margin-top: 10px;
